@@ -5,9 +5,24 @@ html {
 body {
     background: url('/media/cigar.jpeg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh);
+    height: calc(100vh - 164px);
     color: #000;
     font-family: 'Helvetica';
+}
+
+.bg-black1 {
+    background: #000;
+}
+
+.btn-white1 {
+    background: #fff;
+}
+
+/* Footer */
+
+.bg-black2 {
+    background: #000;
+    height: 100px;
 }
 
 /* Taken from Bulma */
@@ -60,22 +75,22 @@ body {
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
+    .container {
+      max-width: 80%;
+    }
   }
-}
-
-/* fixed top navbar only on medium and up */
-@media (min-width: 992px) {
-    .fixed-top-desktop-only {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1030;
-    }
-
-    .header-container {
-        padding-top: 164px;
-    }
-}
+  
+  /* fixed top navbar only on medium and up */
+  @media (min-width: 992px) {
+      .fixed-top-desktop-only {
+          position: fixed;
+          top: 0;
+          right: 0;
+          left: 0;
+          z-index: 1030;
+      }
+  
+      .header-container {
+          padding-top: 164px;
+      }
+  }

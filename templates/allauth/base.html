@@ -36,7 +36,7 @@
   </head>
   <body>
     <header class="container-fluid fixed-top">
-        <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
+        <div id="topnav" class="row bg-black1 pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
                     <h2 class="logo-font text-white my-0">Gentlemen</h2>
@@ -45,9 +45,10 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="">
                     <div class="input-group w-100">
-                        <input class="form-control border border-black rounded-50" type="text" name="q" placeholder="Search our site">
+                        <input class="form-control border border-black
+                      rounded-50" type="text" name="q" placeholder="Search">
                         <div class="input-group-append">
-                            <button class="form-control btn btn-black border border-black rounded-50" type="submit">
+                            <button class="form-control btn btn-white1 border border-black rounded-50" type="submit">
                                 <span class="icon">
                                     <i class="fas fa-pen"></i>
                                 </span>
@@ -132,4 +133,9 @@
     {% endblock %}
 
   </body>
+  <footer class="container-fluid fixed-bottom bg-black">
+    <div id="fixed-bottom" class="row bg-black2 pt-lg-2 d-none d-lg-flex">
+        <div class="row"><h1 class="text-white">Gentlemen</h1></div>
+    </div>
+  </footer>
 </html>
