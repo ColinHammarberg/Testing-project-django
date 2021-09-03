@@ -5,18 +5,18 @@
   <head>
 
     {% block meta %}
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {% endblock %}
 
     {% block extra_meta %}
     {% endblock %}
 
     {% block corecss %}
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
-    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
+        <link rel="stylesheet" href="{% static 'css/base.css' %}"> 
     {% endblock %}
 
     {% block extra_css %}
@@ -28,15 +28,17 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" crossorigin="anonymous"></script>
-		    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js" crossorigin="anonymous"></script>     
-    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js" crossorigin="anonymous"></script>  
     {% endblock %}
 
-    <title>Gentlemen</title>
+    {% block extra_js %}
+    {% endblock %}
+
+    <title>Boutique Ado {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
     <header class="container-fluid fixed-top">
-        <div id="topnav" class="row bg-black1 pt-lg-2 d-none d-lg-flex">
+        <div id="topnav" class="row bg-black2 pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
                     <h2 class="logo-font text-white my-0">Gentlemen</h2>
@@ -45,8 +47,7 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="">
                     <div class="input-group w-100">
-                        <input class="form-control border border-black
-                      rounded-50" type="text" name="q" placeholder="Search">
+                        <input class="form-control border border-black rounded-50" type="text" name="q" placeholder="Search">
                         <div class="input-group-append">
                             <button class="form-control btn btn-white1 border border-black rounded-50" type="submit">
                                 <span class="icon">
@@ -72,12 +73,10 @@
                                     <a href="" class="dropdown-item">Product Management</a>
                                 {% endif %}
                                 <a href="" class="dropdown-item">My Profile</a>
-                                <a href="" class="dropdown-item">Logout</a>
+                                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                             {% else %}
-                                <a href="" class="dropdown-item">Home</a>
-                                <a href="" class="dropdown-item">About</a>
-                                <a href="" class="dropdown-item">Register</a>
-                                <a href="" class="dropdown-item">Login</a>
+                                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
                             {% endif %}
                         </div>
                     </li>
@@ -97,20 +96,23 @@
                     </li>
                 </ul>
             </div>
-        <!-- Taken from bootstrapcdn (navbar) -->
-            <div class="row bg-white">
-                <nav class="navbar navbar-expand-lg navbar-light w-100">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon">
-                            <i class="fa fas-"></i>
-                        </span>
-                    </button>
-                </nav>
-            </div>
-      </header>
-    
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0"></div>
+        </div>
+        <div class="row bg-black1">
+            <nav class="navbar navbar-expand-lg navbar-light w-100">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+            </nav>
+        </div>
+        <div id="delivery-banner" class="row text-center">
+            <div class="col bg-black text-white">
+                <h4 class="logo-font my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>                
+            </div>            
+        </div>
+    </header>
 
-    <!-- Message will appear here -->
     {% if messages %}
         <div class="message-container"></div>
     {% endif %}
@@ -119,33 +121,11 @@
     {% endblock %}
 
     {% block content %}
-    <div class="container">
-      <h1 class="header">
-				23F * 734 <br />&nbsp;&nbsp; (8) &.09 <br />0x2_ U3
-			</h1>
-      <div class="title">
-        <div class="title title-1"><h1>Charity</h1></div>
-				<div class="title title-2"><h1>For</h1></div>
-				<div class="title title-3"><h1>Gentlemen</h1></div>
-      </div>
-      <ul class="blocks">
-				<li class="block-1 block"></li>
-				<li class="block-2 block"></li>
-				<li class="block-3 block"></li>
-				<li class="block-4 block"></li>
-				<li class="block-5 block"></li>
-				<li class="block-6 block"></li>
-			</ul>
-    </div>
     {% endblock %}
 
     {% block postloadjs %}
     {% endblock %}
 
+
   </body>
-  <footer class="container-fluid fixed-bottom bg-black">
-    <div id="fixed-bottom" class="row bg-black2 pt-lg-2 d-none d-lg-flex">
-        <div class="row"><h1 class="text-white">Gentlemen</h1></div>
-    </div>
-  </footer>
 </html>
