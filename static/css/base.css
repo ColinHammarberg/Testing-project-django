@@ -1,96 +1,131 @@
-html {
-    height: 100%;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #fff;
 }
 
+html,
 body {
-    background: url('/media/cigar.jpeg') no-repeat center center fixed;
-    background-size: cover;
-    height: calc(100vh - 164px);
-    color: #000;
-    font-family: 'Helvetica';
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	background: #000;
 }
 
-.bg-black1 {
-    background: #000;
+h1.header {
+	font-family: "Bigilla" !important;
+	font-size: 200px;
+	text-transform: uppercase;
+	font-weight: bolder;
+	width: 90%;
 }
 
-.btn-white1 {
-    background: #fff;
+.header .letter {
+	display: inline-block;
+	line-height: 1em;
 }
 
-/* Footer */
-
-.bg-black2 {
-    background: #000;
-    height: 100px;
+.titles {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
-/* Taken from Bulma */
-.icon {
-    align-items: center;
-    display: inline-flex;
-    justify-content: center;
-    height: 1.5rem;
-    width: 1.5rem;
+h1 {
+	font-family: "Bigilla" !important;
+	font-size: 200px;
+	text-transform: uppercase;
+	font-weight: bolder;
+	width: 90%;
 }
 
-.logo-font {
-    text-transform: uppercase;
+ul.titles {
+	display: flex;
 }
 
-.main-logo-link {
-    width: fit-content;
+ul.blocks {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	list-style: none;
+	justify-content: center;
+	align-items: center;
 }
 
-.shop-now-button {
-    background: black;
-    color: white;
-    min-width: 260px;
+li.block {
+	height: 100vh;
 }
 
-.btn-black {
-    background: black;
-    color: white;
+.block-1 {
+	width: 0.2%;
+	margin: 0 10px;
+	background: #54df89;
 }
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
-    background: #222;
-    color: white;
+.block-2 {
+	width: 1.4%;
+	margin: 0 200px 0 20px;
+	background: #54df89;
 }
 
-.text-black {
-    color: #000 !important;
+.block-3 {
+	width: 0.8%;
+	margin: 0 40px;
+	background: #54df89;
 }
 
-.border-black {
-    border: 1px solid black !important;
+.block-4 {
+	width: 2%;
+	margin: 0 400px;
+	background: #54df89;
 }
 
-/* -------------------------------- Media Queries */
+.block-5 {
+	width: 0.8%;
+	margin: 0 20px;
+	background: #54df89;
+}
 
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-    .container {
-      max-width: 80%;
-    }
-  }
-  
-  /* fixed top navbar only on medium and up */
-  @media (min-width: 992px) {
-      .fixed-top-desktop-only {
-          position: fixed;
-          top: 0;
-          right: 0;
-          left: 0;
-          z-index: 1030;
-      }
-  
-      .header-container {
-          padding-top: 164px;
-      }
-  }
+.block-6 {
+	width: 2.8%;
+	background: #54df89;
+}
+
+.menu {
+    text-align: right;
+    transform: translateY(-10px);
+}
+
+.menu a{
+    color: #54df89;
+    transition: all 10s ease-out;
+
+}
+
+nav .menu a {
+      padding-left: 40px;
+      display: inline-block;
+      cursor: pointer;
+      font-weight: 300;
+      line-height: 80px;
+      position: relative;
+      transition: all 0.6s ease-out;
+}
+
+nav #brand {
+    float: left;
+    display: block;
+    margin-left: 52px;
+    line-height: 80px;
+    font-weight: 300;
+    font-size: 25px;
+    position: relative;
+}
+
+nav #brand a {
+    color: #54df89;
+}
