@@ -36,13 +36,13 @@
             <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                     <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                        <h2 class="logo-font text-black my-0"><strong>Gentlemen</strong></h2>
+                        <h2 class="logo-font text-red my-0"><strong>Gentlemen</strong></h2>
                     </a>
                 </div>
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                     <form method="GET" action="">
                         <div class="input-group w-100">
-                            <input class="form-control border border-black rounded-50" type="text" name="q" placeholder="Search our site">
+                            <input class="form-control border border-black rounded-50" type="text" name="q" placeholder="Search">
                             <div class="input-group-append">
                                 <button class="form-control btn btn-black border border-black rounded-50" type="submit">
                                     <span class="icon">
@@ -59,19 +59,20 @@
                             <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <div class="text-center">
                                     <div><i class="fas fa-user fa-lg"></i></div>
-                                    <p class="my-0">My Account</p>
+                                    <p class="my-0">Account</p>
                                 </div>
                             </a>
                             <div class="dropdown-menu border-0" aria-labelledby="user-options">
                                 {% if request.user.is_authenticated %}
                                     {% if request.user.is_superuser %}
-                                        <a href="" class="dropdown-item">Product Management</a>
+                                        <a href="" class="dropdown-item">Management</a>
                                     {% endif %}
-                                    <a href="" class="dropdown-item">My Profile</a>
+                                    <a href="" class="dropdown-item">Account</a>
                                     <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                                 {% else %}
                                     <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
                                     <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                                    <a href="{% url 'account_login' %}" class="dropdown-item">About Us</a>
                                 {% endif %}
                             </div>
                         </li>
@@ -115,7 +116,9 @@
         </div>
     </div>
 
-   
+    <footer class="container-fluid fixed-bottom">
+        <h1>Footer</h1>
+    </footer> 
     
            
     
@@ -141,19 +144,6 @@
 				},
 				2
 			);
-
-			TweenMax.staggerTo(
-				".titles > div",
-				0.8,
-				{
-					x: "60",
-					ease: Power3.easeInOut,
-					delay: 1.2,
-					opacity: "0",
-				},
-				2
-			);
-			
 
 			anime.timeline().add({
 				targets: ".letter",
