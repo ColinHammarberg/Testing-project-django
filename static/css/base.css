@@ -63,6 +63,14 @@ body {
     background: #000 !important;
 }
 
+.bg-red {
+    background:rgb(211, 28, 28);
+}
+
+.text-red {
+    color:rgb(211, 28, 28);
+}
+
 /* --------------------------------- Media queries */
 
 /* Slightly larger container on xl screens */
@@ -116,6 +124,12 @@ h1 {
 
 ul.titles {
 	display: flex;
+}
+
+@media(max-width: 996px) {
+	h1 {
+        font-size: 35px;
+    }
 }
 
 /*------------------ headers begins here ------------- */
