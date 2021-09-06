@@ -3,32 +3,32 @@
         "pk": 1,
         "model": "products.category",
         "fields": {
-            "name": "activewear",
-            "friendly_name": "Activewear"
+            "name": "Suits",
+            "friendly_name": "Suits"
         }
     },
     {
         "pk": 2,
         "model": "products.category",
         "fields": {
-            "name": "bed_bath",
-            "friendly_name": "Bed & Bath"
+            "name": "Shirts",
+            "friendly_name": "Shirts"
         }
     },
     {
         "pk": 3,
         "model": "products.category",
         "fields": {
-            "name": "clearance",
-            "friendly_name": "Clearance"
+            "name": "Cigars",
+            "friendly_name": "Cigars"
         }
     },
     {
         "pk": 4,
         "model": "products.category",
         "fields": {
-            "name": "deals",
-            "friendly_name": "Deals"
+            "name": "Music",
+            "friendly_name": "Music"
         }
     },
     {

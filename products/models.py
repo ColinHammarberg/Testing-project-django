@@ -1,3 +1,11 @@
 from django.db import models
 
-# Create your models here.
+# Products page
+
+class Category(models.Model):
+    name: 
+
+
+
+
+
