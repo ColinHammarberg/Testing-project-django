@@ -2,14 +2,36 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+    <div class="titles">
+        <div class="title title-1"><h1>Make</h1></div>
+        <div class="title title-2"><h1>A</h1></div>
+        <div class="title title-3"><h1>Difference</h1></div>
     </div>
 {% endblock %}
 
 {% block content %}
     
+<script type="text/javascript">
+    TweenMax.staggerFrom(
+            ".titles > div",
+            0.8,
+            {
+                x: "-60",
+                ease: Power3.easeInOut,
+                opacity: "0",
+            },
+            2
+        );
+
+        anime.timeline().add({
+            targets: ".letter",
+            opacity: [0, 1],
+            translateY: [80, 0],
+            translateZ: 0,
+            easing: "easeOutExpo",
+            duration: 2000,
+            delay: (el, i) => 8400 + 40 * i,
+        });
+</script>
 
 {% endblock %}
