@@ -40,11 +40,35 @@
         }
     },
     {
-        "pk": 8,
+        "pk": 6,
         "model": "products.category",
         "fields": {
             "name": "new_arrivals",
             "friendly_name": "New Arrivals"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.category",
+        "fields": {
+            "name": "deals",
+            "friendly_name": "deals"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.category",
+        "fields": {
+            "name": "packages",
+            "friendly_name": "Packages"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.category",
+        "fields": {
+            "name": "charity",
+            "friendly_name": "Charity"
         }
     }
 ]
