@@ -5,10 +5,11 @@
       "fields": {
           "sku": "pp5001340155",
           "name": "1920 Suite",
-          "description": "Tailor made suite",
+          "description": "Tailor made suit",
           "has_sizes": true,
           "price": 299,
           "category": 1,
+          "rating": 4.7,
           "image_url": "https://i.pinimg.com/474x/dd/5e/56/dd5e56325576bd13ad3054f0f442d5dd.jpg",
           "image": "Suite1.jpeg"
       }
@@ -23,6 +24,7 @@
           "has_sizes": true,
           "price": 99,
           "category": 3,
+          "rating": 4.7,
           "image_url": "https://shimmercat.abicart.se/shop/ws40/66140/art40/h6522/130616522-origpic-317585.png?max-width=720&max-height=720&quality=70",
           "image": "Trinidad Reyes.png"
       }
@@ -37,6 +39,7 @@
           "has_sizes": false,
           "price": 3.99,
           "category": 3,
+          "rating": 4.7,
           "image_url": "https://shimmercat.abicart.se/shop/ws40/66140/art40/h7319/178287319-origpic-ce6e7a.png?max-width=720&max-height=720&quality=70",
           "image": "Puros.png"
       }
