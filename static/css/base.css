@@ -133,3 +133,16 @@ ul.titles {
 }
 
 /*------------------ headers begins here ------------- */
+
+
+/*------------------ product page ------------- */
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: rgb(184, 181, 181);
+    z-index: -1;
+}
+/*------------------ product page ends------------- */
