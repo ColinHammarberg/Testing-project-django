@@ -145,4 +145,8 @@ ul.titles {
     background: rgb(184, 181, 181);
     z-index: -1;
 }
+
+.product-container {
+    padding-top: 100px;
+}
 /*------------------ product page ends------------- */
