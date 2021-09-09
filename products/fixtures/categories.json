@@ -3,32 +3,32 @@
         "pk": 1,
         "model": "products.category",
         "fields": {
-            "name": "Suits",
-            "friendly_name": "suits"
+            "name": "ties",
+            "friendly_name": "Ties"
         }
     },
     {
         "pk": 2,
         "model": "products.category",
         "fields": {
-            "name": "shirts",
-            "friendly_name": "Shirts"
+            "name": "suits",
+            "friendly_name": "Suits"
         }
     },
     {
         "pk": 3,
         "model": "products.category",
         "fields": {
-            "name": "cigars",
-            "friendly_name": "Cigars"
+            "name": "scarfs",
+            "friendly_name": "Scarfs"
         }
     },
     {
         "pk": 4,
         "model": "products.category",
         "fields": {
-            "name": "music",
-            "friendly_name": "Music"
+            "name": "vests",
+            "friendly_name": "Vests"
         }
     },
     {
@@ -43,8 +43,8 @@
         "pk": 6,
         "model": "products.category",
         "fields": {
-            "name": "new_arrivals",
-            "friendly_name": "New Arrivals"
+            "name": "jackets",
+            "friendly_name": "Jackets"
         }
     },
     {
@@ -59,8 +59,8 @@
         "pk": 8,
         "model": "products.category",
         "fields": {
-            "name": "packages",
-            "friendly_name": "Packages"
+            "name": "shoes",
+            "friendly_name": "Shoes"
         }
     },
     {
