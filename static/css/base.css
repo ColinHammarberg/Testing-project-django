@@ -137,16 +137,12 @@ ul.titles {
 
 /*------------------ product page ------------- */
 .overlay {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background: rgb(184, 181, 181);
-    z-index: -1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: rgb(187, 185, 185);
+	z-index: -1;
 }
-
-.product-container {
-    padding-top: 100px;
-}
-/*------------------ product page ends------------- */
+/*------------------ product page ends ------------- */
