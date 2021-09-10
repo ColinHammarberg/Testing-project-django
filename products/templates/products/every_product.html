@@ -49,13 +49,13 @@
                         <div class="col-sm-8 col-md-6 col-lg-4 col-xl-3">
                             <div class="card h-100 border-0">
                                 {% if product.image %}
-                                <a href="">
+                                <a href="{% url 'product_description' product.id %}">
                                     <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                                 </a>
                                 
                                 {% endif %}
                                 <div class="card-body pb-0">
-                                    <p class="mb-0">{{ product.name }}</p>
+                                    <p class="mb-0 text-black bold">{{ product.name }}</p>
                                 </div>
                                 <div class="card-footer bg-white pt-20 border-2 text-center">
                                     <div class="row">
@@ -92,6 +92,7 @@
             </div>
         </div>
     </div>
+    {% block footer %}
     <footer>
     <div class="container">
         <div class="row">
@@ -183,7 +184,8 @@
           </div>
         </div>
       </div>   
-    </footer>             
+    </footer>
+    {% endblock %}          
     <script type="text/javascript">
       $('.carousel').carousel({
           interval: 1500
