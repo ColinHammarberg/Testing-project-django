@@ -88,6 +88,67 @@
           "image_url": "https://picture.bestsecret.com/static/images/1589/image_32081445_73_620x757_0.jpg",
           "image": "Cinque-vest-Marin.jpeg"
       }
-   }
+   },
+
+   {
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5002690715",
+        "name": "Cinque Suit",
+        "description": "Beatiful Suit from Cinque",
+        "has_sizes": false,
+        "price": 399,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "https://picture.bestsecret.com/static/images/1611/image_32097841_30_620x757_0.jpg",
+        "image": "Cinque-suit.jpeg"
+    }
+ },
+ {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5002690715",
+        "name": "Boss Suit Dark Blue",
+        "description": "Beatiful Suit from Boss",
+        "has_sizes": false,
+        "price": 799,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "https://picture.bestsecret.com/static/images/1569/image_32044470_31_620x757_0.jpg",
+        "image": "Boss-Mörkblå.jpeg"
+    }
+ },
+ {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5002690715",
+        "name": "Boss Jacket Light Blue",
+        "description": "Beatiful Jacket from Boss",
+        "has_sizes": false,
+        "price": 499,
+        "category": 6,
+        "rating": 4.7,
+        "image_url": "https://picture.bestsecret.com/static/images/1559/image_32030026_30_620x757_0.jpg",
+        "image": "Boss-Jacket.jpeg"
+    }
+    },
+    {
+        "pk": 13,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002690715",
+            "name": "Armani Suit Grey",
+            "description": "Beatiful Suit from Armani with a fabulous pattern",
+            "has_sizes": false,
+            "price": 899,
+            "category": 2,
+            "rating": 4.7,
+            "image_url": "https://picture.bestsecret.com/static/images/1563/image_32029949_88_620x757_0.jpg",
+            "image": "Armani-Suit-Grey.jpeg"
+        }
+        }
 ]
   
