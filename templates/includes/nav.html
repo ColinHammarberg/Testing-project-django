@@ -1,0 +1,36 @@
+<div class="collapse navbar-collapse" id="main-nav">
+    <ul class="navbar-nav w-auto mx-auto">
+        <li class="nav-item dropdown">
+            <a class="font-weight-bold nav-link text-white mr-4" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Filter Products
+            </a>
+            <div class="dropdown-menu border-10" aria-labelledby="all-products-link">
+                <a href="" class="dropdown-item">Sort by Price</a>
+                <a href="" class="dropdown-item ">Sort by Category</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="font-weight-bold nav-link text-white mr-4" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Filter Clothing
+            </a>
+            <div class="dropdown-menu border-10" aria-labelledby="clothing-link">
+                <a href="" class="dropdown-item">Suits</a>
+                <a href="" class="dropdown-item">Shoes</a>
+                <a href="" class="dropdown-item">Jackets</a>
+                <a href="" class="dropdown-item">Vests</a>
+                <a href="" class="dropdown-item">Display Everything</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="font-weight-bold nav-link text-white mr-4" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Cigars
+            </a>
+            <div class="dropdown-menu border-10" aria-labelledby="homeware-link">
+                <a href="" class="dropdown-item">Sort by Price</a>
+            </div>
+        </li>
+    </ul>
+</div>

@@ -149,6 +149,81 @@
             "image_url": "https://picture.bestsecret.com/static/images/1563/image_32029949_88_620x757_0.jpg",
             "image": "Armani-Suit-Grey.jpeg"
         }
-        }
+    },
+        {
+            "pk": 14,
+            "model": "products.product",
+            "fields": {
+                "sku": "pp5002690715",
+                "name": "Bugatti Oxford",
+                "description": "Beatiful Oxford Shoes from Bugatti",
+                "has_sizes": false,
+                "price": 299,
+                "category": 8,
+                "rating": 4.7,
+                "image_url": "https://picture.bestsecret.com/static/images/1582/image_32051744_42_620x757_0.jpg",
+                "image": "Bugatti-shoes.jpeg"
+            }
+            },
+            {
+                "pk": 15,
+                "model": "products.product",
+                "fields": {
+                    "sku": "pp5002690715",
+                    "name": "Armani Oxford",
+                    "description": "Beatiful Oxford Shoes from Armani",
+                    "has_sizes": false,
+                    "price": 229,
+                    "category": 8,
+                    "rating": 4.7,
+                    "image_url": "https://picture.bestsecret.com/static/images/1582/image_32051744_42_620x757_0.jpg",
+                    "image": "Armani-shoes-red.jpeg"
+                }
+                },
+                {
+                    "pk": 16,
+                    "model": "products.product",
+                    "fields": {
+                        "sku": "pp5002690715",
+                        "name": "Boggi Suit",
+                        "description": "Beatiful red suit from Boggi",
+                        "has_sizes": false,
+                        "price": 699,
+                        "category": 2,
+                        "rating": 4.7,
+                        "image_url": "https://picture.bestsecret.com/static/images/1559/image_32029993_71_620x757_0.jpg",
+                        "image": "Boggi-suit-red.jpeg"
+                    }
+                    },
+                    {
+                        "pk": 17,
+                        "model": "products.product",
+                        "fields": {
+                            "sku": "pp5002690715",
+                            "name": "Baroni Suit",
+                            "description": "Beatiful black suit from Baroni",
+                            "has_sizes": false,
+                            "price": 2999,
+                            "category": 2,
+                            "rating": 4.7,
+                            "image_url": "https://picture.bestsecret.com/static/images/1559/image_32029993_71_620x757_0.jpg",
+                            "image": "Baroni-Suit-Black.jpeg"
+                        }
+                        },
+                        {
+                            "pk": 18,
+                            "model": "products.product",
+                            "fields": {
+                                "sku": "pp5002690715",
+                                "name": "Armani Suit",
+                                "description": "Beatiful beige suit from Armani",
+                                "has_sizes": false,
+                                "price": 1299,
+                                "category": 2,
+                                "rating": 4.7,
+                                "image_url": "https://picture.bestsecret.com/static/images/1559/image_32029993_71_620x757_0.jpg",
+                                "image": "Armani-suit-beige.jpeg"
+                            }
+                            }
 ]
   

@@ -145,9 +145,16 @@ ul.titles {
 	background: #fff;
 	z-index: -1;
 }
+
+@media(max-width: 992px){ 
+
+.product-introduction h2 {
+  padding-top: 150px;
+}
+}
 /*------------------ product page ends ------------- */
 
-/*------------------ footer section begins ------------- */
+/*------------------ footer section begins here (Bootsrapcdn inspired)------------- */
 
   a {
     color: rgb(211, 28, 28);
