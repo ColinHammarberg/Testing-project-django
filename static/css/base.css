@@ -253,3 +253,14 @@ ul.titles {
   }  
 
 /*------------------ footer section ends ------------- */
+
+/*--------------- Google map JavaScript API begins here --------------- */
+
+
+div#map {
+  min-height: 360px;
+}
+
+
+/*--------------- Google map JavaScript API ends here --------------- */
+
