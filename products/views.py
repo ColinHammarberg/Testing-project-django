@@ -8,6 +8,10 @@ def all_products(request):
 
     products = Product.objects.all()
 
+    if request.GET:
+        if 'q' in request.GET:
+            query =
+
     context = {
         'products': products,
     }
