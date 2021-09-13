@@ -110,14 +110,14 @@
     "model": "products.product",
     "fields": {
         "sku": "pp5002690715",
-        "name": "Boss Suit Dark Blue",
+        "name": "Boss Suit Brown Pattern",
         "description": "Beatiful Suit from Boss",
         "has_sizes": false,
         "price": 799,
         "category": 2,
         "rating": 4.7,
-        "image_url": "https://picture.bestsecret.com/static/images/1569/image_32044470_31_620x757_0.jpg",
-        "image": "Boss-Mörkblå.jpeg"
+        "image_url": "https://picture.bestsecret.com/static/images/1563/image_32029879_70_620x757_0.jpg",
+        "image": "Boss-Morkbla.jpeg"
     }
  },
  {
