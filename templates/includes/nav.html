@@ -5,8 +5,8 @@
                 Filter Products
             </a>
             <div class="dropdown-menu border-10" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">Sort by Price</a>
-                <a href="" class="dropdown-item ">Sort by Category</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">Sort by Price</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">Sort by Category</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>

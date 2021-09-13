@@ -12,6 +12,14 @@ def all_products(request):
     query = None
 
     if request.GET:
+        if 'sort' in request.GET:
+            sortkey = request.GET['sort']
+            sort = sortkey
+            if sortkey = 'name':
+                sortkey = 'lower_name'
+                products.annotate(lower_name=Lower('name'))
+            if 'direction' in request.GET:
+
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
