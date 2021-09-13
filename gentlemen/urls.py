@@ -23,7 +23,10 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     path('', include('home.urls')),
     path('about/', include('about.urls')),
+    path('shoppingbag/', include('shoppingbag.urls')),
     path('products/', include('products.urls')),
+    
+
 
 
 
