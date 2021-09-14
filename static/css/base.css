@@ -46,6 +46,11 @@ body {
     color: white;
 }
 
+.btn-red {
+background: rgb(211, 28, 28);
+color: white;
+}
+
 .discover {
     padding-top: 100px;
     float: right;
@@ -263,3 +268,25 @@ div#map {
 
 
 /*--------------- Google map JavaScript API ends here --------------- */
+
+/*--------------- Shopping cart --------------- */
+
+@media(max-width: 992px) {
+.cart {
+  margin-top: 150px;
+}
+}
+
+/*--------------- Shopping cart ends --------------- */
+
+/*--------------- Product detail page begins --------------- */
+
+@media(max-width: 400px) {
+  .cart {
+    margin-top: 150px;
+  }
+  }
+
+/*--------------- Product detail page ends --------------- */
+
+
