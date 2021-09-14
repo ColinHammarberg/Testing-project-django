@@ -16,11 +16,11 @@
                 Filter Clothing
             </a>
             <div class="dropdown-menu border-10" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Suits</a>
-                <a href="" class="dropdown-item">Shoes</a>
-                <a href="" class="dropdown-item">Jackets</a>
-                <a href="" class="dropdown-item">Vests</a>
-                <a href="" class="dropdown-item">Display Everything</a>
+                <a href="{% url 'products' %}?category=suits" class="dropdown-item">Suits</a>
+                <a href="{% url 'products' %}?category=shoes" class="dropdown-item">Shoes</a>
+                <a href="{% url 'products' %}?category=jackets" class="dropdown-item">Jackets</a>
+                <a href="{% url 'products' %}?category=vests" class="dropdown-item">Vests</a>
+                <a href="{% url 'products' %}" class="dropdown-item">Display Everything</a>
             </div>
         </li>
 
