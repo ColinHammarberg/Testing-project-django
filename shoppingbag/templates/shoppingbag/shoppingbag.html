@@ -53,7 +53,19 @@
                        </td>
                         {% endfor %}
                         </tr>
-                        
+                        <tr>
+                          <td class="pt-6 text-center" colspan="8">
+                            <h6><b>Delivery: ${{ delivery|floatformat:2 }}</b></h6>
+                            <h5><b>Total: ${{ total|floatformat:2 }}</b></h5>
+                            <h4 class="mt-5"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="pt-6 text-center" colspan="8">
+                            <a class="btn btn-red rounded-50 text-uppercase mt-4" href="{% url 'products' %}"><span>Continue Shopping</span></a>
+                            <a class="btn btn-red rounded-50 text-uppercase mt-4" href="{% url 'products' %}"><span>Checkout</span></a>
+                          </td>
+                        </tr>
                       </table>                  
                      </div>
                 {% else %}
