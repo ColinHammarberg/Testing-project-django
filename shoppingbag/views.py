@@ -11,7 +11,14 @@ def add_product(request, item_id):
 
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
+    if 'product_size' in request.POST:
     cart = request.session.get('cart', {})
+
+    if size:
+         if item_id in list(cart.keys()):
+                  cart[item_id]['items_by_size'][size] += quantity
+             
+
 
     if item_id in list(cart.keys()):
         cart[item_id] += quantity
