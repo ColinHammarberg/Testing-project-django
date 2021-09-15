@@ -20,15 +20,16 @@
         </div>
 
         <div class="row">
-            <div class="col">
+            <div class="col-12 ">
               {% if cart_items %}
                     <div class="table-responsive rounded text-black">
-                      <table class="table table-md">
+                      <table class="table table-sm">
                         <thead class="text-black">
                           <tr>
                             <th scope="col">Image</th>
                             <th scope="col">Product</th>
                             <th scope="col">Price</th>
+                            <th scope="col">Size</th>
                             <th scope="col">Quantity</th>
                             <th scope="col">Total</th>
                           </tr>
@@ -36,7 +37,7 @@
                         {% for item in cart_items %}
                         <tr>
                         <td class="w-30 p-4">
-                       <img class="image-fluid rounded-50" src="{{ item.product.image.url }}">
+                       <img class="image-fluid rounded" src="{{ item.product.image.url }}">
                         </td>
                        <td class="py-4">
                         <h4 class="my-0 small text-muted">{{ item.product.sku|upper }}</h4>
@@ -44,6 +45,9 @@
                        </td>
                        <td class="py-4">
                         <h4 class="my-0 small text-muted">{{ item.product.price }}</h4>
+                       </td>
+                       <td class="py-4">
+                        <h4 class="my-0 small text-muted">{{ item.product.has_sizes }}</h4>
                        </td>
                        <td class="py-4">
                         <h4 class="my-0 small text-muted">{{ item.quantity }}</h4>
