@@ -47,7 +47,7 @@
                         <h4 class="my-0 small text-muted">{{ item.product.price }}</h4>
                        </td>
                        <td class="py-4">
-                        <h4 class="my-0 small text-muted">{{ item.product.has_sizes }}</h4>
+                        <h4 class="my-0 small text-muted text-black">{% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</h4>
                        </td>
                        <td class="py-4">
                         <h4 class="my-0 small text-muted">{{ item.quantity }}</h4>
