@@ -23,7 +23,20 @@
             <div class="col">
               {% if cart_items %}
                     <div class="table-responsive rounded text-black">
-                      {{ cart_items }}                   
+                      <table class="table table-md">
+                        <thead class="text-black">
+                          <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Image</th>
+                            <th scope="col">Product</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Total</th>
+                          </tr>
+                        </thead>
+                        {% for item in cart_items %}
+                        {% endfor %}
+                      </table>                  
                      </div>
                 {% else %}
                     <p class="lead mb-5 text-black">Your cart is empty. Add some products to fill it up.</p>
