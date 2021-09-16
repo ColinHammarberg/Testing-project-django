@@ -13,17 +13,32 @@ def cart_contents(request):
 
 # Required help from previous coding lessons
 
-    for item_id, quantity in cart.items():
-        product = get_object_or_404(Product, pk=item_id)
-        total += (1 * 2)
-        product_count += 1
-        cart_items.append(
+    for item_id, item_data in cart.items():
+        if isinstance(item_data, int):
+            product = get_object_or_404(Product, pk=item_id)
+            total += item_data * product.price
+            product_count += item_data
+            cart_items.append(
             {
                 'item_id': item_id,
-                'quantity': quantity,
+                'quantity': item_data,
                 'product': product,
             }
         )
+        else:
+            product = get_object_or_404(Product, pk=item_id)
+            for size, quantity in item_data['items_by_size'].items():
+                total += quantity * product.price
+                product_count += quantity
+                cart_items.append(
+            {
+                'item_id': item_id,
+                'quantity': item_data,
+                'product': product,
+                'size': size,
+            }
+        )
+        
 
     delivery = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
 
