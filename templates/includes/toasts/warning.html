@@ -1,0 +1,16 @@
+<div class="toast custom-toast rounded-0 border-top-0" data-autohide="false">
+  <div class="arrow-up arrow-warning"></div>
+  <div class="w-100 toast-capper bg-warning"></div>
+  <div class="toast-header bg-white text-dark">
+      <strong class="mr-auto text-uppercase">Warning!</strong>
+      <button type="button" class="ml-2 mb-1 close text-dark" data-dismiss="toast" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+      </button>
+  </div>
+  <div class="toast-body bg-black text-white">
+      {{ message }}
+      <br>
+      <br>
+      <a href="{% url 'shoppingbag' %}" class="btn btn-red text-white rounded-50 btn-sm text-right">Checkout My Cart</a>
+  </div>
+</div>
