@@ -42,7 +42,7 @@
                         </td>
                        <td class="py-4">
                         <h4 class="my-0 small text-muted">{{ item.product.sku|upper }}</h4>
-                         <h4 class="my-0 small text-muted">{{ item.product.name }}</h4>
+                         <b><a href="{% url 'products' %}"><h4 class="my-0 medium text-muted">{{ item.product.name }}</h4></a></b>
                        </td>
                        <td class="py-4">
                         <h4 class="my-0 small text-muted">{{ item.product.price }}</h4>
@@ -63,7 +63,7 @@
                             {% csrf_token %}
                             
                         </form>
-                        <a class="btn-sm btn-red rounded-50 text-uppercase mt-4 remove-item text-right" id="remove_{{ item.item_id }}"><span>Remove</span></a>
+                        <a class="btn-sm btn-red rounded-50 text-uppercase mt-4 remove-item text-right text-white" id="remove_{{ item.item_id }}"><span>Remove</span></a>
                     </td>
                         {% endfor %}
                         </tr>

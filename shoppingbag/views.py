@@ -29,9 +29,13 @@ def add_product(request, item_id):
     else:
         if item_id in list(cart.keys()):
             cart[item_id] += quantity
+            messages.success(request, f'You have successfully updated your cart by adding another item of the {product.name}. We are happy that you like it.')
         else:
             cart[item_id] = quantity
             messages.success(request, f'You have successfully added the {product.name} to your shopping cart.')
 
     request.session['cart'] = cart
     return redirect(redirect_url)
+
+def remove_product(request, item_id):
+    """Removing product from shopping cart"""
