@@ -63,7 +63,7 @@ def remove_product(request, item_id):
         return HttpResponse(status=200)
 
     except Exception as e:
-        messages.error(request, f'There was an error removing the product ({e})')
+        messages.error(request, f'There was an error removing the product')
         return HttpResponse(status=500)
 
 
