@@ -12,3 +12,6 @@ g d# CHARITY FOR GENTLEMEN
 
 # Media
 - https://www.pexels.com/sv-se/foto/restaurang-vintage-cigarr-lyx-7299582/
+
+# Credits
+- The Checkout models.py & Admin.py is completely inspired by Code Institute.
