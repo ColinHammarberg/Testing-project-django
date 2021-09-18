@@ -1,4 +1,4 @@
- d# CHARITY FOR GENTLEMEN     
+g d# CHARITY FOR GENTLEMEN     
 - A fullstack Django website. 
 - It's going to be charity platform built up on selling exclusive clothing & cigars. All profits goes to Star for life, Water organizations or Planting trees. The consumer will make a choice of what he/she prefers the profit goes to.
 - The platform will be focusing a lot on the design and functionality.
