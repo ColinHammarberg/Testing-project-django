@@ -16,6 +16,7 @@ def add_product(request, item_id):
     """ User can add items to the cart """
     product = Product.objects.get(pk=item_id)
     quantity = int(request.POST.get('quantity'))
+    charity = int(request.POST.get('charity_selection'))
     redirect_url = request.POST.get('redirect_url')
     size = None
     if 'product_size' in request.POST:
@@ -37,13 +38,6 @@ def add_product(request, item_id):
         else:
             cart[item_id] = quantity
             messages.success(request, f'You have successfully added the {product.name} to your shopping cart.')
-
-    request.session['cart'] = cart
-    return redirect(redirect_url)
-
-    if 'charity_selection' in request.POST:
-        charity = request.POST['charity_selection']
-    cart = request.session.get('cart', {})
 
     request.session['cart'] = cart
     return redirect(redirect_url)

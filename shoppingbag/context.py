@@ -22,20 +22,21 @@ def cart_contents(request):
             {
                 'item_id': item_id,
                 'quantity': item_data,
+                'charity': item_data,
                 'product': product,
                 
             }
         )
         else:
             product = get_object_or_404(Product, pk=item_id)
-            for size, quantity in item_data['items_by_size'].items():
+            for size, quantity in item_data['sizes'].items():
                 total += quantity * product.price
                 product_count += quantity
-                charity = charity
                 cart_items.append(
             {
                 'item_id': item_id,
                 'quantity': quantity,
+                'charity': item_data,
                 'product': product,
                 'size': size,
             }
