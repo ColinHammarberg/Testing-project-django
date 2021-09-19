@@ -5,7 +5,7 @@ from .forms import OrderForm
 
 # Checkout view.
 
-def checkout_view(request):
+def checkout(request):
     cart = request.session.get('cart', {})
     if not cart:
         messages.error(request, "Add some products to your cart")
