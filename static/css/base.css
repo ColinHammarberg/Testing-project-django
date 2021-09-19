@@ -304,3 +304,6 @@ div#map {
 }
 /*--------------- Messages CSS ends --------------- */
 
+form .login {
+  padding-top: 20px;
+}
