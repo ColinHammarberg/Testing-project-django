@@ -304,6 +304,14 @@ div#map {
 }
 /*--------------- Messages CSS ends --------------- */
 
-form .login {
-  padding-top: 20px;
+/* Allauth form formatting */
+
+.allauth-form-inner-content p {
+  margin-top: 1.5rem;
+  color: #000;
+
 }
+
+
+
+
