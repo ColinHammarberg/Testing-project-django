@@ -8,7 +8,8 @@ class OrderForm(forms.ModelForm):
         fields = ('full_name', 'email', 'phone_number',
                   'street_address', 'town_or_city',
                   'postcode', 'country',
-                  'county',)
+                  'county', ['charity_choices'])
+
 
     def __init__(self, *args, **kwargs):
        
@@ -22,7 +23,9 @@ class OrderForm(forms.ModelForm):
             'town_or_city': 'Town or City',
             'street_address': 'Street Address',
             'county': 'County',
+            ['charity_choices']: 'Charity',
         }
+         
 
         for field in self.fields:
             if self.fields[field].required:
@@ -31,5 +34,6 @@ class OrderForm(forms.ModelForm):
                 placeholder = placeholders[field]
             self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].label = True
+
         
         

@@ -41,6 +41,14 @@ def add_product(request, item_id):
     request.session['cart'] = cart
     return redirect(redirect_url)
 
+    if 'charity_selection' in request.POST:
+        charity = request.POST['charity_selection']
+    cart = request.session.get('cart', {})
+
+    request.session['cart'] = cart
+    return redirect(redirect_url)
+
+
 # Removing product/item from cart.
 
 def remove_product(request, item_id):

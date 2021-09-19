@@ -63,15 +63,23 @@
                         
                           
                             <div class="col-12">
-                                <p class="mt-6"><strong>Quantity:</strong></p>
+                                <p class=""><strong>Quantity:</strong></p>
                                 <div class="form-group w-60 mt-4">
                                     <div class="input-group">
                                         <input class="form-control qty_input" type="number" name="quantity" value="1" min="1" max="10" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
                                     </div>
                                 </div>
                             </div>
-
                             <div class="col-12">
+                              <select class="form-control rounded-50 w-60 mt-4" name="charity_selection" id='id_charity_selection'>
+                                <option value="Star For Life" selected>Star For Life</option>
+                                <option value="Unicef">Unicef</option>
+                                <option value="Red Cross">Red Cross</option>
+                                <option value="Oceana">Oceana</option>
+                            </select>
+                            </div>
+
+                            <div class="col-12 mt-4">
                                 <a href="{% url 'products' %}" class="btn btn-red rounded-50 text-uppercase mt-4">
                                     Continue Shopping
                                 </a>

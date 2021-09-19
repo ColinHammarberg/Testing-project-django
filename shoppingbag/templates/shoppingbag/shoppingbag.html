@@ -31,6 +31,7 @@
                             <th scope="col">Price</th>
                             <th scope="col">Size</th>
                             <th scope="col">Quantity</th>
+                            <th scope="col">Charity</th>
                             <th scope="col">Total</th>
                             <th scope="col">Remove</th>
                           </tr>
@@ -52,6 +53,9 @@
                        </td>
                        <td class="py-4">
                         <h4 class="my-0 small text-muted">{{ item.quantity }}</h4>
+                       </td>
+                       <td class="py-4">
+                         <h4 class="my-0 small text-muted text-black">{{ item.charity }}</h4>
                        </td>
                        <td class="py-4">
                         <h4 class="my-0 small text-muted">{{ item.product.price }}</h4>
