@@ -36,9 +36,9 @@ def cart_contents(request):
             {
                 'item_id': item_id,
                 'quantity': quantity,
-                'charity': item_data,
                 'product': product,
                 'size': size,
+                'charity': quantity,
             }
         )
         
