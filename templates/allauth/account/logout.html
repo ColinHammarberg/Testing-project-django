@@ -4,7 +4,14 @@
 
 {% block head_title %}{% trans "Sign Out" %}{% endblock %}
 
-{% block inner_content %}
+{% block content %}
+<div class="overlay"></div>
+<div class="container mt-5 login">
+  <div class="row">
+    <div class="col-12 text-center mt-5 login-introduction">
+<hr class="mt-5">
+<h2 class="logo-font mt-5 text-black text-center">{% trans "Sign In" %}</h2>
+<hr class="mt-5">
 <hr>
 <h2 class="logo-font mb-4">{% trans "Sign Out" %}</h2>
 <hr>
@@ -15,9 +22,12 @@
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
   {% endif %}
-  <a class="btn btn-outline-black rounded-0" href="{% url 'home' %}">Cancel</a>
-  <button type="submit">{% trans 'Sign Out' %}</button>
+  <a class="btn btn-red rounded-50" href="{% url 'home' %}">Cancel</a>
+  <button class="primaryAction btn btn-red rounded-50" type="submit">{% trans 'Sign Out' %}</button>
 </form>
+</div>
+</div>
+</div>
 
 
 {% endblock %}

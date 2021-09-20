@@ -316,6 +316,18 @@ div#map {
 
 /*--------------- Checkout page --------------- */
 
+/*--------------- Login page --------------- */
+
+.login-introduction h2 {
+  padding-top: 50px;
+}
+
+.login form {
+  text-align: center;
+  width: 100px;
+  
+}
+
  
 
 
