@@ -15,20 +15,33 @@
 <div class="container mb-2 purchase">
     <div class="row">
         <div class="col">
-            <h2 class="logo-font mb-4 text-black text-center">Purchase</h2>
+            <h2 class="logo-font text-black text-center">Order Details</h2>
             <hr>
         
           </div>
         </div>
-        <div class="container">
-        <div class="col-12 text-center mt-5 ">
+        <div class="row">
+          <div class="col-12 col-lg-6 order-lg-last mb-5 bg-grey">
+            <div class="row">
+              <div class="col-7 offset-2">
+                <h5 class="mb-1 mt-0 text-black">Products</h5>
+              </div>
+              <div class="col-3 text-right">
+                <h5 class="mb-1 mt-0 text-black">Subtotal</h5>
+              </div>
+            </div>
+          </div>
+        <div class="col-12 col-lg-6">
+        
             <h4 class="logo-font text-black text-decoration text-center mb-5">Fill out the details down below</h4>
             <form action="{% url 'checkout' %}" method="POST" id="payment-form">
               {% csrf_token %}
               <fieldset class="rounded-50 px-4 mb-4">
+                <legend class="fieldset-label small text-black px-2 w-auto">Details</legend>
                 {{ order_form.full_name | as_crispy_field }}
               </fieldset>
               <fieldset class="rounded-50 px-4 mb-4">
+                <legend class="fieldset-label small text-black px-2 w-auto">Delivery</legend>
                         {{ order_form.email | as_crispy_field }}
                         {{ order_form.phone_number | as_crispy_field }}
                         {{ order_form.country | as_crispy_field }}
@@ -42,16 +55,34 @@
                                             <input class="form-check-input ml-2" type="checkbox" id="id-save-info" name="save-info" checked>
                           {% else %}
                             <label class="form-check-label" for="id-save-info">
-                                                <a class="text-info" href="{% url 'account_signup' %}">Create an account</a> or 
-                                                <a class="text-info" href="{% url 'account_login' %}">Log-in</a> to save the added information.
-                                            </label>
+                                  <a class="text-info" href="{% url 'account_signup' %}">Create an account</a> or 
+                                  <a class="text-info" href="{% url 'account_login' %}">Log-in</a> to save the added information.
+                            </label>
                           {% endif %}
                         </div>
               </fieldset>
               <fieldset class="rounded-50 px-4 mb-4">
+                <legend class="fieldset-label small text-black px-2 w-auto">Payment</legend>
                 <div class="mb-4" id="card-element"></div>
                 <div class="mb4" id="card-errors"></div>
               </fieldset>
+              <div class="submit-button text-center mt-5 mb-2">                    
+                <a href="{% url 'shoppingbag' %}" class="btn btn-black rounded-50 mt-4">
+                  <span>Adjust Products </span>
+                  <span>
+                    <i class="fas fa-shopping-cart"></i>
+                  </span>
+                </a>
+                <button id="submit-button" class="btn btn-red rounded-50 mt-4">
+                  <span>Complete Order </span>
+                  <span class="icon">
+                    <i class="fas fa-money-check-alt"></i>
+                  </span>
+                </button>
+                <p class="small text-black my-5">
+                  <span> By completing your order you agree that your card will be charged <strong>${{ grand_total|floatformat:2 }}</strong></span>
+                </p>
+              </div>
             </form>
           </div>
           </div>

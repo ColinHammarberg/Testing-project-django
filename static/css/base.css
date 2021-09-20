@@ -68,6 +68,11 @@ color: white;
     background: #000 !important;
 }
 
+.bg-grey {
+  background:rgb(180, 180, 180);
+}
+
+
 .bg-red {
     background:rgb(211, 28, 28);
 }
@@ -325,7 +330,7 @@ div#map {
 .login form {
   text-align: center;
   width: 100px;
-  
+
 }
 
  
