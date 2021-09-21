@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 
+
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -39,7 +40,9 @@
                         {% for item in cart_items %}
                         <tr>
                         <td class="w-30 p-4">
+                          <a href="{% url 'product_description' item.product.id %}">
                        <img class="image-fluid rounded" src="{{ item.product.image.url }}">
+                      </a>
                         </td>
                        <td class="py-4">
                         <h4 class="my-0 small text-muted">{{ item.product.sku|upper }}</h4>
@@ -49,7 +52,7 @@
                         <h4 class="my-0 small text-muted">{{ item.product.price }}</h4>
                        </td>
                        <td class="py-4">
-                        <h4 class="my-0 small text-muted text-black">{% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</h4>
+                        <h4 class="my-0 small text-muted text-black">{% if item.product.has_sizes %}{{ item.size|upper }}{% else %}One Size{% endif %}</h4>
                        </td>
                        <td class="py-4">
                         <h4 class="my-0 small text-muted">{{ item.quantity }}</h4>
@@ -58,7 +61,7 @@
                          <h4 class="my-0 small text-muted text-black">{{ item.charity }}</h4>
                        </td>
                        <td class="py-4">
-                        <h4 class="my-0 small text-muted">{{ item.product.price }}</h4>
+                        <h4 class="my-0 small text-muted"><p class="my-0">${{ item.product.price }}</p></h4>
                        </td>
 
                        
