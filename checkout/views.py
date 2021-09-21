@@ -2,6 +2,10 @@ from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
 
 from .forms import OrderForm
+from django.conf import settings
+from shoppingbag.context import cart_contents
+
+import stripe
 
 
 def checkout(request):
@@ -9,6 +13,10 @@ def checkout(request):
     if not cart:
         messages.error(request, "There's nothing in your bag at the moment")
         return redirect(reverse('products'))
+
+    current_cart = cart_contents(request)
+    total = current_cart['grand_total']
+    stripe_payment = round(total * 1000)
 
     order_form = OrderForm()
     template = 'checkout/checkout_page.html'
