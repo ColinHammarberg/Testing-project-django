@@ -1,5 +1,8 @@
 {% extends "base.html" %}
 {% load static %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'checkout_style.css' %}">
+{% endblock %}
 
 {% block page_header %}
 <div class="container header-container">
@@ -75,7 +78,6 @@
                     
 
                 </div>
-                <hr class="my-2 bg-black">
           </div>
         <div class="col-12 col-lg-6">
         
@@ -110,7 +112,7 @@
               <fieldset class="rounded-50 px-4 mb-4">
                 <legend class="fieldset-label small text-black px-2 w-auto">Payment</legend>
                 <!---- Stripe integrattion element ---->
-                <div class="mb-4" id="card-element"></div>
+                <div class="mb-4 border-black border-50 rounded-50 p-20" id="card-element"></div>
                 <div class="mb4" id="card-errors"></div>
                 <!---- Stripe integrattion element ends ---->
               </fieldset>
@@ -236,5 +238,11 @@
 
   </script>
 {% endblock %}
+{% endblock %}
+{% block postloadjs %}
+    {{ block.super }}
+    {{ stripe_public_key|json_script:"id_stripe_public_key" }}
+    {{ client_secret|json_script:"id_client_secret" }}
+    <script src="{% static 'stripe_elements.js' %}"></script>
 {% endblock %}
 
