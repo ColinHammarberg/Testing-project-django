@@ -321,6 +321,12 @@ div#map {
 
 /*--------------- Checkout page --------------- */
 
+@media(max-width: 492px){
+  .border-black {
+    background: #fff;
+  }
+}
+
 /*--------------- Login page --------------- */
 
 .login-introduction h2 {
@@ -333,7 +339,7 @@ div#map {
 
 }
 
- 
 
+/* Allauth form formatting */
 
 
