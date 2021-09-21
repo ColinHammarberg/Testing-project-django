@@ -45,23 +45,23 @@
                       </a>
                         </td>
                        <td class="py-4">
-                        <h4 class="my-0 small text-muted">{{ item.product.sku|upper }}</h4>
-                         <b><a href="{% url 'products' %}"><h4 class="my-0 medium text-muted">{{ item.product.name }}</h4></a></b>
+                        <h4 class="my-0 small text-black">{{ item.product.sku|upper }}</h4>
+                         <b><a href="{% url 'products' %}"><h4 class="my-0 small text-black"><b>{{ item.product.name }}</b></h4></a></b>
                        </td>
                        <td class="py-4">
-                        <h4 class="my-0 small text-muted">{{ item.product.price }}</h4>
+                        <h4 class="my-0 small text-black">{{ item.product.price }}</h4>
                        </td>
                        <td class="py-4">
-                        <h4 class="my-0 small text-muted text-black">{% if item.product.has_sizes %}{{ item.size|upper }}{% else %}One Size{% endif %}</h4>
+                        <h4 class="my-0 small text-black">{% if item.product.has_sizes %}{{ item.size|upper }}{% else %}One Size{% endif %}</h4>
                        </td>
                        <td class="py-4">
-                        <h4 class="my-0 small text-muted">{{ item.quantity }}</h4>
+                        <h4 class="my-0 small text-black">{{ item.quantity }}</h4>
                        </td>
                        <td class="py-4">
-                         <h4 class="my-0 small text-muted text-black">{{ item.charity }}</h4>
+                         <h4 class="my-0 small text-black">{{ item.charity }}</h4>
                        </td>
                        <td class="py-4">
-                        <h4 class="my-0 small text-muted"><p class="my-0">${{ item.product.price }}</p></h4>
+                        <h4 class="my-0 small text-black"><p class="my-0">${{ item.product.price }}</p></h4>
                        </td>
 
                        
