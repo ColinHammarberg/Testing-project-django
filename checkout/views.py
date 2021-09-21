@@ -9,6 +9,9 @@ import stripe
 
 
 def checkout(request):
+    stripe_public_key = settings.STRIPE_PUBLIC_KEY
+    stripe_secret_key = settings.STRIPE_SECRET_KEY
+
     cart = request.session.get('cart', {})
     if not cart:
         messages.error(request, "There's nothing in your bag at the moment")
@@ -16,7 +19,14 @@ def checkout(request):
 
     current_cart = cart_contents(request)
     total = current_cart['grand_total']
-    stripe_payment = round(total * 1000)
+    stripe_total = round(total * 1000)
+    stripe.api_key = stripe_secret_key
+    intent = stripe.PaymentIntent.create(
+        amount=stripe_total,
+        currency=settings.STRIPE_CURRENCY,
+    )
+
+    print(intent)
 
     order_form = OrderForm()
     template = 'checkout/checkout_page.html'
