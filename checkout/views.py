@@ -19,7 +19,7 @@ def checkout(request):
 
     current_cart = cart_contents(request)
     total = current_cart['grand_total']
-    stripe_total = round(total * 1000)
+    stripe_total = round(total * 100)
     stripe.api_key = stripe_secret_key
     intent = stripe.PaymentIntent.create(
         amount=stripe_total,
