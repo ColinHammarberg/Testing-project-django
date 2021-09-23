@@ -198,7 +198,7 @@ if 'USE_AWS' in os.environ:
 
     STATICFILES_STORAGE = 'custom_storages.StaticStorage'
     STATICFILES_LOCATION = 'static'
-    DEFAULT_FILES_STORAGE = 'custom_storages.MediaStorage'
+    MEDIAFILES_STORAGE = 'custom_storages.MediaStorage'
     MEDIAFILES_LOCATION = 'media'
 
     #Overwrite static & media urls
