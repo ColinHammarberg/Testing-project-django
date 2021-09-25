@@ -30,7 +30,7 @@ def checkout(request):
         order_form = OrderForm(form_data)
         if order_form.is_valid():
             order = order_form.save()
-            for item_id, item_data in bag.items():
+            for item_id, item_data in cart.items():
                 try:
                     product = Product.objects.get(id=item_id)
                     if isinstance(item_data, int):
@@ -59,7 +59,7 @@ def checkout(request):
                     order.delete()
                     return redirect(reverse('shoppingbag'))
 
-            request.method['save_info'] = 'save_info' in request.POST
+            request.session['save_info'] = 'save-info' in request.POST
             return redirect(reverse('success', args=[order.order_number]))
 
     else:
