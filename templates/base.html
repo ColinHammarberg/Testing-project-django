@@ -127,11 +127,13 @@
             {% for message in messages %}
                 {% with message.level as level %}
                     {% if level == 40 %}
-                                {% include 'includes/toasts/error_message.html' %}
-                        {% elif level == 30 %}
-                                {% include 'includes/toasts/warning.html' %}
-                            {% elif level == 25 %}
-                                {% include 'includes/toasts/success_message.html' %}
+                        {% include 'includes/toasts/error_message.html' %}
+                    {% elif level == 30 %}
+                        {% include 'includes/toasts/warning.html' %}
+                    {% elif level == 25 %}
+                        {% include 'includes/toasts/success_message.html' %}
+                    {% else %}
+                        {% include 'includes/toasts/toast_info.html' %}
                     {% endif %}
                 {% endwith %}
             {% endfor %}

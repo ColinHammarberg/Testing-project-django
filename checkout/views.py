@@ -92,7 +92,7 @@ def success(request, order_number):
     """
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
-    messages.success(request, f'Thank you! \
+    messages.info(request, f'Thank you! \
         Your order number is {order_number}. Expect an \
         confirmation email to be sent to {order.email}.')
 

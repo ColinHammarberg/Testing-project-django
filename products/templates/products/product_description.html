@@ -33,37 +33,24 @@
                           {% with product.has_sizes as s %}
                           {% if s %}
                               <div class="col-12">
-                                  <p><strong>Size:</strong></p>
+                                  <p class="text-black"><b>Size:</b></p>
                                   <select class="form-control rounded-50 w-60" name="product_size" id='id_product_size'>
-                                      <option value="s" selected>S</option>
-                                      <option value="m">M</option>
-                                      <option value="l">L</option>
-                                      <option value="xl">XL</option>
+                                      <option value="42" selected>42</option>
+                                      <option value="44">44 lllll</option>
+                                      <option value="46">46</option>
+                                      <option value="48">48</option>
+                                      <option value="50">50</option>
                                   </select>
                               </div>
                           
                         {% endif %}
                         {% endwith %}
 
-                        {% with product.category.shoes as s %}
-                        {% if s %}
-                        <div class="col-12">
-                          <p><strong>Size:</strong></p>
-                          <select class="form-control rounded-50 w-60 mt-4" name="product_size" id='id_product_size'>
-                              <option value="40" selected>40</option>
-                              <option value="41">41</option>
-                              <option value="42">M</option>
-                              <option value="43">L</option>
-                              <option value="44">XL</option>
-                          </select>
-                      </div>
-                      {% endif %}
-                      {% endwith %}
 
                         
                           
                             <div class="col-12">
-                                <p class=""><strong>Quantity:</strong></p>
+                                <p class="text-black mt-3"><b>Quantity:</b></p>
                                 <div class="form-group w-60 mt-4">
                                     <div class="input-group">
                                         <input class="form-control qty_input" type="number" name="quantity" value="1" min="1" max="10" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
