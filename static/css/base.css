@@ -81,6 +81,10 @@ color: white;
     color:rgb(211, 28, 28);
 }
 
+.navbar-toggler-icon {
+  background: #fff;
+}
+
 /* --------------------------------- Media queries */
 
 /* Slightly larger container on xl screens */
