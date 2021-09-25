@@ -343,7 +343,10 @@ div#map {
 
 }
 
-
-/* Allauth form formatting */
+@media(max-width: 992px){
+  td {
+    width: 50%;
+  }
+}
 
 
