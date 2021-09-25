@@ -40,11 +40,11 @@
               </div>
               <div class="row">
                 <div class="col-12 col-md-4">
-                  <h5 class="small text-black mb-0"><b>Products:</b></h5>
+                  <h5 class="small text-black"><b>Products:</b></h5>
                 </div>
                 {% for item in order.lineitems.all %}
-                <div class="col-12 col-md-4">
-                      <h5 class="small text-black">
+                <div class="col-12 col-md-4 text-md-right">
+                      <h5 class="small text-black mb-0">
                           {{ item.product.name }}
                       </h5>
               </div>
@@ -54,14 +54,14 @@
 
               
             
-            <div class="row">
-              <div class="col-12 col-md-4">
-                <h5 class="small text-black mb-0"><b>Name:</b></h5>
+              <div class="row">
+                <div class="col-12 col-md-4">
+                  <h5 class="small text-black mb-0"><b>Name:</b></h5>
+                </div>
+                <div class="col-12 col-md-4 text-md-right">
+                  <h5 class="small text-black mb-0">{{ order.full_name }}</h5>
+                </div>
               </div>
-              <div class="col-12 col-md-4 text-md-right">
-                <h5 class="small text-black mb-0">{{ order.full_name }}</h5>
-              </div>
-            </div>
             <div class="row">
               <div class="col-12 col-md-4">
                 <h5 class="small text-black mb-0"><b>Shipping Address:</b></h5>
@@ -96,10 +96,10 @@
             </div>
             <div class="row">
               <div class="col-12 col-md-4">
-                <h5 class="small text-black mb-0"><b>Your card was charged the following:</b></h5>
+                <h5 class="small text-black mb-0"><b>Your card was charged:</b></h5>
               </div>
               <div class="col-12 col-md-4 text-md-right">
-                <h5 class="small text-black mb-2">{{ order.grand_total }}</h5>
+                <h5 class="small text-black mb-2">$ {{ order.grand_total }}</h5>
               </div>
             </div>
             
