@@ -1,18 +1,153 @@
-{% extends "openid/base.html" %}
+{% extends "account/base.html" %}
 
 {% load i18n %}
+{% load account socialaccount %}
 
-{% block head_title %}OpenID Sign In{% endblock %}
+{% block head_title %}{% trans "Sign In" %}{% endblock %}
 
 {% block content %}
 
-<h1>{% trans 'OpenID Sign In' %}</h1>
+<div class="overlay"></div>
+<div class="container mt-5 login">
+  <div class="row">
+    <div class="col-12 text-center mt-5 login-introduction">
+<hr class="mt-5">
+<h2 class="logo-font mt-5 text-black text-center">{% trans "Sign In" %}</h2>
+<hr class="mt-5">
 
+{% get_providers as socialaccount_providers %}
 
-<form id="openid_login_form" class="openid_login" method="post" action="{% url 'openid_login' %}">
-{% csrf_token %}
-{{form.as_p}}
-<button type="submit">Sign In</button>
+{% if socialaccount_providers %}
+<p>{% blocktrans with site.name as site_name %}Please sign in with one
+of your existing third party accounts. Or, <a href="{{ signup_url }}">sign up</a>
+for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
+
+<div class="socialaccount_ballot">
+
+  <ul class="socialaccount_providers">
+    {% include "socialaccount/snippets/provider_list.html" with process="login" %}
+  </ul>
+
+  <div class="login-or">{% trans 'or' %}</div>
+
+</div>
+
+{% include "socialaccount/snippets/login_extra.html" %}
+
+{% else %}
+<p class="text-black text-center">{% blocktrans %}If you have not created an account yet, then please
+<a href="{{ signup_url }}">register</a> first.{% endblocktrans %}</p>
+{% endif %}
+<form class="login text-center w-100" method="POST" action="{% url 'account_login' %}">
+  {% csrf_token %}
+  {{ form|crispy }}
+  {% if redirect_field_value %}
+  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+  {% endif %}
+  <a class="btn btn-red rounded-50 mt-4" href="{% url 'home' %}">Home</a>
+  <button class="primaryAction btn btn-red rounded-50 mt-4" type="submit">{% trans "Sign In" %}</button>
+  <p class="mt-4">
+    <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
+  </p>
 </form>
+</div>
+</div>
+</div>
+</div>
 
-{% endblock %}
+{% block footer %}
+    <footer class="md-5">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-4 footer-column">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <span class="footer-title">Products</span>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Suits</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ties</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shoes</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 footer-column">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <span class="footer-title">Company</span>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Job postings</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News and articles</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 footer-column">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <span class="footer-title">Contact & Support</span>
+              </li>
+              <li class="nav-item">
+                <span class="nav-link"><i class="fas fa-phone"></i>+1 504-711-2934</span>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-envelope"></i>Contact us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-star"></i>Give feedback</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="text-center"><i class="fas fa-ellipsis-h"></i></div>
+        
+        <div class="row text-center">
+          <div class="col-md-4 box">
+            <span class="copyright quick-links">Copyright &copy; Your Website <script>document.write(new Date().getFullYear())</script>
+            </span>
+          </div>
+          <div class="col-md-4 box">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="https://www.twitter.com" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 box">
+            <ul class="list-inline quick-links">
+              <li class="list-inline-item">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Terms & Condition</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>   
+    </footer>
+    {% endblock %}
+
+    {% endblock %}

@@ -13,11 +13,11 @@
 <h2 class="logo-font mt-5 text-black text-center">{% trans "Sign In" %}</h2>
 <hr class="mt-5">
 <hr>
-<h2 class="logo-font mb-4">{% trans "Sign Out" %}</h2>
+<h2 class="logo-font mb-4 text-black">{% trans "Sign Out" %}</h2>
 <hr>
-<p>{% trans 'Are you sure you want to sign out?' %}</p>
+<p class="text-black">{% trans 'Are you sure you want to sign out?' %}</p>
 
-<form method="post" action="{% url 'account_logout' %}">
+<form class="text-center text-black" method="post" action="{% url 'account_logout' %}">
   {% csrf_token %}
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
