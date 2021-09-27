@@ -60,29 +60,7 @@
                     </form>
                 </div>
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                    <ul class="list-inline list-unstyled text-lg-right my-0">
-                        <li class="list-inline-item dropdown text-right">
-                            <a class="text-white
-                             nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <div class="text-center">
-                                    <div><i class="fas fa-bars fa-lg"></i></div>
-                                    <p class="my-0">Menu</p>
-                                </div>
-                            </a>
-                            <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                                {% if request.user.is_authenticated %}
-                                    {% if request.user.is_superuser %}
-                                        <a href="" class="dropdown-item">Management</a>
-                                    {% endif %}
-                                    <a href="" class="dropdown-item">Account</a>
-                                    <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-                                {% else %}
-                                    <a href="{% url 'account_signup' %}" class="dropdown-item">Create an Account</a>
-                                    <a href="{% url 'account_login' %}" class="dropdown-item">Log-in</a>
-                                    <a href="{% url 'about' %}" class="dropdown-item">About Us</a>
-                                {% endif %}
-                            </div>
-                        </li>
+                    <ul class="list-inline list-unstyled text-lg-right my-2">
                         <li class="list-inline-item">
                             <a class="{% if grand_total %}text-info{% else %}text-white{% endif %} nav-link" href="{% url 'shoppingbag' %}">
                                 <div class="text-center">
@@ -117,9 +95,6 @@
 		</div>
         </div>
     </div>
-
-    
-    
            
     
     {% if messages %}

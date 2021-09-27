@@ -1,19 +1,10 @@
 
-{% if request.user.is_authenticated %}
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
-        <li class="nav-item dropdown">
-            <a class="font-weight-bold nav-link text-white mr-4" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Clothing
-            </a>
-            <div class="dropdown-menu border-10" aria-labelledby="all-products-link">
-                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
-            </div>
-        </li>
-
+        {% if request.user.is_authenticated %}
         <li class="nav-item dropdown">
             <a class="font-weight-bold nav-link text-white mr-4" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Filter Clothing
+                Shop
             </a>
             <div class="dropdown-menu border-10" aria-labelledby="clothing-link">
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">Sort by Price</a>
@@ -21,8 +12,19 @@
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
+            {% if request.user.is_superuser %}
+            <li>
+                <a class="text-white mr-4 font-weight-bold nav-link" href="{% url 'account_logout' %}" class="dropdown-item">Management</a>
+            </li>
+            {% endif %}
+            <a class="text-white mr-4 font-weight-bold nav-link" href="" class="dropdown-item">My Account</a>
+            <a class="text-white mr-4 font-weight-bold nav-link" href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+        {% else %}
+            <a class="text-white mr-4 font-weight-bold nav-link" href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+            <a class="text-white mr-4 font-weight-bold nav-link" href="{% url 'account_login' %}" class="dropdown-item">Log-in</a>
+            <a class="text-white mr-4 font-weight-bold nav-link" href="{% url 'about' %}" class="dropdown-item">About Us</a>
+        {% endif %}
     </ul>
 </div>
-{% endif %}
 
 
