@@ -3,7 +3,7 @@ html {
 }
 
 body {
-	background: url('https://images.pexels.com/photos/3779055/pexels-photo-3779055.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat center center;
+	background: url('http://bespoketailors.pk/assets/uploads/57a06-suit.jpg') no-repeat center center;
 	background-size: cover;
     height: calc(100vh - 164px);
     color: #fff;
@@ -167,6 +167,12 @@ ul.titles {
 }
 }
 /*------------------ product page ends ------------- */
+
+/*------------------ about us page ------------- */
+
+
+
+/*------------------ about us page ends ------------- */
 
 /*------------------ footer section begins here (Bootsrapcdn inspired)------------- */
 

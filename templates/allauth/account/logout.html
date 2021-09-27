@@ -1,33 +1,137 @@
 {% extends "account/base.html" %}
 
 {% load i18n %}
+{% load account socialaccount %}
 
-{% block head_title %}{% trans "Sign Out" %}{% endblock %}
+{% block head_title %}{% trans "Sign In" %}{% endblock %}
 
 {% block content %}
+
 <div class="overlay"></div>
 <div class="container mt-5 login">
   <div class="row">
     <div class="col-12 text-center mt-5 login-introduction">
 <hr class="mt-5">
-<h2 class="logo-font mt-5 text-black text-center">{% trans "Sign In" %}</h2>
+<h2 class="logo-font mt-3 text-black text-center">{% trans "Sign Out" %}</h2>
 <hr class="mt-5">
-<hr>
-<h2 class="logo-font mb-4 text-black">{% trans "Sign Out" %}</h2>
-<hr>
-<p class="text-black">{% trans 'Are you sure you want to sign out?' %}</p>
 
-<form class="text-center text-black" method="post" action="{% url 'account_logout' %}">
+{% get_providers as socialaccount_providers %}
+
+{% if socialaccount_providers %}
+<p>{% blocktrans with site.name as site_name %}Please sign in with one
+of your existing third party accounts. Or, <a href="{{ signup_url }}">sign up</a>
+for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
+
+<div class="socialaccount_ballot">
+
+{% endif %}
+<form class="login text-center w-100" method="POST" action="{% url 'account_logout' %}">
   {% csrf_token %}
+  {{ form|crispy }}
   {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
   {% endif %}
-  <a class="btn btn-red rounded-50" href="{% url 'home' %}">Cancel</a>
-  <button class="primaryAction btn btn-red rounded-50" type="submit">{% trans 'Sign Out' %}</button>
+  <h5 class="text-black">Are you sure that you would like to sign out?</h5>
+  <a class="btn btn-red rounded-50 mt-4" href="{% url 'home' %}">No</a>
+  <button class="primaryAction btn btn-red rounded-50 mt-4" type="submit">{% trans "Yes" %}</button>
 </form>
 </div>
 </div>
 </div>
+</div>
 
+{% block footer %}
+    <footer class="md-5">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-4 footer-column">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <span class="footer-title">Products</span>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Suits</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ties</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shoes</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 footer-column">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <span class="footer-title">Company</span>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Job postings</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News and articles</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 footer-column">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <span class="footer-title">Contact & Support</span>
+              </li>
+              <li class="nav-item">
+                <span class="nav-link"><i class="fas fa-phone"></i>+1 504-711-2934</span>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-envelope"></i>Contact us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-star"></i>Give feedback</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="text-center"><i class="fas fa-ellipsis-h"></i></div>
+        
+        <div class="row text-center">
+          <div class="col-md-4 box">
+            <span class="copyright quick-links">Copyright &copy; Your Website <script>document.write(new Date().getFullYear())</script>
+            </span>
+          </div>
+          <div class="col-md-4 box">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="https://www.twitter.com" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 box">
+            <ul class="list-inline quick-links">
+              <li class="list-inline-item">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Terms & Condition</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>   
+    </footer>
+    {% endblock %}
 
-{% endblock %}
+    {% endblock %}
