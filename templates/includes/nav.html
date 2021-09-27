@@ -1,12 +1,12 @@
+
+{% if request.user.is_authenticated %}
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
             <a class="font-weight-bold nav-link text-white mr-4" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Filter Products
+                Clothing
             </a>
             <div class="dropdown-menu border-10" aria-labelledby="all-products-link">
-                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">Sort by Price</a>
-                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">Sort by Category</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
@@ -16,21 +16,13 @@
                 Filter Clothing
             </a>
             <div class="dropdown-menu border-10" aria-labelledby="clothing-link">
-                <a href="{% url 'products' %}?category=suits" class="dropdown-item">Suits</a>
-                <a href="{% url 'products' %}?category=shoes" class="dropdown-item">Shoes</a>
-                <a href="{% url 'products' %}?category=jackets" class="dropdown-item">Jackets</a>
-                <a href="{% url 'products' %}?category=vests" class="dropdown-item">Vests</a>
-                <a href="{% url 'products' %}" class="dropdown-item">Display Everything</a>
-            </div>
-        </li>
-
-        <li class="nav-item dropdown">
-            <a class="font-weight-bold nav-link text-white mr-4" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Cigars
-            </a>
-            <div class="dropdown-menu border-10" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Sort by Price</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">Sort by Price</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">Sort by Category</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
     </ul>
 </div>
+{% endif %}
+
+
