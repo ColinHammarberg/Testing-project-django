@@ -28,4 +28,4 @@ def create_or_update_user_account(sender, instance, created, **kwargs):
     if created:
         UserAccount.objects.create(user=instance)
     # Existing users: just save the profile
-    instance.userprofile.save()
+    instance.useraccount.save()

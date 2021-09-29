@@ -20,7 +20,7 @@
                 <a class="text-white mr-4 font-weight-bold nav-link" href="{% url 'account_logout' %}" class="dropdown-item">Management Console</a>
             </li>
             {% endif %}
-            <a class="text-white mr-4 font-weight-bold nav-link" href="" class="dropdown-item">My Account</a>
+            <a class="text-white mr-4 font-weight-bold nav-link" href="{% url 'account' %}" class="dropdown-item">My Account</a>
             <a class="text-white mr-4 font-weight-bold nav-link" href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
             <a class="text-white mr-4 font-weight-bold nav-link" href="{% url 'about' %}" class="dropdown-item">About Us</a>
         {% else %}
