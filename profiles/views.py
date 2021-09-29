@@ -1,3 +1,7 @@
 from django.shortcuts import render
 
-# Create your views here.
+def account(request):
+    template = 'profiles/account.html'
+    context = {}
+
+    return render(request, template, context)
