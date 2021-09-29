@@ -67,11 +67,33 @@
 
               <div class="row gutters-sm">
                 <div class="col-sm-6 mb-3">
-                  <div class="card h-100">
+                  <div class="card h-100 previous-orders">
                     <div class="card-body text-black">
                       <h6 class="d-flex align-items-center mb-3">Current Order</h6>
-                      <small>Order Details</small>
-                      {{ orders }}
+                      <thead>
+                        <tr>
+                        <td>Placed order at:</td>
+                        <td>Order Number:</td>
+                        <td>Products</td>
+                        <td>Total Amount:</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {% for order in orders %}
+                        <tr>
+                          <td>{{ order.date }}</td>
+                          <td>{{ order.order_number }}</td>
+                          <td>
+                            <ul class="list-unstyled">
+                              {% for item in order.lineitems.all %}
+                              {{ item.product.name }}
+                              {% endfor %}
+                            </ul>
+                          </td>
+                          <td>{{ order.grand_total }}</td>
+                        </tr>
+                        {% endfor %}
+                      </tbody>
                     </div>
                   </div>
                 </div>
