@@ -71,40 +71,29 @@
                     <div class="card-body text-black">
                       <h6 class="d-flex align-items-center mb-3">Current Order</h6>
                       <thead>
+                        {% for order in orders %}
                         <tr>
                           <ul class="transform-none">
                           <li>
-                        <td>Placed order at:</td>
+                        <td>Placed order at: {{ order.date }}</td>
                         </li>
                         <li>
-                        <td>Order Number:</td>
+                        <td>Order Number: {{ order.order_number }}</td>
                       </li>
+                      {% for item in order.lineitems.all %}
                       <li>
-                        <td>Products</td>
+                        <td>Products: {{ item.product.name }}</td>
                       </li>
+                      {% endfor %}
                       <li>
-                        <td>Total Amount:</td>
+                        <td>Total Amount: {{ order.grand_total }}</td>
                       </li>
                       
                     </ul>
+                    {% endfor %}
                         </tr>
                       </thead>
-                      <tbody>
-                        {% for order in orders %}
-                        <tr>
-                          <td>{{ order.date }}</td>
-                          <td>{{ order.order_number }}</td>
-                          <td>
-                            <ul class="list-unstyled">
-                              {% for item in order.lineitems.all %}
-                              {{ item.product.name }}
-                              {% endfor %}
-                            </ul>
-                          </td>
-                          <td>{{ order.grand_total }}</td>
-                        </tr>
-                        {% endfor %}
-                      </tbody>
+                      
                     </div>
                   </div>
                 </div>
@@ -119,7 +108,7 @@
                 </div>
               </div>
 
-
+             
 
             </div>
           </div>
