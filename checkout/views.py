@@ -10,9 +10,13 @@ from .forms import OrderForm
 from .models import Order, OrderLineItem
 from django.conf import settings
 from products.models import Product
+from profiles.forms import UserAccountForm
+from profiles.models import UserAccount
 from shoppingbag.context import cart_contents
 
 import stripe
+import json
+
 
 @require_POST
 def cache_checkout_data(request):
@@ -29,6 +33,7 @@ def cache_checkout_data(request):
         messages.error(request, 'Sorry, your payment cannot be \
             processed right now. Please try again later.')
         return HttpResponse(content=e, status=400)
+
 
 def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
@@ -112,6 +117,23 @@ def success(request, order_number):
     """
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
+    my_account = UserAccount.objects.get(user=request.user)
+    order.user_account = my_account
+    order.save()
+
+    if save_info:
+        account_data = {
+            'default_full_name': 'Full Name',
+            'default_email': 'Email Address',
+            'default_phone_number': 'Phone Number',
+            'default_postcode': 'Postal Code',
+            'default_town_or_city': 'Town or City',
+            'default_street_address': 'Street Address',
+            'default_county': 'County',
+        }
+        user_account_form = UserAccountForm(account_data, instance=my_account)
+        if user_account_form.is_valid():
+            user_account_form.save()
     messages.info(request, f'Thank you! \
         Your order number is {order_number}. Expect an \
         confirmation email to be sent to {order.email}.')
