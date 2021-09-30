@@ -34,4 +34,3 @@ def previous_orders(request, order_number):
     }
 
     return render(request, template, context)
-

@@ -15,14 +15,13 @@ var style = {
         color: '#000',
         fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
         fontSmoothing: 'antialiased',
-        fontSize: '16px',
+        fontSize: '18px',
         '::placeholder': {
-            color: '#aab7c4'
+            color: '#000'
         }
     },
     invalid: {
-        color: '#dc3545',
-        iconColor: '#dc3545'
+        color: '#000',
     }
 };
 var card = elements.create('card', {style: style});
