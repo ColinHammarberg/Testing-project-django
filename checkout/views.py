@@ -127,9 +127,7 @@ def checkout(request):
 
 
 def success(request, order_number):
-    """
-    Handle successful payments
-    """
+    
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
 
@@ -137,20 +135,21 @@ def success(request, order_number):
     order.user_account = my_account
     order.save()
 
-    # Saving the user's personal details
+    # Saving the user's personal details to account page
     if save_info:
-        account_data = {
-            'default_full_name': 'Full Name',
-            'default_email': 'Email Address',
-            'default_phone_number': 'Phone Number',
-            'default_postcode': 'Postal Code',
-            'default_town_or_city': 'Town or City',
-            'default_street_address': 'Street Address',
-            'default_county': 'County',
-        }
-        user_account_form = UserAccountForm(account_data, instance=my_account)
-        if user_account_form.is_valid():
-            user_account_form.save()
+            account_data = {
+                'default_full_name': order.full_name,
+                'default_email': order.email,
+                'default_phone_number': order.phone_number,
+                'default_country': order.country,
+                'default_postcode': order.postcode,
+                'default_town_or_city': order.town_or_city,
+                'default_street_address': order.street_address,
+                'default_county': order.county,
+            }
+            user_account_form = UserAccountForm(account_data, instance=my_account)
+            if user_account_form.is_valid():
+                user_account_form.save()
 
     messages.success(request, f'Thank you! \
         Your order number is {order_number}. A confirmation \
