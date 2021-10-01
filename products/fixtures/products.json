@@ -223,6 +223,67 @@
                                 "image_url": "https://picture.bestsecret.com/static/images/1559/image_32029993_71_620x757_0.jpg",
                                 "image": "Armani-suit-beige.jpeg"
                             }
-                            }
+                            },
+                            {
+                                "pk": 19,
+                                "model": "products.product",
+                                "fields": {
+                                    "sku": "pp5002690715",
+                                    "name": "Hugo Boss Vest",
+                                    "description": "Beatiful Vest from Hugo Boss",
+                                    "has_sizes": false,
+                                    "price": 299,
+                                    "category": 4,
+                                    "rating": 4.7,
+                                    "image_url": "https://picture.bestsecret.com/static/images/1539/image_32012613_31_620x757_0.jpg",
+                                    "image": "Hugo-boss-vest.jpeg"
+                                }
+                                },
+                        
+                                        {
+                                            "pk": 21,
+                                            "model": "products.product",
+                                            "fields": {
+                                                "sku": "pp5002690715",
+                                                "name": "Hugo Boss Jacket Red",
+                                                "description": "Beatiful Red Jacket from Hugo Boss",
+                                                "has_sizes": false,
+                                                "price": 1299,
+                                                "category": 6,
+                                                "rating": 4.7,
+                                                "image_url": "https://picture.bestsecret.com/static/images/1538/image_32012611_44_620x757_0.jpg",
+                                                "image": "Hugo-Boss-red.jpeg"
+                                            }
+                                            },
+                                        {
+                                            "pk": 22,
+                                            "model": "products.product",
+                                            "fields": {
+                                                "sku": "pp5002690715",
+                                                "name": "Calamar Jacket Beige",
+                                                "description": "Beatiful Beige Jacket from Calamar",
+                                                "has_sizes": false,
+                                                "price": 699,
+                                                "category": 6,
+                                                "rating": 4.7,
+                                                "image_url": "https://picture.bestsecret.com/static/images/1590/image_32070182_80_620x757_0.jpg",
+                                                "image": "Calamar-jacket-grey.jpeg"
+                                            }
+                                            },
+                                            {
+                                                "pk": 23,
+                                                "model": "products.product",
+                                                "fields": {
+                                                    "sku": "pp5002690715",
+                                                    "name": "Calamar Jacket Grey",
+                                                    "description": "Beatiful Grey jacket from Calamar",
+                                                    "has_sizes": false,
+                                                    "price": 699,
+                                                    "category": 6,
+                                                    "rating": 4.7,
+                                                    "image_url": "https://picture.bestsecret.com/static/images/1590/image_32070182_36_620x757_0.jpg",
+                                                    "image": "Calamar-jacket.jpeg"
+                                                }
+                                                }
 ]
   
