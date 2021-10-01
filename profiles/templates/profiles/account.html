@@ -75,18 +75,18 @@
                         <tr>
                           <ul class="transform-none">
                           <li>
-                        <td>Placed order at: {{ order.date }}</td>
+                        <td>Placed order at: <b>{{ order.date }}</b></td>
                         </li>
                         <li>
-                        <td>Order Number: {{ order.order_number }}</td>
+                        <td>Order Number: <b>{{ order.order_number }}</b></td>
                       </li>
                       {% for item in order.lineitems.all %}
                       <li>
-                        <td>Products: {{ item.product.name }}</td>
+                        <td>Products: <b>{{ item.product.name }}</b></td>
                       </li>
                       {% endfor %}
                       <li>
-                        <td>Total Amount: {{ order.grand_total }}</td>
+                        <td>Total Amount: <b>{{ order.grand_total }}</b></td>
                       </li>
                       
                     </ul>
