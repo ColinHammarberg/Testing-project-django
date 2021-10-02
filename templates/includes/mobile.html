@@ -25,7 +25,6 @@
   <li class="list-inline-item">
       <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-white{% endif %} nav-link d-block d-lg-none" href="{% url 'shoppingbag' %}">
           <div class="text-center">
-            {% if request.user.is_authenticated %}
               <div><i class="fas fa-shopping-bag fa-lg"></i></div>
               <p class="my-0">
                   {% if grand_total %}
@@ -35,7 +34,6 @@
                   {% endif %}
               </p>
           </div>
-          {% endif %}
       </a>
     </li>
   </ul>

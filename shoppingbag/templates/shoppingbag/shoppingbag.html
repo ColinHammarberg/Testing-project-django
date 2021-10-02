@@ -90,11 +90,22 @@
                       </table>   
                     </div>               
                 {% else %}
+
+                <p class="lead mb-5 text-black">You have to create an account to access the shopping feature.</p>
+                    
+                <a href="{% url 'account_signup' %}" class="btn btn-red text-white rounded-50 btn-lg">
+                    Register
+                </a>
+                {% if request.user.is_authenticated %}
                     <p class="lead mb-5 text-black">Your cart is empty. Add some products to fill it up.</p>
+                    
                     <a href="{% url 'products' %}" class="btn btn-red text-white rounded-50 btn-lg">
                         Continue Shopping
                     </a>
+                    {% endif %}
+                    
                 {% endif %}
+                
             
         </div>
     </div>
