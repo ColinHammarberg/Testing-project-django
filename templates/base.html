@@ -64,6 +64,7 @@
                         <li class="list-inline-item">
                             <a class="{% if grand_total %}text-info{% else %}text-white{% endif %} nav-link" href="{% url 'shoppingbag' %}">
                                 <div class="text-center">
+                                    {% if request.user.is_authenticated %}
                                     <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                                     <p class="my-0">
                                         {% if grand_total %}
@@ -73,6 +74,7 @@
                                         {% endif %}
                                     </p>
                                 </div>
+                                {% endif %}
                             </a>
                         </li>
                     </ul>
