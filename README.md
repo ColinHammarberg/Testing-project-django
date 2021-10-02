@@ -55,6 +55,16 @@
 
 # FEATURES
 
+## Existing Features
+
+### Navigation bar 
+<a href="" target="_blank"><img src="/media/Navbar.png" alt="Book Bites mobile Screen"></a>
+<a href="" target="_blank"><img src="/media/Mobil-navbar.png" alt="Book Bites mobile Screen"></a>
+
+- The navigation bar is featured on all pages, but in different ways. If a user has not yet created an account and is currently logged into his/hers account, some of the application's features are not visible. The navigation bar is responsive and includes links to the "Love Therapy" logo, Home/Landing page, Contact page, My Account page, Schedule Meetings page, View Meetings page, Diary page and Log Out function (which directly logs out the user). It is identical in each page to allow for smooth navigation throughout the whole application.
+- This nav bar will allow the user to easily find him or herself all around the application. As does the mobile navigation slide out (which comes out from the right side when the user activates it by clicking the hamburger icon).
+
+
 # Media
 - https://www.pexels.com/sv-se/foto/restaurang-vintage-cigarr-lyx-7299582/
 

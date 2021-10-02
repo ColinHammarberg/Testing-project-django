@@ -14,6 +14,10 @@ def all_products(request):
     sort = None
     direction = None
 
+
+    # Sorting products
+
+
     if request.GET:
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
@@ -28,10 +32,12 @@ def all_products(request):
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
 
+        # Search function for products
+
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(request, "Please enter a search key to be directed to the right page.")
                 return redirect(reverse('products'))
             
             queries = Q(name__icontains=query) | Q(description__icontains=query)
@@ -63,4 +69,3 @@ def product_description(request, product_id):
     }
 
     return render(request, 'products/product_description.html', context)
-

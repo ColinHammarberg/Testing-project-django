@@ -16,99 +16,57 @@
 {% block content %}
 <div class="overlay"></div>
 <div class="container mb-2 purchase">
-    <div class="row">
-        <div class="col">
-            <h2 class="logo-font text-black text-center product-introduction">Order Confirmed!</h2>
-            <hr class="bg-black">
+  <div class="row">
+      <div class="col">
+          <h2 class="logo-font text-black text-center mt-3">Order Successful!</h2>
+          <hr class="bg-black">
           </div>
-        </div>
-        <div class="row">
-         <div class="col-12 col-lg-7">
-           <div class="wrapper border-2 border-black">
-            <div class="row">
-              <div class="col">
-                <h5 class="small text-black">Order:</h5>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12 col-md-4">
-                <h5 class="small text-black mb-0"><b>Order Number:</b></h5>
-              </div>
-              <div class="col-12 col-md-4 text-md-right">
-                <h5 class="small text-black mb-0">{{ order.order_number }}</h5>
-              </div>
-              </div>
-              <div class="row">
-                <div class="col-12 col-md-4">
-                  <h5 class="small text-black"><b>Products:</b></h5>
-                </div>
-                {% for item in order.lineitems.all %}
-                <div class="col-12 col-md-4 text-md-right">
-                      <h5 class="small text-black mb-0">
-                          {{ item.product.name }}
-                      </h5>
-              </div>
-              
-              {% endfor %}
-              </div>
-
-              
-            
-              <div class="row">
-                <div class="col-12 col-md-4">
-                  <h5 class="small text-black mb-0"><b>Name:</b></h5>
-                </div>
-                <div class="col-12 col-md-4 text-md-right">
-                  <h5 class="small text-black mb-0">{{ order.full_name }}</h5>
-                </div>
-              </div>
-            <div class="row">
-              <div class="col-12 col-md-4">
-                <h5 class="small text-black mb-0"><b>Shipping Address:</b></h5>
-              </div>
-              <div class="col-12 col-md-4 text-md-right">
-                <h5 class="small text-black mb-0">{{ order.street_address }}</h5>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12 col-md-4">
-                <h5 class="small text-black mb-0"><b>County:</b></h5>
-              </div>
-              <div class="col-12 col-md-4 text-md-right">
-                <h5 class="small text-black mb-0">{{ order.county }}</h5>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12 col-md-4">
-                <h5 class="small text-black mb-0"><b>Post Code:</b></h5>
-              </div>
-              <div class="col-12 col-md-4 text-md-right">
-                <h5 class="small text-black mb-0">{{ order.postcode }}</h5>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12 col-md-4">
-                <h5 class="small text-black mb-0"><b>Country:</b></h5>
-              </div>
-              <div class="col-12 col-md-4 text-md-right">
-                <h5 class="small text-black mb-0">{{ order.country}}</h5>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12 col-md-4">
-                <h5 class="small text-black mb-0"><b>Your card was charged:</b></h5>
-              </div>
-              <div class="col-12 col-md-4 text-md-right">
-                <h5 class="small text-black mb-2">$ {{ order.grand_total }}</h5>
-              </div>
-            </div>
-            
-
-         </div>
           </div>
-        </div>
-
-        </div>
+          </div>
+<div class="card-success text-black">
+  <div class="title-1 text-red">Thank you for you order!</div>
+  <div class="info">
+      <div class="row">
+          <div class="col-7"> <span id="heading">Date:</span><br> <span id="details">{{ order.date }}</span> </div>
+          <div class="col-5 pull-right"> <span id="heading">Order Number:</span><br> <span id="details">{{ order.order_number }}</span> </div>
+      </div>
+  </div>
+  <div class="pricing">
+      <div class="row">
+        {% for item in order.lineitems.all %}
+          <div class="col-9"> <span id="name"> {{ item.product.name }} </span> </div>
+          
+          <div class="col-3"> <span id="price">$ {{ item.product.price }}</span> </div>
+          {% endfor %}
+      </div>
+      <div class="row">
+        <div class="col-9"> <span id="name">Order Total:</span> </div>
+        <div class="col-3"> <span id="price">$ {{ order.order_total }}</span> </div>
+    </div>
+  </div>
+  <div class="total">
+      <div class="row">
+          <div class="col-9">Grand Total:</div>
+          <div class="col-3 text-red"><b>$ {{ order.grand_total }}</b></div>
+      </div>
+  </div>
+  <div class="tracking">
+      <div class="title-1 mt-2">Tracking Order:</div>
+  </div>
+  <div class="progress-track">
+      <ul id="progressbar">
+          <li class="step0 active p-2" id="step1">Ordered</li>
+          <li class="step0 active text-center p-2" id="step2">Shipped</li>
+          <li class="step0 active text-right p-2" id="step3">On the way</li>
+          <li class="step0 text-right p-2" id="step4">Delivered</li>
+      </ul>
+  </div>
+  <div class="footer">
+      <div class="row">
+          <div class="col-10">Want any help? Please &nbsp;<a href=""> contact us!</a></div>
+      </div>
+  </div>
+</div>
         
 
     {% block footer %}
