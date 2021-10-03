@@ -563,8 +563,9 @@ div#map {
 
 @media(max-width: 992px) {
   .purchase {
-    padding-top: 100px;
+    padding-top: 150px;
   }
 }
 
 /*--------------- Checkout success --------------- */
+

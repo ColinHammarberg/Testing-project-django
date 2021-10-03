@@ -15,11 +15,12 @@
 {% endblock %}
 
 {% block content %}
+
 <div class="overlay"></div>
     <div class="container">
         <div class="row">
             <div class="col">
-                <h2 class="logo-font mb-4 text-black">Shopping Cart</h2>
+                <h4 class="logo-font mb-4 text-black purchase text-center ">Shopping Cart</h4>
                 <hr>
             </div>
         </div>
@@ -30,22 +31,20 @@
                     <div class="table-responsive text-black">
                       <table class="table table-sm">
                         <thead class="text-black">
-                          <tr>
+                          <tr class="small">
                             <th scope="col">Image</th>
                             <th scope="col">Product</th>
                             <th scope="col">Price</th>
                             <th scope="col">Size</th>
-                            <th scope="col">Quantity</th>
-                            <th scope="col">Charity</th>
                             <th scope="col">Total</th>
-                            <th scope="col">Remove</th>
+                            
                           </tr>
                         </thead>
                         {% for item in cart_items %}
                         <tr>
                         <td class="p-3 w-25">
                           <a href="{% url 'product_description' item.product.id %}">
-                       <img class="image-fluid rounded" src="{{ item.product.image.url }}"></a>
+                       <img class="img-fluid rounded" src="{{ item.product.image.url }}"></a>
                         </td>
                        <td class="py-3">
                         <h4 class="my-0 small text-black">{{ item.product.sku|upper }}</h4>
@@ -58,18 +57,12 @@
                         <h4 class="my-0 small text-black">{% if item.product.has_sizes %}{{ item.size|upper }}{% else %}One Size{% endif %}</h4>
                        </td>
                        <td class="py-3">
-                        <h4 class="my-0 small text-black">{{ item.quantity }}</h4>
-                       </td>
-                       <td class="py-3">
-                         <h4 class="my-0 small text-black">{{ item.charity }}</h4>
-                       </td>
-                       <td class="py-3">
                         <h4 class="my-0 small text-black"><p class="my-0">${{ item.product.price }}</p></h4>
                        </td>
 
                        
-                       <td class="py-3 w-25">
-                        <a class="remove-item float-left btn-sm btn-red text-white text-center" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}">Remove</a>
+                       <td class="py-3 w-25"><a class="remove-item" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><i class="fas fa-times text-red float-right"></i></a>
+                        
                     </td>
                         {% endfor %}
                         </tr>
@@ -77,14 +70,14 @@
                           
                           <td class="pt-6 text-center" colspan="8">
                             <h6><b>Delivery: ${{ delivery|floatformat:2 }}</b></h6>
-                            <h5><b>Total: ${{ total|floatformat:2 }}</b></h5>
-                            <h4 class="mt-5"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
+                            <h6><b>Total: ${{ total|floatformat:2 }}</b></h5>
+                            <h6><b>Grand Total: ${{ grand_total|floatformat:2 }}</b></h4>
                           </td>
                         </tr>
                         <tr>
                           <td class="pt-6 text-center" colspan="8">
-                            <a class="btn btn-red rounded-50 text-uppercase mt-4" href="{% url 'products' %}"><span>Continue Shopping</span></a>
-                            <a class="btn btn-red rounded-50 text-uppercase mt-4 remove-item" href="{% url 'checkout' %}"><span>Checkout</span></a>
+                            <a class="btn btn-red btn-sm rounded-50 text-uppercase mt-4" href="{% url 'products' %}"><span>Continue Shopping</span></a>
+                            <a class="btn btn-red btn-sm rounded-50 text-uppercase mt-4 remove-item" href="{% url 'checkout' %}"><span>Checkout</span></a>
                           </td>
                         </tr>
                       </table>   
@@ -110,6 +103,7 @@
         </div>
     </div>
   </div>
+
     {% block footer %}
     <footer>
     <div class="container">
