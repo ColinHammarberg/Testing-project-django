@@ -62,8 +62,6 @@
                     </form>
                     {% endif %}
                 </div>
-                
-
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                     <ul class="list-inline list-unstyled text-lg-right my-2">
                         <li class="list-inline-item">
@@ -93,7 +91,15 @@
                     {% include 'includes/nav.html' %}
                 </nav>
             </div>
-            
+            {% if request.user.is_authenticated %}
+
+            {% else %}
+            <div id="delivery-banner" class="row text-center">
+                <div class="col bg-white text-black">
+                    <h6 class="logo-font my-1">Register to access the shopping feature</h6>                
+                </div>            
+            </div>
+            {% endif %}
         </header>
             
             

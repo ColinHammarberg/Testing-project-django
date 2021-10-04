@@ -20,7 +20,7 @@
     <div class="row">
         <div class="col">
             <h2 class="logo-font text-black text-center">Checkout</h2>
-            <hr class="bg-black">
+            <hr class="">
         
           </div>
         </div>
@@ -32,7 +32,7 @@
                 <h5 class="mb-1 mt-5 text-black">Products</h5>
               </div>
               <div class="col-2 text-right">
-                <h5 class="mb-3 mt-5 text-black">Subtotal</h5>
+                <h5 class="mb-1 mt-5 text-black"></h5>
               </div>
             </div>
             {% for item in cart_items %}
@@ -56,23 +56,22 @@
                         </div>
                     </div>
                 {% endfor %}
-                <hr class="my-3 bg-black">
                 <div class="row text-black text-center">
                     <div class="col-5 offset-2">
                         <p class="my-2">Delivery:</p>
-                        <hr class="my-2 bg-black">
+                        <hr class="my-2 ">
                         <p class="my-2">Order Total:</p>
-                        <hr class="my-2 bg-black">
+                        <hr class="my-2">
                         <p class="my-2">Grand Total:</p>
-                        <hr class="my-2 bg-black">
+                        <hr class="my-2">
                     </div>
                     <div class="col-3 text-black text-center">
                         <p class="my-2">${{ delivery | floatformat:2 }}</p>
-                        <hr class="my-2 bg-black">
+                        <hr class="my-2">
                         <p class="my-2">${{ total | floatformat:2 }}</p>
-                        <hr class="my-2 bg-black">
+                        <hr class="my-2">
                         <p class="my-2"><b>${{ grand_total | floatformat:2 }}</b></p>
-                        <hr class="my-2 bg-black">
+                        <hr class="my-2">
                         
                     </div>
                     
@@ -151,7 +150,7 @@
           <div class="col-md-4 footer-column">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <span class="footer-title">Products</span>
+                <span class="footer-title mt-3">Products</span>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Suits</a>
@@ -192,7 +191,7 @@
                 <a class="nav-link" href="#"><i class="fas fa-envelope"></i>Contact us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-star"></i>Give feedback</a>
+                <a class="nav-link" href="mailto:contact@charityforgentlemen.com"><i class="fas fa-star"></i>Give feedback</a>
               </li>
             </ul>
           </div>
