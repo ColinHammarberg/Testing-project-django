@@ -91,7 +91,7 @@ class WH_Handler:
                     street_address__iexact=shipping_details.address.line1,
                     county__iexact=shipping_details.address.state,
                     grand_total=grand_total,
-                    original_bag=bag,
+                    original_cart=cart,
                     stripe_pid=pid,
                 )
                 order_exists = True
@@ -117,7 +117,7 @@ class WH_Handler:
                     town_or_city=shipping_details.address.city,
                     street_address=shipping_details.address.line1,
                     county=shipping_details.address.state,
-                    original_bag=bag,
+                    original_cart=cart,
                     stripe_pid=pid,
                 )
                 for item_id, item_data in json.loads(bag).items():

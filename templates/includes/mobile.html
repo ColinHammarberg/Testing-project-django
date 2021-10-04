@@ -1,4 +1,6 @@
 <ul>
+    {% if request.user.is_authenticated %}
+
     <li class="list-inline-item">
       <a class="text-white nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <div class="text-center">
@@ -21,6 +23,8 @@
           </form>
       </div>
   </li>
+  {% endif %}
+
   
   <li class="list-inline-item">
       <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-white{% endif %} nav-link d-block d-lg-none" href="{% url 'shoppingbag' %}">
