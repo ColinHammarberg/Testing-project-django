@@ -7,6 +7,15 @@ from products.models import Product
 from profiles.models import UserAccount
 
 
+charity = (
+    ('Star_for_life', 'Star For Life'),
+    ('Unicef', 'Unicef'),
+    ('Red_Cross', 'Red Cross'),
+    ('Oceana', 'Oceana'),
+    ('Plastic_Ocean_Foundation', 'Plastic Ocean Foundation'),
+)
+
+
 class Order(models.Model):
     order_number = models.CharField(max_length=32, null=False, editable=False)
     user_account = models.ForeignKey(UserAccount, on_delete=models.SET_NULL, null=True, related_name='orders')
@@ -22,7 +31,7 @@ class Order(models.Model):
     delivery_cost = models.DecimalField(max_digits=6, decimal_places=2, null=False, default=0)
     order_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
     grand_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)  
-    favorite_charity = models.CharField(max_length=20, null=True, blank=True)
+    charity = models.CharField(max_length=24, choices=charity, default='Star_For_life')
         
 
     def _generate_order_number(self):
@@ -60,7 +69,7 @@ class OrderLineItem(models.Model):
     quantity = models.IntegerField(null=False, blank=False, default=0)
     lineitem_total = models.DecimalField(max_digits=6, decimal_places=2, null=False, blank=False, editable=False)
     has_sizes = models.BooleanField(default=False, null=True, blank=True)
-    favorite_charity = models.CharField(max_length=20, null=True, blank=True)
+    charity = models.CharField(max_length=24, choices=charity, default='Star_For_life')
     
     def save(self, *args, **kwargs):
         """

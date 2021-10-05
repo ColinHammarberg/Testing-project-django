@@ -97,7 +97,7 @@
                         {{ order_form.town_or_city | as_crispy_field }}
                         {{ order_form.street_address | as_crispy_field }}
                         {{ order_form.county | as_crispy_field }}
-                        {{ order_form.favorite_charity | as_crispy_field }}
+                        {{ order_form.charity | as_crispy_field }}
                         <div class="form-check form-check-inline float-center">
                           {% if user.is_authenticated %}
                             <label class="form-check-label text-black" for="id-save-info">Save this delivery information to my profile</label>

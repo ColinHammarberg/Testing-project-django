@@ -46,7 +46,7 @@ def checkout(request):
             'town_or_city': request.POST['town_or_city'],
             'street_address': request.POST['street_address'],
             'county': request.POST['county'],
-            'favorite_charity': request.POST['favorite_charity'],
+            'charity': request.POST['charity'],
         }
         order_form = OrderForm(form_data)
         if order_form.is_valid():
@@ -147,7 +147,6 @@ def success(request, order_number):
                 'default_town_or_city': order.town_or_city,
                 'default_street_address': order.street_address,
                 'default_county': order.county,
-                'favorite_charity': order.favorite_charity,
             }
             user_account_form = UserAccountForm(account_data, instance=my_account)
             if user_account_form.is_valid():

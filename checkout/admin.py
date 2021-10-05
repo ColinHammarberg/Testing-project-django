@@ -18,12 +18,12 @@ class OrderAdmin(admin.ModelAdmin):
               'email', 'phone_number', 'country',
               'postcode', 'town_or_city', 'street_address',
               'county', 'delivery_cost',
-              'order_total', 'grand_total', 'favorite_charity',)
+              'order_total', 'grand_total', 'charity',)
 
 
     list_display = ('order_number', 'date', 'full_name',
                     'order_total', 'delivery_cost',
-                    'grand_total', 'favorite_charity',)
+                    'grand_total', 'charity',)
 
     ordering = ('-date',)
 
