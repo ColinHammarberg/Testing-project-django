@@ -154,7 +154,7 @@ ul.titles {
 
 @media(max-width: 992px){ 
 
-.product-introduction h2 {
+.product-introduction h3 {
   padding-top: 150px;
 }
 }
@@ -375,8 +375,8 @@ div#map {
 
 @media(max-width: 992px) {
   #details{
-    font-weight: 300;
-    font-size: 8px;
+    font-weight: 250;
+    font-size: 7px;
   }
 }
 
@@ -557,4 +557,3 @@ div#map {
 }
 
 /*--------------- Checkout success --------------- */
-

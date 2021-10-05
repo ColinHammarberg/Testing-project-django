@@ -21,11 +21,14 @@
     <div class="main-body">
     
           <!-- Breadcrumb -->
-          <nav aria-label="breadcrumb" class="main-breadcrumb">
-            <ol class="breadcrumb">
-              <h3 class="text-black text-center align-center">My Account</h3>
-            </ol>
-          </nav>
+          <div class="container">
+            <div class="row">
+              <div class="col text-center mt-3 product-introduction">
+                  <h3 class="logo-font text-black text-decoration product-introduction">My Account</h3>
+              </div>
+              </div>
+            
+          </div>
           <!-- /Breadcrumb -->
     
           <div class="row gutters-sm">
@@ -78,7 +81,7 @@
                         <td>Placed order at: <b>{{ order.date }}</b></td>
                         </li>
                         <li>
-                        <td>Order Number: <b>{{ order.order_number }}</b></td>
+                        <td><br>Order Number: <p class="small">{{ order.order_number }}</p></b></td>
                       </li>
                       {% for item in order.lineitems.all %}
                       <li>
