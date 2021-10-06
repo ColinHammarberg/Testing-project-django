@@ -51,6 +51,7 @@
           "sku": "pp5002440521",
           "name": "Dolce & Gabbana Suit",
           "description": "Suit from Dolce & Gabbana in black",
+          "has_sizes": true,
           "price": 1999,
           "category": 2,
           "rating": 4.4,
@@ -65,7 +66,7 @@
           "sku": "pp5002601115",
           "name": "Bulgari Scarf",
           "description": "Scarf from Bulgari.",
-          "has_sizes": false,
+          "has_sizes": true,
           "price": 149,
           "category": 3,
           "rating": 4.5,
@@ -80,7 +81,7 @@
           "sku": "pp5002690715",
           "name": "Cinque Vest",
           "description": "Beatiful cotton vest from Cinque",
-          "has_sizes": false,
+          "has_sizes": true,
           "price": 169.99,
           "category": 4,
           "rating": 4.7,
@@ -96,7 +97,7 @@
         "sku": "pp5002690715",
         "name": "Cinque Suit",
         "description": "Beatiful Suit from Cinque",
-        "has_sizes": false,
+        "has_sizes": true,
         "price": 399,
         "category": 2,
         "rating": 4.7,
@@ -111,7 +112,7 @@
         "sku": "pp5002690715",
         "name": "Boss Suit Brown Pattern",
         "description": "Beatiful Suit from Boss",
-        "has_sizes": false,
+        "has_sizes": true,
         "price": 799,
         "category": 2,
         "rating": 4.7,
@@ -126,7 +127,7 @@
         "sku": "pp5002690715",
         "name": "Boss Jacket Light Blue",
         "description": "Beatiful Jacket from Boss",
-        "has_sizes": false,
+        "has_sizes": true,
         "price": 499,
         "category": 6,
         "rating": 4.7,
@@ -141,7 +142,7 @@
             "sku": "pp5002690715",
             "name": "Armani Suit Grey",
             "description": "Beatiful Suit from Armani with a fabulous pattern",
-            "has_sizes": false,
+            "has_sizes": true,
             "price": 899,
             "category": 2,
             "rating": 4.7,
@@ -156,7 +157,7 @@
                 "sku": "pp5002690715",
                 "name": "Bugatti Oxford",
                 "description": "Beatiful Oxford Shoes from Bugatti",
-                "has_sizes": false,
+                "has_sizes": true,
                 "price": 299,
                 "category": 8,
                 "rating": 4.7,
@@ -171,7 +172,7 @@
                     "sku": "pp5002690715",
                     "name": "Armani Oxford",
                     "description": "Beatiful Oxford Shoes from Armani",
-                    "has_sizes": false,
+                    "has_sizes": true,
                     "price": 229,
                     "category": 8,
                     "rating": 4.7,
@@ -186,7 +187,7 @@
                         "sku": "pp5002690715",
                         "name": "Boggi Suit",
                         "description": "Beatiful red suit from Boggi",
-                        "has_sizes": false,
+                        "has_sizes": true,
                         "price": 699,
                         "category": 2,
                         "rating": 4.7,
@@ -201,7 +202,7 @@
                             "sku": "pp5002690715",
                             "name": "Baroni Suit",
                             "description": "Beatiful black suit from Baroni",
-                            "has_sizes": false,
+                            "has_sizes": true,
                             "price": 2999,
                             "category": 2,
                             "rating": 4.7,
@@ -216,7 +217,7 @@
                                 "sku": "pp5002690715",
                                 "name": "Armani Suit",
                                 "description": "Beatiful beige suit from Armani",
-                                "has_sizes": false,
+                                "has_sizes": true,
                                 "price": 1299,
                                 "category": 2,
                                 "rating": 4.7,
@@ -231,7 +232,7 @@
                                     "sku": "pp5002690715",
                                     "name": "Hugo Boss Vest",
                                     "description": "Beatiful Vest from Hugo Boss",
-                                    "has_sizes": false,
+                                    "has_sizes": true,
                                     "price": 299,
                                     "category": 4,
                                     "rating": 4.7,
@@ -247,7 +248,7 @@
                                                 "sku": "pp5002690715",
                                                 "name": "Hugo Boss Jacket Red",
                                                 "description": "Beatiful Red Jacket from Hugo Boss",
-                                                "has_sizes": false,
+                                                "has_sizes": true,
                                                 "price": 1299,
                                                 "category": 6,
                                                 "rating": 4.7,
@@ -262,7 +263,7 @@
                                                 "sku": "pp5002690715",
                                                 "name": "Calamar Jacket Beige",
                                                 "description": "Beatiful Beige Jacket from Calamar",
-                                                "has_sizes": false,
+                                                "has_sizes": true,
                                                 "price": 699,
                                                 "category": 6,
                                                 "rating": 4.7,
@@ -277,13 +278,194 @@
                                                     "sku": "pp5002690715",
                                                     "name": "Calamar Jacket Grey",
                                                     "description": "Beatiful Grey jacket from Calamar",
-                                                    "has_sizes": false,
+                                                    "has_sizes": true,
                                                     "price": 699,
                                                     "category": 6,
                                                     "rating": 4.7,
                                                     "image_url": "https://picture.bestsecret.com/static/images/1590/image_32070182_36_620x757_0.jpg",
                                                     "image": "Calamar-jacket.jpeg"
                                                 }
-                                                }
-]
+                                                },
+                                                {
+                                                    "pk": 24,
+                                                    "model": "products.product",
+                                                    "fields": {
+                                                        "sku": "pp5002690715",
+                                                        "name": "Santori Shoes Black",
+                                                        "description": "Beatiful Black Shoes from Santori",
+                                                        "has_sizes": true,
+                                                        "price": 1299,
+                                                        "category": 8,
+                                                        "rating": 4.7,
+                                                        "image_url": "https://picture.bestsecret.com/static/images/1588/image_31992448_99_620x757_0.jpg",
+                                                        "image": "Santoni-shoes.jpeg"
+                                                    }
+                                                    },
+                                                    {
+                                                        "pk": 25,
+                                                        "model": "products.product",
+                                                        "fields": {
+                                                            "sku": "pp5002690715",
+                                                            "name": "Santori Shoes Brown",
+                                                            "description": "Beatiful Brown Leather Shoes from Santori",
+                                                            "has_sizes": true,
+                                                            "price": 999,
+                                                            "category": 8,
+                                                            "rating": 4.7,
+                                                            "image_url": "https://picture.bestsecret.com/static/images/1529/image_31992448_10_620x757_0.jpg",
+                                                            "image": "Santoni-shoes-brown.jpeg"
+                                                        }
+                                                        },
+                                                        {
+                                                            "pk": 26,
+                                                            "model": "products.product",
+                                                            "fields": {
+                                                                "sku": "pp5002690715",
+                                                                "name": "Hammerstein Shoes Black",
+                                                                "description": "Beatiful Black Leather Shoes from Hammarstein",
+                                                                "has_sizes": true,
+                                                                "price": 899,
+                                                                "category": 8,
+                                                                "rating": 4.7,
+                                                                "image_url": "https://picture.bestsecret.com/static/images/596/image_30801570_10_620x757_0.jpg",
+                                                                "image": "Hammerstein.jpeg"
+                                                            }
+                                                            },
+                                                            {
+                                                                "pk": 27,
+                                                                "model": "products.product",
+                                                                "fields": {
+                                                                    "sku": "pp5002690715",
+                                                                    "name": "Ermenegildo Zegna Brown",
+                                                                    "description": "Beatiful Brown Leather Loafers from Ermenegildo Zegna",
+                                                                    "has_sizes": true,
+                                                                    "price": 699,
+                                                                    "category": 8,
+                                                                    "rating": 4.7,
+                                                                    "image_url": "https://picture.bestsecret.com/static/images/1647/image_32074297_75_620x757_0.jpg",
+                                                                    "image": "Ermenegildo Zegna.jpeg"
+                                                                }
+                                                                },
+                                                                {
+                                                                    "pk": 28,
+                                                                    "model": "products.product",
+                                                                    "fields": {
+                                                                        "sku": "pp5002690715",
+                                                                        "name": "Bottega Veneta Shoes",
+                                                                        "description": "Beatiful Black Leather Shoes from Bottega Veneta",
+                                                                        "has_sizes": true,
+                                                                        "price": 699,
+                                                                        "category": 8,
+                                                                        "rating": 4.7,
+                                                                        "image_url": "https://picture.bestsecret.com/static/images/1647/image_32134619_10_620x757_0.jpg",
+                                                                        "image": "Bottega Veneta.jpeg"
+                                                                    }
+                                                                    },
+                                                                    {
+                                                                        "pk": 29,
+                                                                        "model": "products.product",
+                                                                        "fields": {
+                                                                            "sku": "pp5002690715",
+                                                                            "name": "Arma Coat Brown",
+                                                                            "description": "Beatiful Brown Coat from Arma",
+                                                                            "has_sizes": true,
+                                                                            "price": 2999,
+                                                                            "category": 6,
+                                                                            "rating": 1.9,
+                                                                            "image_url": "https://picture.bestsecret.com/static/images/1530/image_32018216_70_620x757_0.jpg",
+                                                                            "image": "Arma Coat.jpeg"
+                                                                        }
+                                                                        },
+                                                                        {
+                                                                            "pk": 30,
+                                                                            "model": "products.product",
+                                                                            "fields": {
+                                                                                "sku": "pp5002690715",
+                                                                                "name": "Salle Privée Coat",
+                                                                                "description": "Beatiful Coat from Salle Privée",
+                                                                                "has_sizes": true,
+                                                                                "price": 1999,
+                                                                                "category": 6,
+                                                                                "rating": 4.7,
+                                                                                "image_url": "https://picture.bestsecret.com/static/images/1549/image_32030652_21_620x757_0.jpg",
+                                                                                "image": "Salle Coat.jpeg"
+                                                                            }
+                                                                            },
+                                                                            {
+                                                                                "pk": 31,
+                                                                                "model": "products.product",
+                                                                                "fields": {
+                                                                                    "sku": "pp5002690715",
+                                                                                    "name": "Salle Privée Coat",
+                                                                                    "description": "Beatiful Coat from Salle Privée",
+                                                                                    "has_sizes": true,
+                                                                                    "price": 2499,
+                                                                                    "category": 6,
+                                                                                    "rating": 4.7,
+                                                                                    "image_url": "https://picture.bestsecret.com/static/images/1553/image_32030650_59_620x757_0.jpg",
+                                                                                    "image": "Salle Coat Pattern.jpeg"
+                                                                                }
+                                                                                },
+                                                                                {
+                                                                                    "pk": 32,
+                                                                                    "model": "products.product",
+                                                                                    "fields": {
+                                                                                        "sku": "pp5002690715",
+                                                                                        "name": "Armani Black Suit",
+                                                                                        "description": "Beatiful Suit from Armani",
+                                                                                        "has_sizes": true,
+                                                                                        "price": 2499,
+                                                                                        "category": 2,
+                                                                                        "rating": 4.7,
+                                                                                        "image_url": "https://picture.bestsecret.com/static/images/1561/image_32029979_31_620x757_0.jpg",
+                                                                                        "image": "Armani-suit-three.jpeg"
+                                                                                    }
+                                                                                    },
+                                                                                    {
+                                                                                        "pk": 33,
+                                                                                        "model": "products.product",
+                                                                                        "fields": {
+                                                                                            "sku": "pp5002690715",
+                                                                                            "name": "Windsor Coat",
+                                                                                            "description": "Beatiful Coat from Windsor",
+                                                                                            "has_sizes": true,
+                                                                                            "price": 1999,
+                                                                                            "category": 6,
+                                                                                            "rating": 4.7,
+                                                                                            "image_url": "https://picture.bestsecret.com/static/images/1649/image_32012521_71_620x757_0.jpg",
+                                                                                            "image": "Windsor.jpeg"
+                                                                                        }
+                                                                                        },
+                                                                                        {
+                                                                                            "pk": 34,
+                                                                                            "model": "products.product",
+                                                                                            "fields": {
+                                                                                                "sku": "pp5002690715",
+                                                                                                "name": "Blue Ascot",
+                                                                                                "description": "Beatiful Blue Silk Ascot",
+                                                                                                "has_sizes": false,
+                                                                                                "price": 199,
+                                                                                                "category": 5,
+                                                                                                "rating": 4.7,
+                                                                                                "image_url": "https://picture.bestsecret.com/static/images/1192/image_31652159_34_620x757_0.jpg",
+                                                                                                "image": "Plastrong-blue.jpeg"
+                                                                                            }
+                                                                                            },
+                                                                                            {
+                                                                                                "pk": 35,
+                                                                                                "model": "products.product",
+                                                                                                "fields": {
+                                                                                                    "sku": "pp5002690715",
+                                                                                                    "name": "Brown Ascot",
+                                                                                                    "description": "Beatiful Brown Silk Ascot",
+                                                                                                    "has_sizes": false,
+                                                                                                    "price": 199,
+                                                                                                    "category": 5,
+                                                                                                    "rating": 4.7,
+                                                                                                    "image_url": "https://picture.bestsecret.com/static/images/1192/image_31652160_72_620x757_0.jpg",
+                                                                                                    "image": "Plastrong-brown.jpeg"
+                                                                                                }
+                                                                                                }
+                                                                            ]
+
   

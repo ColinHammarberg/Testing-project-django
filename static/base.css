@@ -162,7 +162,9 @@ ul.titles {
 
 /*------------------ about us page ------------- */
 
-
+.btn a:hover {
+  color: rgb(211, 28, 28);
+}
 
 /*------------------ about us page ends ------------- */
 
@@ -174,6 +176,7 @@ ul.titles {
   }
   a:hover {
     text-decoration: none;
+    color: rgb(211, 28, 28);
   }
   
   ::selection {
