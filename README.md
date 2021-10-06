@@ -3,6 +3,8 @@
 - It's going to be charity platform built up on selling exclusive clothing & cigars. All profits goes to Star for life, Water organizations or Planting trees. The consumer will make a choice of what he/she prefers the profit goes to.
 - The platform will be focusing a lot on the design and functionality.
 
+<hr>
+<br>
 
 # WIREFRAMES
 
@@ -14,17 +16,20 @@
 <br>
 <br>
 
-# UX
- 
-* As an everyday client I want to experience a User Friendly application that is easy to understand and take usage of.
-* The visitor is the individual who is a client of LOVE THERAPY. The application helps the client to get a better structure. 
-* They will experience an ordinary, but different kind of application page. Not too much focus on the design, but more focus on the actual data and functions.
-
 # REASONS FOR DEVELOPMENT
  
 * I (Colin Hammarberg) am developing/building this application to create an E-commerce store that offers high end and exclusive clothing to support charity. With all profits going to the charity of the customers choice, we are able to create a beatiful supplyment of clothing, but at the same time support charity organizations all around the world.
 
-<a href="" target="_blank"><img src="" alt="Book Bites mobile Screen"></a>
+<br>
+
+# UX
+* As an everyday client I want to experience a User Friendly application that is easy to understand and take usage of.
+* I want the users to experience a well developed e-commerce platform, that will support their fine taste of clothes and at the same time do something good for the community and world with picking a charity organization when they place their order.
+
+# USER STORIES
+<a href="" target="_blank"><img src="/media/plan.png" alt="Book Bites mobile Screen"></a>
+
+<br>
 
 # TECHNOLOGIES USED 
  
@@ -92,6 +97,92 @@
 
 ## WHEN DEPLOYING APPLICATION
 
+* In the GitHub terminal, I created a requirements.txt file by running the command (pip3 freeze --local > requirements.txt).
+
+* In the Github terminal, I created a Procfile by running the command (echo web: python app.py > Procfile). According to <a href="https://devcenter.heroku.com/articles/procfile"><b>Heroku</b></a> a Procfile is a mechanism for declaring what commands are run by my application’s web dynos (lightweight Linux containers dedicated to running my application web processes) on the Heroku platform.
+
 * I then logged in to my Heroku account and created the app (charity-for-gentlemen). I also linked my Github repository to receive automated deployment to my Heroku app when pushing my code to Github.
+
 * On Heroku, I went into the Settings tab and accessed the Config Vars. I then entered all variables I had referred to locally in my environment file during development.
-* I then uploaded my media files to AWS (S3). I added the needed environment variables (AWS_ACCESS_KEY, AWS_SECRET_ACCESS_KEY) in order to access my AWS bucket and the uploaded data. I made sure to use the COLLECTSTATIC command to access and get all of my local static files and bring them to the database. I then disabled the collectstatic (DISABLE COLLECTSTATIC) during a deploy by Heroku by adding in the Config Vars DISABLE_COLLECTSTATIC = value 1.
+
+* I then uploaded my media files to <a href="https://aws.amazon.com/"><b>AWS (S3)</b></a>. I added the needed environment variables (AWS_ACCESS_KEY, AWS_SECRET_ACCESS_KEY) in order to access my AWS bucket and the uploaded data. I made sure to use the COLLECTSTATIC command to access and get all of my local static files and bring them to the database. I then disabled the collectstatic (DISABLE COLLECTSTATIC) during a deploy by Heroku by adding in the Config Vars DISABLE_COLLECTSTATIC = value 1.
+
+* I then made a comment to my local database and also include the link to the Heroku generated PostgreSQL database instead. I initialized the PostgreSQL database and pushed the migrations. I used the module dj_database_url within my Django project so that I could refer to a url directly in my settings.py.
+
+* I then changed the "DEBUG=True" option in my settings.py to "DEBUG=False", which means that I changed the app environment to production.
+
+* I requested the deployment from the branch master and reviewed the logs via the Heroku dashboard during the deployment. Once it was done deploying to Heroku, I tested so that everything had been deployed accordingly and to make sure everything worked smoothly.
+
+# MEDIA
+
+### PRODUCTS
+<br>
+
+* All images used on Charity For Gentlemen were found Best Secret. Down below you are able to find all links to the owner (Best Secret) of all images.
+<br>
+
+- https://picture.bestsecret.com/static/images/1519/image_31991066_42_620x757_0.jpg
+- https://picture.bestsecret.com/static/images/1518/image_31991066_30_620x757_0.jpg
+- https://picture.bestsecret.com/static/images/1584/image_32072735_36_620x757_0.jpg
+- https://picture.bestsecret.com/static/images/1584/image_32072735_36_620x757_0.jpg
+- https://picture.bestsecret.com/static/images/1589/image_32081445_73_620x757_0.jpg
+- https://picture.bestsecret.com/static/images/1611/image_32097841_30_620x757_0.jpg
+- https://picture.bestsecret.com/static/images/1563/image_32029879_70_620x757_0.jpg
+- https://picture.bestsecret.com/static/images/1559/image_32030026_30_620x757_0.jpg
+- https://picture.bestsecret.com/static/images/1563/image_32029949_88_620x757_0.jpg
+- https://picture.bestsecret.com/static/images/1582/image_32051744_42_620x757_0.jpg
+- https://picture.bestsecret.com/static/images/1582/image_32051744_42_620x757_0.jpg
+- https://picture.bestsecret.com/static/images/1559/image_32029993_71_620x757_0.jpg
+- https://picture.bestsecret.com/static/images/1559/image_32029993_71_620x757_0.jpg
+- https://picture.bestsecret.com/static/images/1559/image_32029993_71_620x757_0.jpg
+- https://picture.bestsecret.com/static/images/1539/image_32012613_31_620x757_0.jpg
+- https://picture.bestsecret.com/static/images/1538/image_32012611_44_620x757_0.jpg
+- https://picture.bestsecret.com/static/images/1590/image_32070182_80_620x757_0.jpg
+- https://picture.bestsecret.com/static/images/1590/image_32070182_36_620x757_0.jpg
+- https://picture.bestsecret.com/static/images/1588/image_31992448_99_620x757_0.jpg
+- https://picture.bestsecret.com/static/images/1529/image_31992448_10_620x757_0.jpg
+- https://picture.bestsecret.com/static/images/596/image_30801570_10_620x757_0.jpg
+- https://picture.bestsecret.com/static/images/1647/image_32074297_75_620x757_0.jpg
+- https://picture.bestsecret.com/static/images/1647/image_32134619_10_620x757_0.jpg
+- https://picture.bestsecret.com/static/images/1530/image_32018216_70_620x757_0.jpg
+- https://picture.bestsecret.com/static/images/1549/image_32030652_21_620x757_0.jpg
+- https://picture.bestsecret.com/static/images/1553/image_32030650_59_620x757_0.jpg
+- https://picture.bestsecret.com/static/images/1561/image_32029979_31_620x757_0.jpg
+- https://picture.bestsecret.com/static/images/1649/image_32012521_71_620x757_0.jpg
+- https://picture.bestsecret.com/static/images/1192/image_31652159_34_620x757_0.jpg
+- https://picture.bestsecret.com/static/images/1192/image_31652160_72_620x757_0.jpg
+
+<br>
+
+### HOME
+<br>
+
+- http://bespoketailors.pk/assets/uploads/57a06-suit.jpg
+
+<br>
+
+### ABOUT US PAGE
+<br>
+
+- http://bespoketailors.pk/assets/uploads/57a06-suit.jpg
+- https://images.pexels.com/photos/7265994/pexels-photo-7265994.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+- https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+- https://images.pexels.com/photos/2695680/pexels-photo-2695680.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+- https://images.pexels.com/photos/2695680/pexels-photo-2695680.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+- https://images.pexels.com/photos/2190283/pexels-photo-2190283.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+- https://images.pexels.com/photos/1529040/pexels-photo-1529040.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+
+# CREDITS
+- Footer section was inspired by Bootstrap 4 examples.
+- Had a difficulty remembering the checkout code structure and was inspired by Code Institute's mini project to finally get it to work accordingly.
+- I would also give much credit and acknowledgement to Code Institute's lessons and the huge benefit to go back and look at the lessons again to both find inspiration and to fix potential bugs. It has been such a helpful tool for me and I would like to give huge credits to Code Institute for creating such an amazing structure.
+
+<br>
+
+# ACKNOWLEDGEMENTS
+- I would like to acknowledge Code Institute's tutor support which has been a huge benefit and has helped me along whenever I needed it. Thank you for that!
+- I would also like to thank every single individual who has looked at my project and given me constructive feedback, along with always supporting me. Thank you!
+
+
+
+
