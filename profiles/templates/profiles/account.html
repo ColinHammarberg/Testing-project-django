@@ -31,15 +31,15 @@
           </div>
           <!-- /Breadcrumb -->
     
-          <div class="row gutters-sm">
+          <div class="row gutters-sm mt-5">
             <div class="col-md-4 mb-3">
               <div class="card">
                 <div class="card-body">
                   <div class="d-flex flex-column align-items-center text-center">
-                    <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle" width="150">
+                    <img src="https://www.linkpicture.com/q/charity-logo-3.png" alt="Admin" class="rounded-circle" width="300">
                     <div class="mt-3">
-                      <h4>John Doe</h4>
-                      <p class="text-secondary mb-1">{{ my_account }}</p>
+                      <h6 class="text-black">Welcome back <b>@{{ my_account }}</b></h6>
+                      <p class="text-secondary mb-1"></p>
                       <p class="text-muted font-size-sm"></p>
                     </div>
                   </div>
@@ -59,7 +59,7 @@
                       <form class="mt-3" action="{% url 'account' %}" method="POST" id="account-update-form">
                         {% csrf_token %}
                         {{ form|crispy }}
-                        <button class="btn btn-md rounded-50 bg-red text-white float-center">Update Details</button>
+                        <button class="btn btn-md rounded-50 bg-red text-white float-center mt-4">Update Details</button>
                     </form>
                     </div>
                     </div>
@@ -68,11 +68,11 @@
               </div>
               </div>
 
-              <div class="row gutters-sm">
+              <div class="row gutters-sm mt-5">
                 <div class="col-sm-6 mb-3">
                   <div class="card h-100 previous-orders">
                     <div class="card-body text-black">
-                      <h6 class="d-flex align-items-center mb-3">Current Order</h6>
+                      <h5 class="d-flex align-items-center mb-3">Previous Orders</h5>
                       <thead>
                         {% for order in orders %}
                         <tr>
@@ -89,10 +89,11 @@
                       </li>
                       {% endfor %}
                       <li>
-                        <td>Total Amount: <b>{{ order.grand_total }}</b></td>
-                      </li>
-                      
+                        <td>Total Amount: <b> $ {{ order.grand_total }}</b></td>
+                      </li> 
+                       
                     </ul>
+                    
                     {% endfor %}
                         </tr>
                       </thead>
@@ -136,13 +137,11 @@
                 <span class="footer-title">Company</span>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About us</a>
+                <a class="nav-link" href="{% url 'about' %}">About us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Job postings</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">News and articles</a>
               </li>
             </ul>
           </div>
@@ -155,10 +154,9 @@
                 <span class="nav-link"><i class="fas fa-phone"></i>+1 504-711-2934</span>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-envelope"></i>Contact us</a>
+                <a class="nav-link" href="mailto:info@charityforgentlemen.com"><i class="fas fa-envelope"></i>Contact us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-star"></i>Give feedback</a>
               </li>
             </ul>
           </div>
@@ -168,8 +166,7 @@
         
         <div class="row text-center">
           <div class="col-md-4 box">
-            <span class="copyright quick-links">All rights are reserved <br>www.charityforgentlemen.com <script>document.write(new Date().getFullYear())</script>
-            </span>
+            <span class="copyright quick-links">Copyright &copy; Charity For Gentlemen <script>document.write(new Date().getFullYear())</script>            </span>
           </div>
           <div class="col-md-4 box">
             <ul class="list-inline social-buttons">

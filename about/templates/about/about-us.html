@@ -15,7 +15,7 @@
 {% block content %}
 <div class="overlay">
 </div>
-<div class="bg-light">
+<div class="bg-container">
   <div class="container py-5">
     <div class="row h-100 align-items-center py-5">
       <div class="col-lg-6 mt-5">
@@ -23,10 +23,11 @@
         <p class="lead text-muted mb-0">We dream about providing beatiful cultural clothing <br> 
           & at the same time help the ones in need every single day.</p>
       </div>
-      <div class="col-lg-6 d-none d-lg-block"><img src="https://www.linkpicture.com/q/logo_112.png" alt="" class="img-fluid"></div>
     </div>
   </div>
 </div>
+
+
 
 <div class="bg-white py-5">
   <div class="container py-5">
@@ -137,13 +138,11 @@
                 <span class="footer-title">Company</span>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About us</a>
+                <a class="nav-link" href="{% url 'about' %}">About us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Job postings</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">News and articles</a>
               </li>
             </ul>
           </div>
@@ -156,10 +155,9 @@
                 <span class="nav-link"><i class="fas fa-phone"></i>+1 504-711-2934</span>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-envelope"></i>Contact us</a>
+                <a class="nav-link" href="mailto:info@charityforgentlemen.com"><i class="fas fa-envelope"></i>Contact us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-star"></i>Give feedback</a>
               </li>
             </ul>
           </div>
@@ -169,7 +167,7 @@
         
         <div class="row text-center">
           <div class="col-md-4 box">
-            <span class="copyright quick-links">Copyright &copy; Your Website <script>document.write(new Date().getFullYear())</script>
+            <span class="copyright quick-links">Copyright &copy; Charity For Gentlemen <script>document.write(new Date().getFullYear())</script>
             </span>
           </div>
           <div class="col-md-4 box">

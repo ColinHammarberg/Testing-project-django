@@ -73,6 +73,10 @@ color: white;
     color:rgb(211, 28, 28);
 }
 
+.bg-container {
+  background-color: #F9FAFB; 
+}
+
 .navbar-toggler-icon {
   background: #fff;
 }
@@ -187,8 +191,18 @@ ul.titles {
   footer {
     
     padding-top: 20px;
+    padding-bottom: 80px;
     background-color: #212529;
-    margin-top: 50px;
+    margin-top: 300px;
+  }
+
+  @media(max-width: 768px){
+    footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #212529;
+    margin-top: 150px;
+  }
   }
      
   
@@ -275,6 +289,10 @@ div#map {
 .update-link,
 .remove-item {
     cursor: pointer;
+}
+
+.shopping-message {
+  padding-top: 150px;
 }
 
 @media(max-width: 992px) {
@@ -560,3 +578,8 @@ div#map {
 }
 
 /*--------------- Checkout success --------------- */
+
+
+.contact-btn {
+  text-decoration: none;
+}
