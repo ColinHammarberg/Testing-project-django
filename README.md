@@ -74,20 +74,58 @@
 
 # FEATURES
 
-## Existing Features
+## EXISTING FEATURES
 
-### Navigation bar 
-<a href="" target="_blank"><img src="/media/Navbar.png" alt="Book Bites mobile Screen"></a>
-<a href="" target="_blank"><img src="/media/Mobil-navbar.png" alt="Book Bites mobile Screen"></a>
+### HOME & NAVIGATION BAR
+
+<a href="" target="_blank"><img src="/documentation/Home.png" alt="Book Bites mobile Screen"></a>
 
 - The navigation bar is featured on all pages, but in different ways. If a user has not yet created an account and is currently logged into his/hers account, some of the application's features are not visible. The navigation bar is responsive and includes links to the "Gentlemen" logo, Home/Landing page, My Account page, Shop page, Shopping page, About page and Checkout page. The navbar also includes features which will allow the user to login, register and logout. It is identical in each page to allow for smooth navigation throughout the whole application.
 - This nav bar will allow the user to easily find him or herself all around the application. As does the mobile navigation slide out.
 
-# MEDIA
-- https://www.pexels.com/sv-se/foto/restaurang-vintage-cigarr-lyx-7299582/
+### ABOUT
 
-# CREDITS
-- The Checkout models.py & Admin.py is completely inspired by Code Institute and I would like to thank them for that!
+<a href="" target="_blank"><img src="/documentation/About.png" alt="Book Bites mobile Screen"></a>
+
+### PRODUCTS
+
+<a href="" target="_blank"><img src="/documentation/Products.png" alt="Book Bites mobile Screen"></a>
+
+### PRODUCT DESCRIPTION
+
+<a href="" target="_blank"><img src="/documentation/Product-Description.png" alt="Book Bites mobile Screen"></a>
+
+### SHOPPING CART
+
+<a href="" target="_blank"><img src="/documentation/Shopping-Cart.png" alt="Book Bites mobile Screen"></a>
+
+### CHECKOUT
+
+<a href="" target="_blank"><img src="/documentation/Checkout.png" alt="Book Bites mobile Screen"></a>
+
+### ACCOUNT
+
+<a href="" target="_blank"><img src="/documentation/Account.png" alt="Book Bites mobile Screen"></a>
+
+### ORDER SUCCESS
+
+<a href="" target="_blank"><img src="/documentation/Order-success.png" alt="Book Bites mobile Screen"></a>
+
+### PREVIOUS ORDER
+
+<a href="" target="_blank"><img src="/documentation/Previous-order.png" alt="Book Bites mobile Screen"></a>
+
+### REGISTER
+
+<a href="" target="_blank"><img src="/documentation/Register.png" alt="Book Bites mobile Screen"></a>
+
+### LOG-IN
+
+<a href="" target="_blank"><img src="/documentation/Log-In.png" alt="Book Bites mobile Screen"></a>
+
+
+
+
 
 # DEPLOYMENT
 
