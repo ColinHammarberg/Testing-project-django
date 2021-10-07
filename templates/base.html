@@ -12,11 +12,11 @@
         {% block corecss %}
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
-        <link rel="stylesheet" href="{% static 'base.css' %}">
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
         {% endblock %}
 
         {% block corejs %}
-        <script src="{% static 'wow.min.js' %}"></script>
+        <script src="{% static 'js/wow.min.js' %}"></script>
         <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
@@ -26,13 +26,13 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
         <!---Google Maps--->
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4EYIfyuoXcr6FAIldk-v0zV7uluGjtLA&callback=initMap"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuMrrkYP-mwlk3nSafSNssTHXkvR5s5Wo&callback=initMap"></script>
         <!---Stripe Payments--->
         <script src="https://js.stripe.com/v3/"></script>
         {% endblock %}
 
         {% block extra_js %}
-        <script src="{% static 'maps.js' %}"></script>
+        <script src="{% static 'js/maps.js' %}"></script>
         {% endblock %}
 
 		<title>Charity For Gentlemen</title>
