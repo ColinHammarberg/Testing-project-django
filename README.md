@@ -1,6 +1,6 @@
 # CHARITY FOR GENTLEMEN     
 - A fullstack Django website. 
-- It's going to be charity platform built up on selling exclusive clothing & cigars. All profits goes to Star for life, Water organizations or Planting trees. The consumer will make a choice of what he/she prefers the profit goes to.
+- It's going to be charity platform built up on selling exclusive clothes. All profits goes to Star for life, Water organizations or other charity organizations. The consumer will make a choice of what he or she prefers the profits of his or her order goes to.
 - The platform will be focusing a lot on the design and functionality.
 
 <hr>
@@ -9,27 +9,33 @@
 # WIREFRAMES
 
 <br>
+
 <a href="" target="_blank"><img src="/documentation/Desktop-MS4-Wireframes.png" alt="Book Bites mobile Screen"></a>
 <a href="" target="_blank"><img src="/documentation/Ipad-MS4-Wireframes.png" alt="Book Bites mobile Screen"></a>
 <a href="" target="_blank"><img src="/documentation/Mobile-MS4-Wireframes.png" alt="Book Bites mobile Sc"> </a>
 
 <br>
-<br>
+<hr
 
 # REASONS FOR DEVELOPMENT
  
 * I (Colin Hammarberg) am developing/building this application to create an E-commerce store that offers high end and exclusive clothing to support charity. With all profits going to the charity of the customers choice, we are able to create a beatiful supplyment of clothing, but at the same time support charity organizations all around the world.
 
 <br>
+<hr>
 
 # UX
 * As an everyday client I want to experience a User Friendly application that is easy to understand and take usage of.
 * I want the users to experience a well developed e-commerce platform, that will support their fine taste of clothes and at the same time do something good for the community and world with picking a charity organization when they place their order.
 
+<br>
+<hr>
+
 # USER STORIES
 <a href="" target="_blank"><img src="/media/plan.png" alt="Book Bites mobile Screen"></a>
 
 <br>
+<hr>
 
 # TECHNOLOGIES USED 
  
@@ -75,6 +81,9 @@
 ### LANGUAGES
 * The project uses English as its standard language and an Lang=”en” attribute has also been implemented.
 
+<br>
+<hr>
+
 # FEATURES
 
 ## EXISTING FEATURES
@@ -84,9 +93,11 @@
 <a href="" target="_blank"><img src="/documentation/Home.png" alt="Book Bites mobile Screen"></a>
 
 - The navigation bar is featured on all pages, but in different ways. If a user has not yet created an account and is currently logged into his/hers account, some of the application's features are not visible. The navigation bar is responsive and includes links to the "Gentlemen" logo, Home/Landing page, My Account page, Shop page, Shopping page, About page and Checkout page. The navbar also includes features which will allow the user to login, register and logout. It is identical in each page to allow for smooth navigation throughout the whole application.
-- This nav bar will allow the user to easily find him or herself all around the application. As does the mobile navigation slide out.
+- This nav bar will allow the user to easily find him or herself all around the application. As does the mobile navigation drop down.
 
 ### ABOUT
+
+* The About page displays information about the company and the work it does. 
 
 <a href="" target="_blank"><img src="/documentation/About.png" alt="Book Bites mobile Screen"></a>
 
@@ -144,6 +155,21 @@
 
 <a href="" target="_blank"><img src="/documentation/Log-In.png" alt="Book Bites mobile Screen"></a>
 
+### FOOTER
+
+* The footer contains information about the company and some buttons which leads to different pages on the application.
+
+<a href="" target="_blank"><img src="/documentation/Footer.png" alt="Book Bites mobile Screen"></a>
+
+<br>
+<hr>
+
+
+# FEATURES LEFT TO IMPLEMENT
+* In the future I would like to integrate some API or something alike, to give the user the option to view their order status.
+
+<br>
+<hr>
 
 # DEPLOYMENT
 
@@ -168,6 +194,9 @@
 * I then changed the "DEBUG=True" option in my settings.py to "DEBUG=False", which means that I changed the app environment to production.
 
 * I requested the deployment from the branch master and reviewed the logs via the Heroku dashboard during the deployment. Once it was done deploying to Heroku, I tested so that everything had been deployed accordingly and to make sure everything worked smoothly.
+
+<br>
+<hr>
 
 # MEDIA
 
@@ -228,16 +257,23 @@
 - https://images.pexels.com/photos/2190283/pexels-photo-2190283.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
 - https://images.pexels.com/photos/1529040/pexels-photo-1529040.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
 
+<br>
+<hr>
+
 # CREDITS
 - Footer section was inspired by Bootstrap 4 examples.
 - Had a difficulty remembering the checkout code structure and was inspired by Code Institute's mini project to finally get it to work accordingly.
 - I would also give much credit and acknowledgement to Code Institute's lessons and the huge benefit to go back and look at the lessons again to both find inspiration and to fix potential bugs. It has been such a helpful tool for me and I would like to give huge credits to Code Institute for creating such an amazing structure.
 
 <br>
+<hr>
 
 # ACKNOWLEDGEMENTS
 - I would like to acknowledge Code Institute's tutor support which has been a huge benefit and has helped me along whenever I needed it. Thank you for that!
 - I would also like to thank every single individual who has looked at my project and given me constructive feedback, along with always supporting me. Thank you!
+
+<br>
+<hr>
 
 
 
