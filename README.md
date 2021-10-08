@@ -57,8 +57,11 @@
 ### FRAMEWORK
 * The project uses Bootstrap 4, to achive a very well functioning framework, responsiveness and helpful tools/classes/grids.
 
-### DJANGO
+### HEROKU
 * Heroku is a cloud platform based on a managed container system, for deploying and running modern apps. I deployed the project to Heroku.
+
+### DJANGO
+* The project is built using Django.
 
 ### FONTAWESOME
 * Font Awesome is an icon toolkit, which I used for the icons visible in the project.
