@@ -89,42 +89,57 @@
 
 ### PRODUCTS
 
+* The Product page displays all of the available products in the database in different columns. The user is also able to filter the products to price (low to high), categories or to view all of the products available.
+
 <a href="" target="_blank"><img src="/documentation/Products.png" alt="Book Bites mobile Screen"></a>
 
 ### PRODUCT DESCRIPTION
+
+* The Product Description page displays the chosen product's intel and description. The user is also able to choose what size and in what quantity he or she wishes to receive.
 
 <a href="" target="_blank"><img src="/documentation/Product-Description.png" alt="Book Bites mobile Screen"></a>
 
 ### SHOPPING CART
 
+* The Shopping Cart page displays what the user has added to his or her cart. All of the items and selections are displayed in the cart. The user is also able to confirm that he or she would like to place the order and then the user will be directed to the Checkout page.
+
 <a href="" target="_blank"><img src="/documentation/Shopping-Cart.png" alt="Book Bites mobile Screen"></a>
 
 ### CHECKOUT
+
+* The Checkout page is where the user is able to place the order. The order details are displayed and the user is able to confirm the order with his or her shipping address and credit card to actually place the order.
 
 <a href="" target="_blank"><img src="/documentation/Checkout.png" alt="Book Bites mobile Screen"></a>
 
 ### ACCOUNT
 
-<a href="" target="_blank"><img src="/documentation/Account.png" alt="Book Bites mobile Screen"></a>
+* The user is able to get his or her account details displayed on the "My Account" page. The user is also able to update the details whenever he or she wishes to do so. This makes it easy for the user to place another order, because the user details are already saved in the database.
+
+<a href="" target="_blank"><img src="/documentation/Account-2.png" alt="Book Bites mobile Screen"></a>
 
 ### ORDER SUCCESS
+
+* Ones the order has been placed, the user will be directed to a page with the order details. The user is able to checkout what he or she has ordered. It is also a confirmation of that the order has been accurately placed and processed. 
 
 <a href="" target="_blank"><img src="/documentation/Order-success.png" alt="Book Bites mobile Screen"></a>
 
 ### PREVIOUS ORDER
 
+* The user is able to view his or her orders on the "My Account" page. This function displays every item which exists in his or her order.
+
 <a href="" target="_blank"><img src="/documentation/Previous-order.png" alt="Book Bites mobile Screen"></a>
 
 ### REGISTER
+
+* Before the user is able to purchase any products, he or she has to register an account. The account details are registered in our database and all of the personal details registered in the database is displayed on the "My Account" page. 
 
 <a href="" target="_blank"><img src="/documentation/Register.png" alt="Book Bites mobile Screen"></a>
 
 ### LOG-IN
 
+* The user who already has an account registered in the database will be able to log in to his or her account on the log-in page.
+
 <a href="" target="_blank"><img src="/documentation/Log-In.png" alt="Book Bites mobile Screen"></a>
-
-
-
 
 
 # DEPLOYMENT
