@@ -164,7 +164,6 @@
 <br>
 <hr>
 
-
 # FEATURES LEFT TO IMPLEMENT
 * In the future I would like to integrate some API or something alike, to give the user the option to view their order status.
 
@@ -274,5 +273,10 @@
 
 <br>
 <hr>
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d2cf3101e62fc02b29edf9fb9245c877bad3f397
 
 
