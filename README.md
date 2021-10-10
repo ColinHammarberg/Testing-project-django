@@ -164,9 +164,96 @@
 <br>
 <hr>
 
+# TESTING
+
+<br>
+<hr>
+
+### I have been conducting tests on the developed application. I had to do lots of testing and it required quite a lot of time. The tests that I have been conducting are the following.
+
+<br>
+
+#### HOME PAGE (Macbook Air M1 + External Screen)
+* The landing page has different shades. One where the user has not yet been logged in and I have made sure that only the pages visible then are (Home, About, Register & Log-in). This is made because the user has not yet registered and is not allowed access to any other pages at the time. 
+* In the second shade of the landing page, the user has logged in and the home page is still visible. But in the second shade, the user is able to go to the following pages (Home, About, My Account, Shop, Logout, Shopping Cart and the Checkout page.)
+
+<br>
+
+#### ABOUT PAGE (Macbook Air M1 + External Screen)
+* The about page button in the navigation bar takes the user to the accurate url.
+* The About page tells the user more about the company and offers external links, which are all working fine.
+
+<br>
+
+#### MY ACCOUNT (Macbook Air M1 + External Screen)
+* The My Account page saves the user’s personal details after the user has placed his or her first order. That functionality works very well.
+* The user is also able to update his or her personal details via the My Account page.  
+* The user’s previous order is being correctly displayed on the My Account page too. 
+* I have also been conducting tests for the navigation bar, and all links/urls are working fine. 
+
+<br>
+
+#### REGISTER (Macbook Air M1 + External Screen)
+* The register functionality has been used and provided by Django. 
+* I have made sure that when a user has registered, a confirmation email is sent to the accurate email address. 
+* The user is afterwards taken to the log-in page, and is able to log in. The functionality seems to be working exceptionally well.
+
+<br>
+
+#### LOG-IN  (Macbook Air M1 + External Screen)
+* The log-in functionality works well too and finds the user’s details (if it exists) in the database. 
+* I have also made sure that the navigation bar works fine.
+
+<br>
+
+#### SHOP (Macbook Air M1 + External Screen)
+* The shopping functionality works fine too. I have been testing adding products to the shopping cart.
+* I have also made sure that all products available are displayed on the products page. 
+* All of the buttons seem to be working fine too and acquires the accurate functionality. 
+* Even here, I have been testing the navigation bar to see that everything works fine.
+* When pressing a button, the page takes the user to the product description page. This works fine too and includes all the accurate information from the database.
+
+<br>
+
+#### SHOPPING CART (Macbook Air M1 + External Screen)
+* When a user adds a product to the shopping cart, all of the accurate information is being displayed. The shopping cart also includes buttons for the user to confirm the order and access the checkout page.
+* I have also been testing so that the navigation bar links are working fine here too.
+
+<br>
+
+#### CHECKOUT PAGE
+* When a user confirms the order in the shopping cart, he or she will access the checkout page. 
+* The checkout page contains an order gathering of the items chosen by the user.
+* The user is able to confirm and place the order by adding his or her details (name and shipping details + credit card information). I have been testing so that the stripe integration works fine. The tests have been made with stripes testing credit card numbers.
+* I have also been testing so that the navigation bar links are working fine here too.
+
+<br>
+
+#### ORDER CONFIRMATION (Macbook Air M1 + External Screen)
+* Once the order has been successfully placed, the user is directed to an order success page. This process works fine and the user is taken to the accurate url. 
+* I have also made sure that the order success page contains all the correct details from the order.
+* I have also been testing so that the navigation bar links are working fine here too.
+
+<br>
+
+#### MESSAGES (Macbook Air M1 + External Screen)
+* The application also contains messages for errors, success etc. I have contained tests, to make sure that the messages are working correctly.
+* All of the success and error messages are displayed on an accurate occasion.
+* I have also been testing that the user is able to close the message down via the “X -close” button.
+
+<br>
+
+#### Responsiveness (Mobile & Ipad Pro Screens)
+* The application's responsiveness and framework has also been tested on all pages using both the inspect selection through Google Chrome and on the actual devices (Iphone X, Iphone 8 & Ipad Pro).
+
+<br>
+
 # FEATURES LEFT TO IMPLEMENT
 * In the future I would like to integrate some API or something alike, to give the user the option to view their order status.
 
+<br>
+<a href="documentation/TESTING PROCEDURE.pdf">Download my testing procedure document as PDF</a>
+<br>
 <br>
 <hr>
 
