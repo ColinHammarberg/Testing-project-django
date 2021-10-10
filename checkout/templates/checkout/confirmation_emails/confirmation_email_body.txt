@@ -1,4 +1,4 @@
-Hello {{ order.full_name }}!
+Dear {{ order.full_name }}!
 
 This is your confirmation of your order at Charity For Gentlemen. Your order details are below:
 
@@ -11,11 +11,15 @@ Grand Total: ${{ order.grand_total }}
 
 Your order will be shipped to {{ order.street_address }} in {{ order.town_or_city }}, {{ order.country }}.
 
+We would like to let you know that you have made a huge difference today. You chose to donate the profits made from your order to {{ order.charity }}, which will make 
+a huge difference to the ones in need. We will send out an email to you and everyone who have donated in the end of this month, so that you
+will be aware of how much the total donation was.
+
 We've got your phone number on file as {{ order.phone_number }}.
 
 If you have any questions, feel free to contact us at {{ contact_email }}.
 
-Thank you for your order!
+Thank You!
 
 Love,
 
