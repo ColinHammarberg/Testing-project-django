@@ -6,6 +6,8 @@ from django.conf import settings
 
 from .models import Order, OrderLineItem
 from products.models import Product
+from profiles.models import UserAccount
+
 
 import json
 import time
@@ -39,19 +41,12 @@ class WH_Handler:
             status=200)
 
     def handle_payment_intent_succeeded(self, event):
-        intent = event.data.object
-        pid = intent.id
-        cart - intent
-        return HttpResponse(
-            content=f'Unhandled wh received: {event["type"]}',
-            status=200)
-
         """
         Handle the payment_intent.succeeded webhook from STRIPE
         """
         intent = event.data.object
         pid = intent.id
-        bag = intent.metadata.bag
+        cart = intent.metadata.cart
         save_info = intent.metadata.save_info
 
         billing_details = intent.charges.data[0].billing_details
@@ -64,18 +59,18 @@ class WH_Handler:
                 shipping_details.address[field] = None
 
         # Update profile information if save_info was checked
-        profile = None
+        my_account = None
         username = intent.metadata.username
         if username != 'AnonymousUser':
-            profile = UserProfile.objects.get(user__username=username)
+            my_account = UserAccount.objects.get(user__username=username)
             if save_info:
-                profile.default_phone_number = shipping_details.phone
-                profile.default_country = shipping_details.address.country
-                profile.default_postcode = shipping_details.address.postal_code
-                profile.default_town_or_city = shipping_details.address.city
-                profile.default_street_address = shipping_details.address.line1
-                profile.default_county = shipping_details.address.state
-                profile.save()
+                my_account.default_phone_number = shipping_details.phone
+                my_account.default_country = shipping_details.address.country
+                my_account.default_postcode = shipping_details.address.postal_code
+                my_account.default_town_or_city = shipping_details.address.city
+                my_account.default_street_address = shipping_details.address.line1
+                my_account.default_county = shipping_details.address.state
+                my_account.save()
 
         order_exists = False
         attempt = 1
@@ -91,8 +86,7 @@ class WH_Handler:
                     street_address__iexact=shipping_details.address.line1,
                     county__iexact=shipping_details.address.state,
                     grand_total=grand_total,
-                    original_cart=cart,
-                    stripe_pid=pid,
+                    
                 )
                 order_exists = True
                 break
@@ -109,7 +103,7 @@ class WH_Handler:
             try:
                 order = Order.objects.create(
                     full_name=shipping_details.name,
-                    user_profile=profile,
+                    account=my_account,
                     email=billing_details.email,
                     phone_number=shipping_details.phone,
                     country=shipping_details.address.country,
@@ -120,7 +114,7 @@ class WH_Handler:
                     original_cart=cart,
                     stripe_pid=pid,
                 )
-                for item_id, item_data in json.loads(bag).items():
+                for item_id, item_data in json.loads(cart).items():
                     product = Product.objects.get(id=item_id)
                     if isinstance(item_data, int):
                         order_line_item = OrderLineItem(
@@ -152,5 +146,5 @@ class WH_Handler:
 
     def handle_payment_intent_failed(self, event):
         return HttpResponse(
-            content=f'Unhandled wh received: {event["type"]}',
+            content=f'Webhook received: {event["type"]}',
             status=200)

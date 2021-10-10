@@ -9,6 +9,8 @@ import stripe
 
 # Code from STRIPE
 
+@require_POST
+@csrf_exempt
 def webhook(request):
     """Listen for webhooks from Stripe"""
     # Setup
@@ -34,7 +36,7 @@ def webhook(request):
         return HttpResponse(content=e, status=400)
 
     # Set up a webhook handler
-    handler = StripeWH_Handler(request)
+    handler = WH_Handler(request)
 
     # Map webhook events to relevant handler functions
     event_map = {

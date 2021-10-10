@@ -247,14 +247,15 @@
 * The application's responsiveness and framework has also been tested on all pages using both the inspect selection through Google Chrome and on the actual devices (Iphone X, Iphone 8 & Ipad Pro).
 
 <br>
-
-# FEATURES LEFT TO IMPLEMENT
-* In the future I would like to integrate some API or something alike, to give the user the option to view their order status.
-
 <br>
 <a href="documentation/TESTING PROCEDURE.pdf">Download my testing procedure document as PDF</a>
 <br>
 <br>
+<hr>
+
+# FEATURES LEFT TO IMPLEMENT
+* In the future I would like to integrate some API or something alike, to give the user the option to view their order status.
+
 <hr>
 
 # DEPLOYMENT
@@ -360,10 +361,3 @@
 
 <br>
 <hr>
-<<<<<<< HEAD
-=======
-
-
->>>>>>> d2cf3101e62fc02b29edf9fb9245c877bad3f397
-
-
