@@ -15,7 +15,16 @@
 <a href="" target="_blank"><img src="/documentation/Mobile-MS4-Wireframes.png" alt="Book Bites mobile Sc"> </a>
 
 <br>
-<hr
+<hr>
+
+# DATABASE SCHEMA
+
+<br>
+
+<a href="" target="_blank"><img src="/documentation/Database-schema.png" alt="Book Bites mobile Sc"> </a>
+
+<br>
+<hr>
 
 # REASONS FOR DEVELOPMENT
  
@@ -350,7 +359,8 @@
 # CREDITS
 - Footer section was inspired by Bootstrap 4 examples.
 - Had a difficulty remembering the checkout code structure and was inspired by Code Institute's mini project to finally get it to work accordingly.
-- I would also give much credit and acknowledgement to Code Institute's lessons and the huge benefit to go back and look at the lessons again to both find inspiration and to fix potential bugs. It has been such a helpful tool for me and I would like to give huge credits to Code Institute for creating such an amazing structure.
+- I would also give much credit and acknowledgement to Code Institute's lessons and the huge benefit to go back and look at the lessons again to both find inspiration and to fix potential bugs. It has been such a helpful tool for me and I would like to give huge credits to Code Institute for creating such an amazing structure and benefit.
+- 
 
 <br>
 <hr>
