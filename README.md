@@ -291,6 +291,7 @@
 
 * I requested the deployment from the branch master and reviewed the logs via the Heroku dashboard during the deployment. Once it was done deploying to Heroku, I tested so that everything had been deployed accordingly and to make sure everything worked smoothly.
 
+* <a href="https://charity-for-gentlemen.herokuapp.com/">Deployed Version (Heroku App)</a>
 <br>
 <hr>
 

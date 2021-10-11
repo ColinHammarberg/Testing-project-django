@@ -1,6 +1,13 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_js %}
+<!---Google Maps--->
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuMrrkYP-mwlk3nSafSNssTHXkvR5s5Wo&callback=initMap"></script>
+<script src="{% static 'js/maps.js' %}"></script>
+{% endblock %}
+
 <!-- Bootstrap4 -->
 {% block page_header %}
     <div class="container header-container">
