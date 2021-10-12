@@ -374,7 +374,38 @@
 <hr>
 
 # CODE VALIDATOR
+* The code has been searched for errors through the validators mentioned below.
 - HTML Validator (https://validator.w3.org/)
 - CSS Validator (https://jigsaw.w3.org/css-validator/)
 - Python Validator (http://pep8online.com/)
-- Javascript Validator (https://jshint.com/)
+- Javascript Validator (https://esprima.org/demo/validate.html)
+
+<br>
+<hr>
+
+# PUSH TO GITHUB
+
+* The entire code has been written on GitPod and later on pushed to GitHub.
+* When I push my code to GitHub from GitPod I'm writing five different steps in my terminal. 
+1. The first step that I always do is to save the code (by pressing "save all"). 
+2. The second step that I always do is to run "git status". This gives me an overview of which files I have left to push and save to GitHub. 
+3. The third step that I always do is to run "git add" and then followed by the file or folder that I would like to add. 
+4. The fourth step that I always do is to run "git commit -m "Here I write a comment. So that my commits to GitHub are well documented along the way. That makes it a a lot easier to locate which commit I have been making when looking back at them".
+5. The fifth and last step that I always run in my terminal is just a simple "git push". This takes all of the files that I have added and then afterwards commited and pushes them all to GitHub (where the files and all of the code will be stored in a proper way).
+
+<br>
+<hr>
+
+# CLONING
+
+### Cloning Github Code by downloading ZIP code
+* If you wish to clone my code (which is a public published code) you are free to do so. Please follow the steps down below to accomplish the cloning procedure:
+1. Copy this link and place it in a new window (https://github.com/ColinHammarberg/Milestone-project-4). 
+2. Click on the "Code" button and select "HTTPS" to get the required options for cloning. 
+3. Click on the "Download ZIP" to download the code files in ZIP format. 
+
+### Cloning Github code by terminal
+1. Copy this link and place it in a new window (https://github.com/ColinHammarberg/Milestone-project-4). 
+2. Click on the "Code" button and select "GitHub CLI" to get the required options for cloning. 
+3. Copy the text "gh repo clone ColinHammarberg/Milestone-project-4" and place it in your terminal. 
+4. Press enter and it should begin downloading accordingly.
