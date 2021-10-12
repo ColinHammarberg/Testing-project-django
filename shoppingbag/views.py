@@ -7,10 +7,12 @@ from products.models import Product
 
 # Shopping cart.
 
+
 def shoppingbag(request):
     return render(request, 'shoppingbag/shoppingbag.html')
 
 # Adding a product/item to cart.
+
 
 def add_product(request, item_id):
     """ User can add items to the cart """
@@ -29,8 +31,10 @@ def add_product(request, item_id):
         if item_id in list(cart.keys()):
             if size in cart[item_id]['sizes'].keys():
                 cart[item_id]['sizes'][size] += quantity
+                messages.success(request, f'You have successfully added the {product.name} to your shopping cart.')
             else:
                 cart[item_id]['sizes'][size] = quantity
+                messages.success(request, f'You have successfully added the {product.name} to your shopping cart.')
         else:
             cart[item_id] = {'sizes': {size: quantity}}
     else:
@@ -46,6 +50,7 @@ def add_product(request, item_id):
 
 
 # Removing product/item from cart.
+
 
 def remove_product(request, item_id):
     """Remove the selected product/item from the user's/session's cart"""
@@ -68,5 +73,3 @@ def remove_product(request, item_id):
 
     except Exception as e:
         return HttpResponse(status=500)
-
-

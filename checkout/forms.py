@@ -27,7 +27,6 @@ class OrderForm(forms.ModelForm):
             'charity': ['Charity']
         }
         
-
         self.fields['full_name'].widget.attrs['autofocus'] = True
         for field in self.fields:
             if field:

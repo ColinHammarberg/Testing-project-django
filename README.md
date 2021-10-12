@@ -372,3 +372,9 @@
 
 <br>
 <hr>
+
+# CODE VALIDATOR
+- HTML Validator (https://validator.w3.org/)
+- CSS Validator (https://jigsaw.w3.org/css-validator/)
+- Python Validator (http://pep8online.com/)
+- Javascript Validator (https://jshint.com/)

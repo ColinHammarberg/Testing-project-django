@@ -33,7 +33,6 @@ class Order(models.Model):
     grand_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)  
     charity = models.CharField(max_length=24, choices=charity, default='Star_For_life')
         
-
     def _generate_order_number(self):
         """
         Generate a random, unique order number using UUID
@@ -67,7 +66,8 @@ class OrderLineItem(models.Model):
     product = models.ForeignKey(Product, null=False, blank=False, on_delete=models.CASCADE)
     product_size = models.CharField(max_length=2, null=True, blank=True)
     quantity = models.IntegerField(null=False, blank=False, default=0)
-    lineitem_total = models.DecimalField(max_digits=6, decimal_places=2, null=False, blank=False, editable=False)
+    lineitem_total = models.DecimalField(
+        max_digits=6, decimal_places=2, null=False, blank=False, editable=False)
     has_sizes = models.BooleanField(default=False, null=True, blank=True)
     charity = models.CharField(max_length=24, choices=charity, default='Star_For_life')
     

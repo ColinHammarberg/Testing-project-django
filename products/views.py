@@ -5,6 +5,7 @@ from .models import Product
 
 # Demonstrating all products available
 
+
 def all_products(request):
     """ Displaying products """
 
@@ -14,9 +15,7 @@ def all_products(request):
     sort = None
     direction = None
 
-
     # Sorting products
-
 
     if request.GET:
         if 'sort' in request.GET:
@@ -39,7 +38,7 @@ def all_products(request):
             if not query:
                 messages.error(request, "Please enter a search key to be directed to the right page.")
                 return redirect(reverse('products'))
-            
+                
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
@@ -58,6 +57,7 @@ def all_products(request):
     }
 
     return render(request, 'products/every_product.html', context)
+
 
 def product_description(request, product_id):
     """ Product description display """

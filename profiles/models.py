@@ -5,6 +5,7 @@ from django.dispatch import receiver
 
 from django_countries.fields import CountryField
 
+
 class UserAccount(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     default_full_name = models.CharField(max_length=50, null=True, blank=True)

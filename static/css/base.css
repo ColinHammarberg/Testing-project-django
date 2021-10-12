@@ -224,9 +224,7 @@ ul.titles {
 
     ul {
       display: inline-block;
-      @media (min-width: 768px) {
-        text-align: left;
-      }
+      
       
     }
   
@@ -252,7 +250,6 @@ ul.titles {
     color: #fff;
     border-radius: 100%;
     outline: 0;
-    background-color: footer-background-grey;
   }
   
   footer .quick-links {
@@ -562,10 +559,7 @@ div#map {
   color: black
 }
 
-#progressbar li.active:before,
-#progressbar li.active:after {
-  background: 
-}
+
 
 /*--------------- Checkout success progress bar ends --------------- */
 

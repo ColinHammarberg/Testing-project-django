@@ -4,6 +4,7 @@ from checkout.models import Order
 from .models import UserAccount
 from .forms import UserAccountForm
 
+
 def account(request):
     my_account = get_object_or_404(UserAccount, user=request.user)
     if request.method == 'POST':
@@ -24,13 +25,14 @@ def account(request):
 
     return render(request, template, context)
 
+
 def previous_orders(request, order_number):
     order = get_object_or_404(Order, order_number=order_number)
 
     template = 'checkout/order_success.html'
     context = {
-    'order': order,
-    'from_account': True,
+        'order': order,
+        'from_account': True,
     }
 
     return render(request, template, context)
