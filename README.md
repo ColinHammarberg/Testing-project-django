@@ -12,7 +12,7 @@
 
 <a href="" target="_blank"><img src="/documentation/Desktop-MS4-Wireframes.png" alt="Book Bites mobile Screen"></a>
 <a href="" target="_blank"><img src="/documentation/Ipad-MS4-Wireframes.png" alt="Book Bites mobile Screen"></a>
-<a href="" target="_blank"><img src="/documentation/Mobile-MS4-Wireframes.png" alt="Book Bites mobile Sc"> </a>
+<a href="" target="_blank"><img src="/documentation/Mobile-MS4-Wireframes.png" alt="Book Bites mobile Sc"></a>
 
 <br>
 <hr>
@@ -21,7 +21,7 @@
 
 <br>
 
-<a href="" target="_blank"><img src="/documentation/Postgres-schema.png" alt="Book Bites mobile Sc"> </a>
+<a href="" target="_blank"><img src="/documentation/Postgres-schema.png" alt="Book Bites mobile Sc"></a>
 
 <br>
 <hr>

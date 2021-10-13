@@ -69,7 +69,8 @@ class OrderLineItem(models.Model):
     lineitem_total = models.DecimalField(
         max_digits=6, decimal_places=2, null=False, blank=False, editable=False)
     has_sizes = models.BooleanField(default=False, null=True, blank=True)
-    charity = models.CharField(max_length=24, choices=charity, default='Star_For_life')
+    charity = models.CharField(
+        max_length=24, choices=charity, default='Star_For_life')
     
     def save(self, *args, **kwargs):
         """

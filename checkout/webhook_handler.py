@@ -11,7 +11,6 @@ from profiles.models import UserAccount
 import json
 import time
 
-
 class WH_Handler:
     """This handles the Webhooks from Stripe"""
 
@@ -26,7 +25,8 @@ class WH_Handler:
             {'order': order})
         body = render_to_string(
             'checkout/confirmation_emails/confirmation_email_body.txt',
-            {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL}) 
+            {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
+        
         send_mail(
             subject,
             body,
@@ -141,6 +141,7 @@ class WH_Handler:
         return HttpResponse(
             content=f'Webhook received: {event["type"]} | SUCCESS: Created order in webhook',
             status=200)
+
 
     def handle_payment_intent_failed(self, event):
         return HttpResponse(

@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import render, redirect
+from django.shortcuts import reverse, get_object_or_404, HttpResponse
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
@@ -148,7 +149,8 @@ def success(request, order_number):
                 'default_street_address': order.street_address,
                 'default_county': order.county,
             }
-            user_account_form = UserAccountForm(account_data, instance=my_account)
+            user_account_form = UserAccountForm(
+                account_data, instance=my_account)
             if user_account_form.is_valid():
                 user_account_form.save()
 
