@@ -1,8 +1,9 @@
-from django.shortcuts import render, redirect
-from django.shortcuts import reverse, get_object_or_404, HttpResponse
+from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
+from django.template.loader import render_to_string
+from django.core.mail import send_mail
 
 from .forms import OrderForm
 from .models import Order, OrderLineItem
@@ -13,7 +14,6 @@ from shoppingbag.context import cart_contents
 
 import stripe
 import json
-
 
 @require_POST
 def cache_checkout_data(request):
@@ -118,6 +118,7 @@ def checkout(request):
         else:
             order_form = OrderForm()
 
+
     template = 'checkout/checkout_page.html'
     context = {
         'order_form': order_form,
@@ -149,8 +150,7 @@ def success(request, order_number):
                 'default_street_address': order.street_address,
                 'default_county': order.county,
             }
-            user_account_form = UserAccountForm(
-                account_data, instance=my_account)
+            user_account_form = UserAccountForm(account_data, instance=my_account)
             if user_account_form.is_valid():
                 user_account_form.save()
 
@@ -167,4 +167,3 @@ def success(request, order_number):
     }
 
     return render(request, template, context)
-

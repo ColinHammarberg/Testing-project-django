@@ -21,7 +21,7 @@
 
 <br>
 
-<a href="" target="_blank"><img src="/documentation/Postgres-schema.png" alt="Book Bites mobile Sc"></a>
+<a href="" target="_blank"><img src="/documentation/Postgres-schema-2.png" alt="Book Bites mobile Sc"></a>
 
 <br>
 <hr>

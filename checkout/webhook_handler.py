@@ -11,6 +11,7 @@ from profiles.models import UserAccount
 import json
 import time
 
+
 class WH_Handler:
     """This handles the Webhooks from Stripe"""
 

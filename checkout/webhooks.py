@@ -9,6 +9,7 @@ import stripe
 
 # Code from STRIPE
 
+
 @require_POST
 @csrf_exempt
 def webhook(request):
