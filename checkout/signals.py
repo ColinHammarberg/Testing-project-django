@@ -9,4 +9,3 @@ def update_on_save(sender, instance, created, **kwargs):
     instance.order.total_order()
 
 
-

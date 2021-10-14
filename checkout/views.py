@@ -1,9 +1,10 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import (
+    render, redirect, reverse, 
+    get_object_or_404, HttpResponse
+)
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
-from django.template.loader import render_to_string
-from django.core.mail import send_mail
 
 from .forms import OrderForm
 from .models import Order, OrderLineItem
@@ -12,8 +13,10 @@ from profiles.forms import UserAccountForm
 from profiles.models import UserAccount
 from shoppingbag.context import cart_contents
 
+
 import stripe
 import json
+
 
 @require_POST
 def cache_checkout_data(request):
@@ -83,12 +86,13 @@ def checkout(request):
             request.session['save_info'] = 'save-info' in request.POST
             return redirect(reverse('success', args=[order.order_number]))
         else:
-            messages.error(request, 'There was an error with your request. \
+            messages.error(
+                request, 'There was an error with your request. \
                 ')
     else:
         cart = request.session.get('cart', {})
         if not cart:
-            messages.error(request, "There's nothing in your bag at the moment")
+            messages.error(request, "Your bag is empty")
             return redirect(reverse('products'))
 
         current_cart = cart_contents(request)
@@ -117,7 +121,6 @@ def checkout(request):
                 order_form = OrderForm()
         else:
             order_form = OrderForm()
-
 
     template = 'checkout/checkout_page.html'
     context = {
@@ -150,7 +153,8 @@ def success(request, order_number):
                 'default_street_address': order.street_address,
                 'default_county': order.county,
             }
-            user_account_form = UserAccountForm(account_data, instance=my_account)
+            user_account_form = UserAccountForm(
+                account_data, instance=my_account)
             if user_account_form.is_valid():
                 user_account_form.save()
 

@@ -25,5 +25,6 @@ class OrderAdmin(admin.ModelAdmin):
                     'grand_total', 'charity',)
 
     ordering = ('-date',)
+    
 
 admin.site.register(Order, OrderAdmin)

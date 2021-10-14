@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse, HttpResponse
+from django.shortcuts import render, redirect, HttpResponse
 from django.contrib import messages
 
 from products.models import Product
@@ -28,19 +28,31 @@ def add_product(request, item_id):
         if item_id in list(cart.keys()):
             if size in cart[item_id]['sizes'].keys():
                 cart[item_id]['sizes'][size] += quantity
-                messages.success(request, f'You have successfully added the {product.name} to your shopping cart.')
+                messages.success(request, f'You have \
+                    successfully added the \
+                        {product.name} to your \
+                        shopping cart.')
             else:
                 cart[item_id]['sizes'][size] = quantity
-                messages.success(request, f'You have successfully added the {product.name} to your shopping cart.')
+                messages.success(request, f'You have \
+                    successfully added the \
+                        {product.name} to your \
+                            shopping cart.')
         else:
             cart[item_id] = {'sizes': {size: quantity}}
     else:
         if item_id in list(cart.keys()):
             cart[item_id] += quantity
-            messages.success(request, f'You have successfully updated your cart by adding another item of the {product.name}. We are happy that you like the product.')
+            messages.success(request, f'You have successfully \
+                updated your cart by adding \
+                    another item of the \
+                    {product.name}. We are happy \
+                        that you like the product.')
         else:
             cart[item_id] = quantity
-            messages.success(request, f'You have successfully added the {product.name} to your shopping cart.')
+            messages.success(request, f'You have successfully \
+                added the {product.name} \
+                    to your shopping cart.')
 
     request.session['cart'] = cart
     return redirect(redirect_url)
