@@ -374,10 +374,25 @@
 <hr>
 
 # CODE VALIDATOR
+
 * The code has been searched for errors through the validators mentioned below.
+<br>
+
 - HTML Validator (https://validator.w3.org/)
+<br>
+
+* There are a few errors coming up when running the code through an HTML validator, but the errors are coming from classes and elements used from bootstrap4. So I have not fixed these, due to that no difference is seen.
+<br>
+
 - CSS Validator (https://jigsaw.w3.org/css-validator/)
+<br>
+
 - Python Validator (http://pep8online.com/)
+<br>
+
+* All Pep8 errors have been fixed and removed. There are still some warnings when running the code through a pep8 validator, but all errors have been fixed and removed.
+<br>
+
 - Javascript Validator (https://esprima.org/demo/validate.html)
 
 <br>

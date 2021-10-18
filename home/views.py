@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-# Views
+# Views - Home page
 
 
 def index(request):

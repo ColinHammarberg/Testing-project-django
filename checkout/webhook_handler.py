@@ -66,9 +66,12 @@ class WH_Handler:
             if save_info:
                 my_account.default_phone_number = shipping_details.phone
                 my_account.default_country = shipping_details.address.country
-                my_account.default_postcode = shipping_details.address.postal_code
-                my_account.default_town_or_city = shipping_details.address.city
-                my_account.default_street_address = shipping_details.address.line1
+                my_account.default_postcode = shipping_details.\
+                    address.postal_code
+                my_account.default_town_or_city = shipping_details.\
+                    address.city
+                my_account.default_street_address = shipping_details.\
+                    address.line1
                 my_account.default_county = shipping_details.address.state
                 my_account.save()
 
@@ -96,7 +99,8 @@ class WH_Handler:
         if order_exists:
             self._send_confirmation_email(order)
             return HttpResponse(
-                content=f'Webhook received: {event["type"]} | SUCCESS: Verified order already in database',
+                content=f'Webhook received: {event["type"]} | SUCCESS: \
+                    Verified order already in database',
                 status=200)
         else:
             order = None
@@ -124,7 +128,8 @@ class WH_Handler:
                         )
                         order_line_item.save()
                     else:
-                        for size, quantity in item_data['items_by_size'].items():
+                        for size, quantity in item_data['items_by_size'].\
+                            items():
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
@@ -132,6 +137,7 @@ class WH_Handler:
                                 product_size=size,
                             )
                             order_line_item.save()
+                            
             except Exception as e:
                 if order:
                     order.delete()
@@ -140,9 +146,9 @@ class WH_Handler:
                     status=500)
         self._send_confirmation_email(order)
         return HttpResponse(
-            content=f'Webhook received: {event["type"]} | SUCCESS: Created order in webhook',
+            content=f'Webhook received: {event["type"]} | SUCCESS: \
+                Created order in webhook',
             status=200)
-
 
     def handle_payment_intent_failed(self, event):
         return HttpResponse(
