@@ -129,7 +129,7 @@ class WH_Handler:
                         order_line_item.save()
                     else:
                         for size, quantity in item_data['items_by_size'].\
-                            items():
+                                items():
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
