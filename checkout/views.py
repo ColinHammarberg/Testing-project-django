@@ -92,7 +92,7 @@ def checkout(request):
     else:
         cart = request.session.get('cart', {})
         if not cart:
-            messages.error(request, "Your bag is empty")
+            messages.error(request, "Your cart is empty")
             return redirect(reverse('products'))
 
         current_cart = cart_contents(request)
