@@ -369,6 +369,8 @@
 # ACKNOWLEDGEMENTS
 - I would like to acknowledge Code Institute's tutor support which has been a huge benefit and has helped me along whenever I needed it. Thank you for that!
 - I would also like to thank every single individual who has looked at my project and given me constructive feedback, along with always supporting me. Thank you!
+- I would also like to thank my mentor for helping me along during my time building Charity For Gentlemen!
+- Lastly I would like to say thank you to Bootstrap for providing grids and helpful tools. Super helpfull to accomplish a responsive layout.
 
 <br>
 <hr>
