@@ -18,7 +18,7 @@
         </li>
             {% if request.user.is_superuser %}
             <li>
-                <a class="text-white mr-4 font-weight-bold nav-link" href="{% url 'account_logout' %}" class="dropdown-item">Management Console</a>
+                <a class="text-white mr-4 font-weight-bold nav-link" href="https://charity-for-gentlemen.herokuapp.com/admin/" class="dropdown-item">Management Console</a>
             </li>
             {% endif %}
             <a class="text-white mr-4 font-weight-bold nav-link" href="{% url 'account' %}" class="dropdown-item">My Account</a>
