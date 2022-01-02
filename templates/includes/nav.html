@@ -13,22 +13,22 @@
             <div class="dropdown-menu border-10" aria-labelledby="clothing-link">
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">Sort by Price</a>
-                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">Sort by Category</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item">Sort by Category</a>
             </div>
         </li>
             {% if request.user.is_superuser %}
             <li>
-                <a class="text-white mr-4 font-weight-bold nav-link" href="https://charity-for-gentlemen.herokuapp.com/admin/" class="dropdown-item">Management Console</a>
+                <a class="text-white mr-4 font-weight-bold nav-link dropdown-item bg-black" href="https://charity-for-gentlemen.herokuapp.com/admin/">Management Console</a>
             </li>
             {% endif %}
-            <a class="text-white mr-4 font-weight-bold nav-link" href="{% url 'account' %}" class="dropdown-item">My Account</a>
-            <a class="text-white mr-4 font-weight-bold nav-link" href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-            <a class="text-white mr-4 font-weight-bold nav-link" href="{% url 'about' %}" class="dropdown-item">About Us</a>
+            <a class="text-white mr-4 font-weight-bold nav-link dropdown-item bg-black" href="{% url 'account' %}">My Account</a>
+            <a class="text-white mr-4 font-weight-bold nav-link dropdown-item bg-black" href="{% url 'account_logout' %}">Logout</a>
+            <a class="text-white mr-4 font-weight-bold nav-link dropdown-item bg-black" href="{% url 'about' %}">About Us</a>
         {% else %}
-            <a class="text-white mr-4 font-weight-bold nav-link" href="{% url 'home' %}" class="dropdown-item">Home</a>
-            <a class="text-white mr-4 font-weight-bold nav-link" href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-            <a class="text-white mr-4 font-weight-bold nav-link" href="{% url 'account_login' %}" class="dropdown-item">Log-in</a>
-            <a class="text-white mr-4 font-weight-bold nav-link" href="{% url 'about' %}" class="dropdown-item">About Us</a>
+            <a class="text-white mr-4 font-weight-bold nav-link dropdown-item bg-black" href="{% url 'home' %}">Home</a>
+            <a class="text-white mr-4 font-weight-bold nav-link dropdown-item bg-black" href="{% url 'account_signup' %}">Register</a>
+            <a class="text-white mr-4 font-weight-bold nav-link dropdown-item bg-black" href="{% url 'account_login' %}">Log-in</a>
+            <a class="text-white mr-4 font-weight-bold nav-link dropdown-item bg-black" href="{% url 'about' %}">About Us</a>
         {% endif %}
     </ul>
 </div>
