@@ -13,7 +13,6 @@ class UserAccountForm(forms.ModelForm):
             'default_full_name': 'Full Name',
             'default_email': 'Email Address',
             'default_phone_number': 'Phone Number',
-            'default_mobile_number': 'Mobile Number',
             'default_postcode': 'Postal Code',
             'default_town_or_city': 'Town or City',
             'default_street_address': 'Street Address',
