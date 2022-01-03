@@ -46,7 +46,6 @@ def checkout(request):
             'full_name': request.POST['full_name'],
             'email': request.POST['email'],
             'phone_number': request.POST['phone_number'],
-            'mobile_number': request.POST['mobile_number'],
             'country': request.POST['country'],
             'postcode': request.POST['postcode'],
             'town_or_city': request.POST['town_or_city'],
