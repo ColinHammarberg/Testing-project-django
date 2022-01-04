@@ -11,6 +11,7 @@
           "price": 169.99,
           "category": 1,
           "color": "Red",
+          "material": "Silk",
           "image_url": "https://picture.bestsecret.com/static/images/1519/image_31991066_42_620x757_0.jpg",
           "image": "Armani-Tie.jpeg"
       }
@@ -27,6 +28,7 @@
           "price": 169.99,
           "category": 1,
           "color": "Blue",
+          "material": "Silk",
           "image_url": "https://picture.bestsecret.com/static/images/1518/image_31991066_30_620x757_0.jpg",
           "image": "Armani-Tie-Blue.jpeg"
       }
@@ -43,6 +45,7 @@
           "price": 999,
           "category": 2,
           "color": "Grey",
+          "material": "Silk",
           "image_url": "https://picture.bestsecret.com/static/images/1584/image_32072735_36_620x757_0.jpg",
           "image": "Boss-grey.jpeg"
       }
@@ -59,6 +62,7 @@
           "price": 1999,
           "category": 2,
           "color": "Black",
+          "material": "Silk",
           "image_url": "https://picture.bestsecret.com/static/images/1584/image_32072735_36_620x757_0.jpg",
           "image": "Dolce-Gabbana-Marin.jpeg"
       }
@@ -75,6 +79,7 @@
           "price": 149,
           "category": 3,
           "color": "Blue & Red",
+          "material": "Silk",
           "image_url": "https://picture.bestsecret.com/static/images/1571/image_32029400_31_620x757_0.jpg",
           "image": "Bulgari-Scarf.jpeg"
       }
@@ -91,6 +96,7 @@
           "price": 169.99,
           "category": 4,
           "color": "Grey",
+          "material": "Silk",
           "image_url": "https://picture.bestsecret.com/static/images/1589/image_32081445_73_620x757_0.jpg",
           "image": "Cinque-vest-Marin.jpeg"
       }
@@ -108,6 +114,7 @@
         "price": 399,
         "category": 2,
         "color": "Blue",
+        "material": "Silk",
         "image_url": "https://picture.bestsecret.com/static/images/1611/image_32097841_30_620x757_0.jpg",
         "image": "Cinque-suit.jpeg"
     }
@@ -124,6 +131,7 @@
         "price": 799,
         "category": 2,
         "color": "Brown",
+        "material": "Silk",
         "image_url": "https://picture.bestsecret.com/static/images/1563/image_32029879_70_620x757_0.jpg",
         "image": "Boss-Morkbla.jpeg"
     }
@@ -140,6 +148,7 @@
         "price": 499,
         "category": 6,
         "color": "Light Blue",
+        "material": "Silk",
         "image_url": "https://picture.bestsecret.com/static/images/1559/image_32030026_30_620x757_0.jpg",
         "image": "Boss-Jacket.jpeg"
     }
@@ -156,6 +165,7 @@
             "price": 899,
             "category": 2,
             "color": "Grey",
+            "material": "Silk",
             "image_url": "https://picture.bestsecret.com/static/images/1563/image_32029949_88_620x757_0.jpg",
             "image": "Armani-Suit-Grey.jpeg"
         }
@@ -172,6 +182,7 @@
                 "price": 299,
                 "category": 8,
                 "color": "Black",
+                "material": "Silk",
                 "image_url": "https://picture.bestsecret.com/static/images/1582/image_32051744_42_620x757_0.jpg",
                 "image": "Bugatti-shoes.jpeg"
             }
@@ -188,6 +199,7 @@
                     "price": 229,
                     "category": 8,
                     "color": "Black & Red",
+                    "material": "Silk",
                     "image_url": "https://picture.bestsecret.com/static/images/1582/image_32051744_42_620x757_0.jpg",
                     "image": "Armani-shoes-red.jpeg"
                 }
@@ -204,6 +216,7 @@
                         "price": 699,
                         "category": 2,
                         "color": "Red",
+                        "material": "Silk",
                         "image_url": "https://picture.bestsecret.com/static/images/1559/image_32029993_71_620x757_0.jpg",
                         "image": "Boggi-suit-red.jpeg"
                     }
@@ -220,6 +233,7 @@
                             "price": 2999,
                             "category": 2,
                             "color": "Black",
+                            "material": "Silk",
                             "image_url": "https://picture.bestsecret.com/static/images/1559/image_32029993_71_620x757_0.jpg",
                             "image": "Baroni-Suit-Black.jpeg"
                         }
@@ -236,6 +250,7 @@
                                 "price": 1299,
                                 "category": 2,
                                 "color": "Beige",
+                                "material": "Silk",
                                 "image_url": "https://picture.bestsecret.com/static/images/1559/image_32029993_71_620x757_0.jpg",
                                 "image": "Armani-suit-beige.jpeg"
                             }
@@ -252,6 +267,7 @@
                                     "price": 299,
                                     "category": 4,
                                     "color": "Dark Blue",
+                                    "material": "Silk",
                                     "image_url": "https://picture.bestsecret.com/static/images/1539/image_32012613_31_620x757_0.jpg",
                                     "image": "Hugo-boss-vest.jpeg"
                                 }
@@ -269,6 +285,7 @@
                                                 "price": 1299,
                                                 "category": 6,
                                                 "color": "Red",
+                                                "material": "Silk",
                                                 "image_url": "https://picture.bestsecret.com/static/images/1538/image_32012611_44_620x757_0.jpg",
                                                 "image": "Hugo-Boss-red.jpeg"
                                             }
@@ -285,6 +302,7 @@
                                                 "price": 699,
                                                 "category": 6,
                                                 "color": "Beige",
+                                                "material": "Silk",
                                                 "image_url": "https://picture.bestsecret.com/static/images/1590/image_32070182_80_620x757_0.jpg",
                                                 "image": "Calamar-jacket-grey.jpeg"
                                             }
@@ -301,6 +319,7 @@
                                                     "price": 699,
                                                     "category": 6,
                                                     "color": "Grey",
+                                                    "material": "Silk",
                                                     "image_url": "https://picture.bestsecret.com/static/images/1590/image_32070182_36_620x757_0.jpg",
                                                     "image": "Calamar-jacket.jpeg"
                                                 }
@@ -317,6 +336,7 @@
                                                         "price": 1299,
                                                         "category": 8,
                                                         "color": "Black",
+                                                        "material": "Silk",
                                                         "image_url": "https://picture.bestsecret.com/static/images/1588/image_31992448_99_620x757_0.jpg",
                                                         "image": "Santoni-shoes.jpeg"
                                                     }
@@ -333,6 +353,7 @@
                                                             "price": 999,
                                                             "category": 8,
                                                             "color": "Brown",
+                                                            "material": "Silk",
                                                             "image_url": "https://picture.bestsecret.com/static/images/1529/image_31992448_10_620x757_0.jpg",
                                                             "image": "Santoni-shoes-brown.jpeg"
                                                         }
@@ -349,6 +370,7 @@
                                                                 "price": 899,
                                                                 "category": 8,
                                                                 "color": "Black",
+                                                                "material": "Silk",
                                                                 "image_url": "https://picture.bestsecret.com/static/images/596/image_30801570_10_620x757_0.jpg",
                                                                 "image": "Hammerstein.jpeg"
                                                             }
@@ -365,6 +387,7 @@
                                                                     "price": 699,
                                                                     "category": 8,
                                                                     "color": "Brown",
+                                                                    "material": "Silk",
                                                                     "image_url": "https://picture.bestsecret.com/static/images/1647/image_32074297_75_620x757_0.jpg",
                                                                     "image": "Ermenegildo Zegna.jpeg"
                                                                 }
@@ -381,6 +404,7 @@
                                                                         "price": 699,
                                                                         "category": 8,
                                                                         "color": "Black",
+                                                                        "material": "Silk",
                                                                         "image_url": "https://picture.bestsecret.com/static/images/1647/image_32134619_10_620x757_0.jpg",
                                                                         "image": "Bottega Veneta.jpeg"
                                                                     }
@@ -397,6 +421,7 @@
                                                                             "price": 2999,
                                                                             "category": 6,
                                                                             "color": "Brown",
+                                                                            "material": "Silk",
                                                                             "image_url": "https://picture.bestsecret.com/static/images/1530/image_32018216_70_620x757_0.jpg",
                                                                             "image": "Arma Coat.jpeg"
                                                                         }
@@ -413,6 +438,7 @@
                                                                                 "price": 1999,
                                                                                 "category": 6,
                                                                                 "color": "Bright Brown",
+                                                                                "material": "Silk",
                                                                                 "image_url": "https://picture.bestsecret.com/static/images/1549/image_32030652_21_620x757_0.jpg",
                                                                                 "image": "Salle Coat.jpeg"
                                                                             }
@@ -429,6 +455,7 @@
                                                                                     "price": 2499,
                                                                                     "category": 6,
                                                                                     "color": "Dark Brown",
+                                                                                    "material": "Silk",
                                                                                     "image_url": "https://picture.bestsecret.com/static/images/1553/image_32030650_59_620x757_0.jpg",
                                                                                     "image": "Salle Coat Pattern.jpeg"
                                                                                 }
@@ -445,6 +472,7 @@
                                                                                         "price": 2499,
                                                                                         "category": 2,
                                                                                         "color": "Black",
+                                                                                        "material": "Silk",
                                                                                         "image_url": "https://picture.bestsecret.com/static/images/1561/image_32029979_31_620x757_0.jpg",
                                                                                         "image": "Armani-suit-three.jpeg"
                                                                                     }
@@ -461,6 +489,7 @@
                                                                                             "price": 1999,
                                                                                             "category": 6,
                                                                                             "color": "Brown",
+                                                                                            "material": "Silk",
                                                                                             "image_url": "https://picture.bestsecret.com/static/images/1649/image_32012521_71_620x757_0.jpg",
                                                                                             "image": "Windsor.jpeg"
                                                                                         }
@@ -477,6 +506,7 @@
                                                                                                 "price": 199,
                                                                                                 "category": 5,
                                                                                                 "color": "Blue",
+                                                                                                "material": "Silk",
                                                                                                 "image_url": "https://picture.bestsecret.com/static/images/1192/image_31652159_34_620x757_0.jpg",
                                                                                                 "image": "Plastrong-blue.jpeg"
                                                                                             }
@@ -493,6 +523,7 @@
                                                                                                     "price": 199,
                                                                                                     "category": 5,
                                                                                                     "color": "Brown",
+                                                                                                    "material": "Silk",
                                                                                                     "image_url": "https://picture.bestsecret.com/static/images/1192/image_31652160_72_620x757_0.jpg",
                                                                                                     "image": "Plastrong-brown.jpeg"
                                                                                                 }

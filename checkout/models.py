@@ -19,12 +19,12 @@ charity = (
 class Order(models.Model):
     order_number = models.CharField(max_length=32, null=False, editable=False)
     user_account = models.ForeignKey(
-        UserAccount, on_delete=models.SET_NULL, 
+        UserAccount, on_delete=models.SET_NULL,
         null=True, related_name='orders')
     full_name = models.CharField(max_length=50, null=False, blank=False)
     email = models.EmailField(max_length=254, null=False, blank=False)
     phone_number = models.CharField(max_length=20, null=False, blank=False)
-    mobile_number = models.CharField(max_length=20, null=False, blank=False)
+    mobile_number = models.CharField(max_length=20, null=True, blank=True)
     country = CountryField(blank_label='Country', null=False, blank=False)
     postcode = models.CharField(max_length=20, null=True, blank=True)
     town_or_city = models.CharField(max_length=40, null=False, blank=False)

@@ -25,10 +25,11 @@
             <div class="col-12 col-lg-4">
                 <div class="product-details-container mb-5 mt-md-5">
                     <p class="mb-0 text-black">Name: <b>{{ product.name }}</b></p>
-                    <p class="mb-2 text-black">Brand: <b>{{ product.brand }}</b></p>
-                    <p class="lead mb-0 text-left font-weight-bold text-black">${{ product.price }}</p>
-                    <p class="mt-3 text-black">{{ product.description }}</p>
+                    <p class="mb-2 mt-2 text-black">Brand: <b>{{ product.brand }}</b></p>
                     <p class="mb-0 text-black">Color: <b>{{ product.color }}</b></p>
+                    <p class="mb-2 mt-2 text-black">Material: <b>{{ product.material }}</b></p>
+                    <p class="mt-2 text-black">Description: <b>{{ product.description }}</b></p>
+                    <p class="lead mb-0 text-left font-weight-bold text-black">${{ product.price }}</p>
                     <form class="form" action="{% url 'add_product'  product.id%}" method="POST">
                         {% csrf_token %}
                         <div class="form-row">
