@@ -65,6 +65,7 @@ class WH_Handler:
             my_account = UserAccount.objects.get(user__username=username)
             if save_info:
                 my_account.default_phone_number = shipping_details.phone
+                my_account.default_mobile_number = shipping_details.mobile
                 my_account.default_country = shipping_details.address.country
                 my_account.default_postcode = shipping_details.\
                     address.postal_code
@@ -83,6 +84,7 @@ class WH_Handler:
                     full_name__iexact=shipping_details.name,
                     email__iexact=billing_details.email,
                     phone_number__iexact=shipping_details.phone,
+                    mobile_number__iexact=shipping_details.mobile,
                     country__iexact=shipping_details.address.country,
                     postcode__iexact=shipping_details.address.postal_code,
                     town_or_city__iexact=shipping_details.address.city,
@@ -110,6 +112,7 @@ class WH_Handler:
                     account=my_account,
                     email=billing_details.email,
                     phone_number=shipping_details.phone,
+                    mobile_number=shipping_details.mobile,
                     country=shipping_details.address.country,
                     postcode=shipping_details.address.postal_code,
                     town_or_city=shipping_details.address.city,

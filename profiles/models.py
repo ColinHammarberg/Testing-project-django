@@ -12,6 +12,8 @@ class UserAccount(models.Model):
     default_email = models.EmailField(max_length=254, null=True, blank=False)
     default_phone_number = models.CharField(
         max_length=20, null=True, blank=False)
+    default_mobile_number = models.CharField(
+        max_length=20, null=True, blank=True)
     default_street_address = models.CharField(
         max_length=80, null=True, blank=False)
     default_postcode = models.CharField(max_length=20, null=True, blank=False)
