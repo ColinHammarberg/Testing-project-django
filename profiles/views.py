@@ -40,3 +40,12 @@ def previous_orders(request, order_number):
 
 
 
+def delete_user(request):
+    user = request.user
+    user.delete()
+    messages.success(request, 'Account deleted!')
+
+    return redirect('home')
+
+
+

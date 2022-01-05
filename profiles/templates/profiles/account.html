@@ -60,6 +60,7 @@
                         {% csrf_token %}
                         {{ form|crispy }}
                         <button class="btn btn-md rounded-50 bg-red text-white float-center mt-4">Update Details</button>
+                        <a class="btn btn-md rounded-50 bg-red text-white float-center mt-4" href="{% url 'delete_user' %}">Delete Account</a>
                     </form>
                     </div>
                     </div>
