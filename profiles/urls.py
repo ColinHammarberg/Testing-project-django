@@ -6,8 +6,5 @@ urlpatterns = [
     path(
         'previous_orders/<order_number>',
         views.previous_orders, name='previous_orders'),
-    path(
-        'delete_user',
-        views.delete_user, name='delete_user'),
 
 ]

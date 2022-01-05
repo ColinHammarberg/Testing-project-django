@@ -39,12 +39,4 @@ def previous_orders(request, order_number):
     return render(request, template, context)
 
 
-def delete_user(request):
-    if request.method == 'POST':
-        user = get_object_or_404(user=request.user)
-        user.delete()
-        messages.success(request, 'Account details deleted!')
-    
-        template = 'profiles/account.html'
 
-    return redirect('home')
