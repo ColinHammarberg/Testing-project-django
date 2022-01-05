@@ -1,7 +1,8 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib import messages
 from checkout.models import Order
 from .models import UserAccount
+from django.contrib.auth.decorators import login_required
 from .forms import UserAccountForm
 
 
@@ -36,3 +37,14 @@ def previous_orders(request, order_number):
     }
 
     return render(request, template, context)
+
+
+def delete_user(request):
+    if request.method == 'POST':
+        user = get_object_or_404(user=request.user)
+        user.delete()
+        messages.success(request, 'Account details deleted!')
+    
+        template = 'profiles/account.html'
+
+    return redirect('home')

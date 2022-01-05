@@ -25,10 +25,18 @@
             <a class="text-white mr-4 font-weight-bold nav-link dropdown-item bg-black" href="{% url 'account_logout' %}">Logout</a>
             <a class="text-white mr-4 font-weight-bold nav-link dropdown-item bg-black" href="{% url 'about' %}">About Us</a>
         {% else %}
+            <li>
             <a class="text-white mr-4 font-weight-bold nav-link dropdown-item bg-black" href="{% url 'home' %}">Home</a>
+            </li>
+            <li>
             <a class="text-white mr-4 font-weight-bold nav-link dropdown-item bg-black" href="{% url 'account_signup' %}">Register</a>
+            </li>
+            <li>
             <a class="text-white mr-4 font-weight-bold nav-link dropdown-item bg-black" href="{% url 'account_login' %}">Log-in</a>
+            </li>
+            <li>
             <a class="text-white mr-4 font-weight-bold nav-link dropdown-item bg-black" href="{% url 'about' %}">About Us</a>
+            </li>
         {% endif %}
     </ul>
 </div>
