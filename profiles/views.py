@@ -2,7 +2,6 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib import messages
 from checkout.models import Order
 from .models import UserAccount
-from django.contrib.auth.decorators import login_required
 from .forms import UserAccountForm
 
 
@@ -37,8 +36,7 @@ def previous_orders(request, order_number):
     }
 
     return render(request, template, context)
-
-
+    
 
 def delete_user(request):
     user = request.user
