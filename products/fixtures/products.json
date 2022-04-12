@@ -4,530 +4,66 @@
       "model": "products.product",
       "fields": {
           "sku": "pp5001890157",
-          "name": "Armani Tie Red",
-          "brand": "Armani",
-          "description": "Beatiful handmade silk tie from Armani",
-          "has_sizes": false,
-          "price": 169.99,
+          "name": "30 days",
+          "description": "30 days training card",
+          "price": 39.95,
           "category": 1,
-          "color": "Red",
-          "material": "Silk",
-          "image_url": "https://picture.bestsecret.com/static/images/1519/image_31991066_42_620x757_0.jpg",
-          "image": "Armani-Tie.jpeg"
+          "image_url": "http://unblast.com/wp-content/uploads/2020/03/Membership-Card-Mockup-1.jpg",
+          "image": "Card.jpeg"
       }
   },
   {
-      "pk": 5,
-      "model": "products.product",
-      "fields": {
-          "sku": "pp5002111605",
-          "name": "Armani Tie Blue",
-          "brand": "Armani",
-          "description": "Beatiful handmade silk tie from Armani",
-          "has_sizes": false,
-          "price": 169.99,
-          "category": 1,
-          "color": "Blue",
-          "material": "Silk",
-          "image_url": "https://picture.bestsecret.com/static/images/1518/image_31991066_30_620x757_0.jpg",
-          "image": "Armani-Tie-Blue.jpeg"
-      }
-  },
-  {
-      "pk": 6,
-      "model": "products.product",
-      "fields": {
-          "sku": "pp5002260206",
-          "name": "Hugo Boss Suit",
-          "brand": "Hugo Boss",
-          "description": "Suit from Hugo Boss in a beatiful grey scaled color",
-          "has_sizes": true,
-          "price": 999,
-          "category": 2,
-          "color": "Grey",
-          "material": "Silk",
-          "image_url": "https://picture.bestsecret.com/static/images/1584/image_32072735_36_620x757_0.jpg",
-          "image": "Boss-grey.jpeg"
-      }
-  },
-  {
-      "pk": 7,
-      "model": "products.product",
-      "fields": {
-          "sku": "pp5002440521",
-          "name": "Dolce & Gabbana Suit",
-          "brand": "Dolce & Gabbana",
-          "description": "Suit from Dolce & Gabbana in black",
-          "has_sizes": true,
-          "price": 1999,
-          "category": 2,
-          "color": "Black",
-          "material": "Silk",
-          "image_url": "https://picture.bestsecret.com/static/images/1584/image_32072735_36_620x757_0.jpg",
-          "image": "Dolce-Gabbana-Marin.jpeg"
-      }
-  },
-  {
-      "pk": 8,
-      "model": "products.product",
-      "fields": {
-          "sku": "pp5002601115",
-          "name": "Bulgari Scarf",
-          "brand": "Bulgari",
-          "description": "Scarf from Bulgari.",
-          "has_sizes": false,
-          "price": 149,
-          "category": 3,
-          "color": "Blue & Red",
-          "material": "Silk",
-          "image_url": "https://picture.bestsecret.com/static/images/1571/image_32029400_31_620x757_0.jpg",
-          "image": "Bulgari-Scarf.jpeg"
-      }
-  },
-  {
-      "pk": 9,
-      "model": "products.product",
-      "fields": {
-          "sku": "pp5002690715",
-          "name": "Cinque Vest",
-          "brand": "Cinque",
-          "description": "Beatiful cotton vest from Cinque",
-          "has_sizes": true,
-          "price": 169.99,
-          "category": 4,
-          "color": "Grey",
-          "material": "Silk",
-          "image_url": "https://picture.bestsecret.com/static/images/1589/image_32081445_73_620x757_0.jpg",
-          "image": "Cinque-vest-Marin.jpeg"
-      }
-   },
-
-   {
-    "pk": 10,
+    "pk": 5,
     "model": "products.product",
     "fields": {
-        "sku": "pp5002690715",
-        "name": "Cinque Suit",
-        "brand": "Cinque",
-        "description": "Beatiful Suit from Cinque",
-        "has_sizes": true,
-        "price": 399,
+        "sku": "pp5001890157",
+        "name": "60 days",
+        "description": "60 days training card",
+        "price": 49.95,
+        "category": 1,
+        "image_url": "http://unblast.com/wp-content/uploads/2020/03/Membership-Card-Mockup-1.jpg",
+        "image": "Card.jpeg"
+    }
+},
+{
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001890157",
+        "name": "90 days",
+        "description": "90 days training card",
+        "price": 59.95,
+        "category": 1,
+        "image_url": "http://unblast.com/wp-content/uploads/2020/03/Membership-Card-Mockup-1.jpg",
+        "image": "Card.jpeg"
+    }
+},
+{
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001890157",
+        "name": "1 year",
+        "description": "1 year training card",
+        "price": 149.95,
+        "category": 1,
+        "image_url": "http://unblast.com/wp-content/uploads/2020/03/Membership-Card-Mockup-1.jpg",
+        "image": "Card.jpeg"
+    }
+},
+{
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001890157",
+        "name": "Rent venue",
+        "description": "300 sqm venue rental for 3 hours",
+        "price": 149.95,
         "category": 2,
-        "color": "Blue",
-        "material": "Silk",
-        "image_url": "https://picture.bestsecret.com/static/images/1611/image_32097841_30_620x757_0.jpg",
-        "image": "Cinque-suit.jpeg"
+        "image_url": "http://unblast.com/wp-content/uploads/2020/03/Membership-Card-Mockup-1.jpg",
+        "image": "Card.jpeg"
     }
- },
- {
-    "pk": 11,
-    "model": "products.product",
-    "fields": {
-        "sku": "pp5002690715",
-        "name": "Boss Suit",
-        "brand": "Hugo Boss",
-        "description": "Beatiful Suit from Boss",
-        "has_sizes": true,
-        "price": 799,
-        "category": 2,
-        "color": "Brown",
-        "material": "Silk",
-        "image_url": "https://picture.bestsecret.com/static/images/1563/image_32029879_70_620x757_0.jpg",
-        "image": "Boss-Morkbla.jpeg"
-    }
- },
- {
-    "pk": 12,
-    "model": "products.product",
-    "fields": {
-        "sku": "pp5002690715",
-        "name": "Boss Jacket",
-        "brand": "Hugo Boss",
-        "description": "Beatiful Jacket from Boss",
-        "has_sizes": true,
-        "price": 499,
-        "category": 6,
-        "color": "Light Blue",
-        "material": "Silk",
-        "image_url": "https://picture.bestsecret.com/static/images/1559/image_32030026_30_620x757_0.jpg",
-        "image": "Boss-Jacket.jpeg"
-    }
-    },
-    {
-        "pk": 13,
-        "model": "products.product",
-        "fields": {
-            "sku": "pp5002690715",
-            "name": "Armani Suit",
-            "brand": "Armani",
-            "description": "Beatiful Suit from Armani with a fabulous pattern",
-            "has_sizes": true,
-            "price": 899,
-            "category": 2,
-            "color": "Grey",
-            "material": "Silk",
-            "image_url": "https://picture.bestsecret.com/static/images/1563/image_32029949_88_620x757_0.jpg",
-            "image": "Armani-Suit-Grey.jpeg"
-        }
-    },
-        {
-            "pk": 14,
-            "model": "products.product",
-            "fields": {
-                "sku": "pp5002690715",
-                "name": "Bugatti Oxford",
-                "brand": "Bugatti",
-                "description": "Beatiful Oxford Shoes from Bugatti",
-                "has_sizes": true,
-                "price": 299,
-                "category": 8,
-                "color": "Black",
-                "material": "Silk",
-                "image_url": "https://picture.bestsecret.com/static/images/1582/image_32051744_42_620x757_0.jpg",
-                "image": "Bugatti-shoes.jpeg"
-            }
-            },
-            {
-                "pk": 15,
-                "model": "products.product",
-                "fields": {
-                    "sku": "pp5002690715",
-                    "name": "Armani Oxford",
-                    "brand": "Armani",
-                    "description": "Beatiful Oxford Shoes from Armani",
-                    "has_sizes": true,
-                    "price": 229,
-                    "category": 8,
-                    "color": "Black & Red",
-                    "material": "Silk",
-                    "image_url": "https://picture.bestsecret.com/static/images/1582/image_32051744_42_620x757_0.jpg",
-                    "image": "Armani-shoes-red.jpeg"
-                }
-                },
-                {
-                    "pk": 16,
-                    "model": "products.product",
-                    "fields": {
-                        "sku": "pp5002690715",
-                        "name": "Boggi Suit",
-                        "brand": "Boggi",
-                        "description": "Beatiful red suit from Boggi",
-                        "has_sizes": true,
-                        "price": 699,
-                        "category": 2,
-                        "color": "Red",
-                        "material": "Silk",
-                        "image_url": "https://picture.bestsecret.com/static/images/1559/image_32029993_71_620x757_0.jpg",
-                        "image": "Boggi-suit-red.jpeg"
-                    }
-                    },
-                    {
-                        "pk": 17,
-                        "model": "products.product",
-                        "fields": {
-                            "sku": "pp5002690715",
-                            "name": "Baroni Suit",
-                            "brand": "Baroni",
-                            "description": "Beatiful black suit from Baroni",
-                            "has_sizes": true,
-                            "price": 2999,
-                            "category": 2,
-                            "color": "Black",
-                            "material": "Silk",
-                            "image_url": "https://picture.bestsecret.com/static/images/1559/image_32029993_71_620x757_0.jpg",
-                            "image": "Baroni-Suit-Black.jpeg"
-                        }
-                        },
-                        {
-                            "pk": 18,
-                            "model": "products.product",
-                            "fields": {
-                                "sku": "pp5002690715",
-                                "name": "Armani Suit",
-                                "brand": "Armani",
-                                "description": "Beatiful beige suit from Armani",
-                                "has_sizes": true,
-                                "price": 1299,
-                                "category": 2,
-                                "color": "Beige",
-                                "material": "Silk",
-                                "image_url": "https://picture.bestsecret.com/static/images/1559/image_32029993_71_620x757_0.jpg",
-                                "image": "Armani-suit-beige.jpeg"
-                            }
-                            },
-                            {
-                                "pk": 19,
-                                "model": "products.product",
-                                "fields": {
-                                    "sku": "pp5002690715",
-                                    "name": "Hugo Boss Vest",
-                                    "brand": "Hugo Boss",
-                                    "description": "Beatiful Vest from Hugo Boss",
-                                    "has_sizes": true,
-                                    "price": 299,
-                                    "category": 4,
-                                    "color": "Dark Blue",
-                                    "material": "Silk",
-                                    "image_url": "https://picture.bestsecret.com/static/images/1539/image_32012613_31_620x757_0.jpg",
-                                    "image": "Hugo-boss-vest.jpeg"
-                                }
-                                },
-                        
-                                        {
-                                            "pk": 21,
-                                            "model": "products.product",
-                                            "fields": {
-                                                "sku": "pp5002690715",
-                                                "name": "Hugo Boss Jacket",
-                                                "brand": "Hugo Boss",
-                                                "description": "Beatiful Red Jacket from Hugo Boss",
-                                                "has_sizes": true,
-                                                "price": 1299,
-                                                "category": 6,
-                                                "color": "Red",
-                                                "material": "Silk",
-                                                "image_url": "https://picture.bestsecret.com/static/images/1538/image_32012611_44_620x757_0.jpg",
-                                                "image": "Hugo-Boss-red.jpeg"
-                                            }
-                                            },
-                                        {
-                                            "pk": 22,
-                                            "model": "products.product",
-                                            "fields": {
-                                                "sku": "pp5002690715",
-                                                "name": "Calamar Jacket",
-                                                "brand": "Calamar",
-                                                "description": "Beatiful Beige Jacket from Calamar",
-                                                "has_sizes": true,
-                                                "price": 699,
-                                                "category": 6,
-                                                "color": "Beige",
-                                                "material": "Silk",
-                                                "image_url": "https://picture.bestsecret.com/static/images/1590/image_32070182_80_620x757_0.jpg",
-                                                "image": "Calamar-jacket-grey.jpeg"
-                                            }
-                                            },
-                                            {
-                                                "pk": 23,
-                                                "model": "products.product",
-                                                "fields": {
-                                                    "sku": "pp5002690715",
-                                                    "name": "Calamar Jacket",
-                                                    "brand": "Calamar",
-                                                    "description": "Beatiful Grey jacket from Calamar",
-                                                    "has_sizes": true,
-                                                    "price": 699,
-                                                    "category": 6,
-                                                    "color": "Grey",
-                                                    "material": "Silk",
-                                                    "image_url": "https://picture.bestsecret.com/static/images/1590/image_32070182_36_620x757_0.jpg",
-                                                    "image": "Calamar-jacket.jpeg"
-                                                }
-                                                },
-                                                {
-                                                    "pk": 24,
-                                                    "model": "products.product",
-                                                    "fields": {
-                                                        "sku": "pp5002690715",
-                                                        "name": "Santori Shoes",
-                                                        "brand": "Santori",
-                                                        "description": "Beatiful Black Shoes from Santori",
-                                                        "has_sizes": true,
-                                                        "price": 1299,
-                                                        "category": 8,
-                                                        "color": "Black",
-                                                        "material": "Silk",
-                                                        "image_url": "https://picture.bestsecret.com/static/images/1588/image_31992448_99_620x757_0.jpg",
-                                                        "image": "Santoni-shoes.jpeg"
-                                                    }
-                                                    },
-                                                    {
-                                                        "pk": 25,
-                                                        "model": "products.product",
-                                                        "fields": {
-                                                            "sku": "pp5002690715",
-                                                            "name": "Santori Shoes",
-                                                            "brand": "Santori",
-                                                            "description": "Beatiful Brown Leather Shoes from Santori",
-                                                            "has_sizes": true,
-                                                            "price": 999,
-                                                            "category": 8,
-                                                            "color": "Brown",
-                                                            "material": "Silk",
-                                                            "image_url": "https://picture.bestsecret.com/static/images/1529/image_31992448_10_620x757_0.jpg",
-                                                            "image": "Santoni-shoes-brown.jpeg"
-                                                        }
-                                                        },
-                                                        {
-                                                            "pk": 26,
-                                                            "model": "products.product",
-                                                            "fields": {
-                                                                "sku": "pp5002690715",
-                                                                "name": "Hammerstein Shoes",
-                                                                "brand": "Hammerstein",
-                                                                "description": "Beatiful Black Leather Shoes from Hammarstein",
-                                                                "has_sizes": true,
-                                                                "price": 899,
-                                                                "category": 8,
-                                                                "color": "Black",
-                                                                "material": "Silk",
-                                                                "image_url": "https://picture.bestsecret.com/static/images/596/image_30801570_10_620x757_0.jpg",
-                                                                "image": "Hammerstein.jpeg"
-                                                            }
-                                                            },
-                                                            {
-                                                                "pk": 27,
-                                                                "model": "products.product",
-                                                                "fields": {
-                                                                    "sku": "pp5002690715",
-                                                                    "name": "Ermenegildo Zegna",
-                                                                    "brand": "Ermenegildo",
-                                                                    "description": "Beatiful Brown Leather Loafers from Ermenegildo Zegna",
-                                                                    "has_sizes": true,
-                                                                    "price": 699,
-                                                                    "category": 8,
-                                                                    "color": "Brown",
-                                                                    "material": "Silk",
-                                                                    "image_url": "https://picture.bestsecret.com/static/images/1647/image_32074297_75_620x757_0.jpg",
-                                                                    "image": "Ermenegildo Zegna.jpeg"
-                                                                }
-                                                                },
-                                                                {
-                                                                    "pk": 28,
-                                                                    "model": "products.product",
-                                                                    "fields": {
-                                                                        "sku": "pp5002690715",
-                                                                        "name": "Bottega Veneta Shoes",
-                                                                        "brand": "Bottega",
-                                                                        "description": "Beatiful Black Leather Shoes from Bottega Veneta",
-                                                                        "has_sizes": true,
-                                                                        "price": 699,
-                                                                        "category": 8,
-                                                                        "color": "Black",
-                                                                        "material": "Silk",
-                                                                        "image_url": "https://picture.bestsecret.com/static/images/1647/image_32134619_10_620x757_0.jpg",
-                                                                        "image": "Bottega Veneta.jpeg"
-                                                                    }
-                                                                    },
-                                                                    {
-                                                                        "pk": 29,
-                                                                        "model": "products.product",
-                                                                        "fields": {
-                                                                            "sku": "pp5002690715",
-                                                                            "name": "Arma Coat",
-                                                                            "brand": "Arma",
-                                                                            "description": "Beatiful Brown Coat from Arma",
-                                                                            "has_sizes": true,
-                                                                            "price": 2999,
-                                                                            "category": 6,
-                                                                            "color": "Brown",
-                                                                            "material": "Silk",
-                                                                            "image_url": "https://picture.bestsecret.com/static/images/1530/image_32018216_70_620x757_0.jpg",
-                                                                            "image": "Arma Coat.jpeg"
-                                                                        }
-                                                                        },
-                                                                        {
-                                                                            "pk": 30,
-                                                                            "model": "products.product",
-                                                                            "fields": {
-                                                                                "sku": "pp5002690715",
-                                                                                "name": "Salle Privée Coat",
-                                                                                "brand": "Salle Privée",
-                                                                                "description": "Beatiful Coat from Salle Privée",
-                                                                                "has_sizes": true,
-                                                                                "price": 1999,
-                                                                                "category": 6,
-                                                                                "color": "Bright Brown",
-                                                                                "material": "Silk",
-                                                                                "image_url": "https://picture.bestsecret.com/static/images/1549/image_32030652_21_620x757_0.jpg",
-                                                                                "image": "Salle Coat.jpeg"
-                                                                            }
-                                                                            },
-                                                                            {
-                                                                                "pk": 31,
-                                                                                "model": "products.product",
-                                                                                "fields": {
-                                                                                    "sku": "pp5002690715",
-                                                                                    "name": "Salle Privée Coat",
-                                                                                    "brand": "Salle Privée",
-                                                                                    "description": "Beatiful Coat from Salle Privée",
-                                                                                    "has_sizes": true,
-                                                                                    "price": 2499,
-                                                                                    "category": 6,
-                                                                                    "color": "Dark Brown",
-                                                                                    "material": "Silk",
-                                                                                    "image_url": "https://picture.bestsecret.com/static/images/1553/image_32030650_59_620x757_0.jpg",
-                                                                                    "image": "Salle Coat Pattern.jpeg"
-                                                                                }
-                                                                                },
-                                                                                {
-                                                                                    "pk": 32,
-                                                                                    "model": "products.product",
-                                                                                    "fields": {
-                                                                                        "sku": "pp5002690715",
-                                                                                        "name": "Armani Suit",
-                                                                                        "brand": "Armani",
-                                                                                        "description": "Beatiful Suit from Armani",
-                                                                                        "has_sizes": true,
-                                                                                        "price": 2499,
-                                                                                        "category": 2,
-                                                                                        "color": "Black",
-                                                                                        "material": "Silk",
-                                                                                        "image_url": "https://picture.bestsecret.com/static/images/1561/image_32029979_31_620x757_0.jpg",
-                                                                                        "image": "Armani-suit-three.jpeg"
-                                                                                    }
-                                                                                    },
-                                                                                    {
-                                                                                        "pk": 33,
-                                                                                        "model": "products.product",
-                                                                                        "fields": {
-                                                                                            "sku": "pp5002690715",
-                                                                                            "name": "Windsor Coat",
-                                                                                            "brand": "Windsor",
-                                                                                            "description": "Beatiful Coat from Windsor",
-                                                                                            "has_sizes": true,
-                                                                                            "price": 1999,
-                                                                                            "category": 6,
-                                                                                            "color": "Brown",
-                                                                                            "material": "Silk",
-                                                                                            "image_url": "https://picture.bestsecret.com/static/images/1649/image_32012521_71_620x757_0.jpg",
-                                                                                            "image": "Windsor.jpeg"
-                                                                                        }
-                                                                                        },
-                                                                                        {
-                                                                                            "pk": 34,
-                                                                                            "model": "products.product",
-                                                                                            "fields": {
-                                                                                                "sku": "pp5002690715",
-                                                                                                "name": "Ascot",
-                                                                                                "brand": "Ascot",
-                                                                                                "description": "Beatiful Blue Silk Ascot",
-                                                                                                "has_sizes": false,
-                                                                                                "price": 199,
-                                                                                                "category": 5,
-                                                                                                "color": "Blue",
-                                                                                                "material": "Silk",
-                                                                                                "image_url": "https://picture.bestsecret.com/static/images/1192/image_31652159_34_620x757_0.jpg",
-                                                                                                "image": "Plastrong-blue.jpeg"
-                                                                                            }
-                                                                                            },
-                                                                                            {
-                                                                                                "pk": 35,
-                                                                                                "model": "products.product",
-                                                                                                "fields": {
-                                                                                                    "sku": "pp5002690715",
-                                                                                                    "name": "Ascot",
-                                                                                                    "brand": "Ascot",
-                                                                                                    "description": "Beatiful Brown Silk Ascot",
-                                                                                                    "has_sizes": false,
-                                                                                                    "price": 199,
-                                                                                                    "category": 5,
-                                                                                                    "color": "Brown",
-                                                                                                    "material": "Silk",
-                                                                                                    "image_url": "https://picture.bestsecret.com/static/images/1192/image_31652160_72_620x757_0.jpg",
-                                                                                                    "image": "Plastrong-brown.jpeg"
-                                                                                                }
-                                                                                                }
-                                                                            ]
+}
+]
 
   

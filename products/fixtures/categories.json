@@ -3,72 +3,24 @@
         "pk": 1,
         "model": "products.category",
         "fields": {
-            "name": "ties",
-            "friendly_name": "Ties"
+            "name": "membership",
+            "friendly_name": "Membership"
         }
     },
     {
         "pk": 2,
         "model": "products.category",
         "fields": {
-            "name": "suits",
-            "friendly_name": "Suits"
+            "name": "rent",
+            "friendly_name": "Rent"
         }
     },
     {
         "pk": 3,
         "model": "products.category",
         "fields": {
-            "name": "scarfs",
-            "friendly_name": "Scarfs"
-        }
-    },
-    {
-        "pk": 4,
-        "model": "products.category",
-        "fields": {
-            "name": "vests",
-            "friendly_name": "Vests"
-        }
-    },
-    {
-        "pk": 5,
-        "model": "products.category",
-        "fields": {
-            "name": "essentials",
-            "friendly_name": "Essentials"
-        }
-    },
-    {
-        "pk": 6,
-        "model": "products.category",
-        "fields": {
-            "name": "jackets",
-            "friendly_name": "Jackets"
-        }
-    },
-    {
-        "pk": 7,
-        "model": "products.category",
-        "fields": {
-            "name": "deals",
-            "friendly_name": "deals"
-        }
-    },
-    {
-        "pk": 8,
-        "model": "products.category",
-        "fields": {
-            "name": "shoes",
-            "friendly_name": "Shoes"
-        }
-    },
-    {
-        "pk": 9,
-        "model": "products.category",
-        "fields": {
-            "name": "charity",
-            "friendly_name": "Charity"
+            "name": "clothes",
+            "friendly_name": "Clothes"
         }
     }
 ]

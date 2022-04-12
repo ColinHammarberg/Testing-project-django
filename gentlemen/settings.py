@@ -117,7 +117,6 @@ LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'gentlemen.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
@@ -132,6 +131,8 @@ else:
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
     }
+    
+# DATABASES = {'default': dj_database_url.parse('postgres://hrziexdyoppqoh:073e3ae82b2502b7c9b733b6efcd70832331066204a10ec28d788da13d877756@ec2-34-247-118-233.eu-west-1.compute.amazonaws.com:5432/d737ocjetqvqvt')}
 
 
 # Password validation
