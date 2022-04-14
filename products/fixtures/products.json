@@ -52,14 +52,105 @@
     }
 },
 {
+    "pk": 19,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001890157",
+        "name": "10 training sessions",
+        "description": "10 training sessions card",
+        "price": 59.95,
+        "category": 1,
+        "image_url": "http://unblast.com/wp-content/uploads/2020/03/Membership-Card-Mockup-1.jpg",
+        "image": "Card.jpeg"
+    }
+},
+{
     "pk": 8,
     "model": "products.product",
     "fields": {
         "sku": "pp5001890157",
-        "name": "Rent venue",
+        "name": "Rent venue 3 hours",
         "description": "300 sqm venue rental for 3 hours",
         "price": 149.95,
         "category": 2,
+        "image_url": "http://unblast.com/wp-content/uploads/2020/03/Membership-Card-Mockup-1.jpg",
+        "image": "Card.jpeg"
+    }
+},
+{
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001890157",
+        "name": "Rent venue 1 day",
+        "description": "300 sqm venue rental for 24 hours",
+        "price": 429.95,
+        "category": 2,
+        "image_url": "http://unblast.com/wp-content/uploads/2020/03/Membership-Card-Mockup-1.jpg",
+        "image": "Card.jpeg"
+    }
+},
+{
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001890157",
+        "name": "Training t-shirt",
+        "description": "Cotton training shirt",
+        "price": 29.95,
+        "category": 3,
+        "image_url": "http://unblast.com/wp-content/uploads/2020/03/Membership-Card-Mockup-1.jpg",
+        "image": "Card.jpeg"
+    }
+},
+{
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001890157",
+        "name": "Training sweatshirt",
+        "description": "Sweatshirt",
+        "price": 39.95,
+        "category": 3,
+        "image_url": "http://unblast.com/wp-content/uploads/2020/03/Membership-Card-Mockup-1.jpg",
+        "image": "Card.jpeg"
+    }
+},
+{
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001890157",
+        "name": "Training tracksuit",
+        "description": "Tracksuit",
+        "price": 49.95,
+        "category": 3,
+        "image_url": "http://unblast.com/wp-content/uploads/2020/03/Membership-Card-Mockup-1.jpg",
+        "image": "Card.jpeg"
+    }
+},
+{
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001890157",
+        "name": "Cap",
+        "description": "Cap",
+        "price": 19.95,
+        "category": 3,
+        "image_url": "http://unblast.com/wp-content/uploads/2020/03/Membership-Card-Mockup-1.jpg",
+        "image": "Card.jpeg"
+    }
+},
+{
+    "pk": 14,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001890157",
+        "name": "Training shoes",
+        "description": "Training shoes",
+        "price": 99.95,
+        "category": 3,
         "image_url": "http://unblast.com/wp-content/uploads/2020/03/Membership-Card-Mockup-1.jpg",
         "image": "Card.jpeg"
     }
