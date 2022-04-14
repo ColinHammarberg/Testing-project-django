@@ -52,7 +52,7 @@
     }
 },
 {
-    "pk": 19,
+    "pk": 1,
     "model": "products.product",
     "fields": {
         "sku": "pp5001890157",
@@ -74,7 +74,7 @@
         "price": 149.95,
         "category": 2,
         "image_url": "http://unblast.com/wp-content/uploads/2020/03/Membership-Card-Mockup-1.jpg",
-        "image": "Card.jpeg"
+        "image": "Gymvenue.jpeg"
     }
 },
 {
@@ -87,7 +87,7 @@
         "price": 429.95,
         "category": 2,
         "image_url": "http://unblast.com/wp-content/uploads/2020/03/Membership-Card-Mockup-1.jpg",
-        "image": "Card.jpeg"
+        "image": "Gymvenue.jpeg"
     }
 },
 {
@@ -100,7 +100,7 @@
         "price": 29.95,
         "category": 3,
         "image_url": "http://unblast.com/wp-content/uploads/2020/03/Membership-Card-Mockup-1.jpg",
-        "image": "Card.jpeg"
+        "image": "Shirt.jpeg"
     }
 },
 {
@@ -113,7 +113,7 @@
         "price": 39.95,
         "category": 3,
         "image_url": "http://unblast.com/wp-content/uploads/2020/03/Membership-Card-Mockup-1.jpg",
-        "image": "Card.jpeg"
+        "image": "Tracksuit.jpeg"
     }
 },
 {
@@ -126,7 +126,7 @@
         "price": 49.95,
         "category": 3,
         "image_url": "http://unblast.com/wp-content/uploads/2020/03/Membership-Card-Mockup-1.jpg",
-        "image": "Card.jpeg"
+        "image": "Tracksuit2.jpeg"
     }
 },
 {
@@ -139,7 +139,7 @@
         "price": 19.95,
         "category": 3,
         "image_url": "http://unblast.com/wp-content/uploads/2020/03/Membership-Card-Mockup-1.jpg",
-        "image": "Card.jpeg"
+        "image": "Cap.jpeg"
     }
 },
 {
@@ -152,7 +152,7 @@
         "price": 99.95,
         "category": 3,
         "image_url": "http://unblast.com/wp-content/uploads/2020/03/Membership-Card-Mockup-1.jpg",
-        "image": "Card.jpeg"
+        "image": "Shoes.jpeg"
     }
 }
 ]
