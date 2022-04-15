@@ -40,7 +40,7 @@
   <div class="container py-5">
     <div class="row align-items-center mb-5">
       <div class="col-lg-6 order-2 order-lg-1">
-        <h2 class="font-weight-light text-black">Charity</h2>
+        <h2 class="font-weight-light text-black">Gym Pigs</h2>
         <p class="font-italic text-muted mb-4">Gym Pigs was established in 1992. In London, England. The first gym which opened, is located at the same spot until today, London. 
 
           The goals have always been to serve people with great training environments. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum atque sint praesentium dolorum eius.
@@ -50,10 +50,10 @@
       <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img src="http://bespoketailors.pk/assets/uploads/57a06-suit.jpg" alt="" class="img-fluid mb-4 mb-lg-0"></div>
     </div>
     <div class="row align-items-center">
-      <div class="col-lg-5 px-5 mx-auto"><img src="https://images.pexels.com/photos/7265994/pexels-photo-7265994.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="img-fluid mb-4 mb-lg-0"></div>
+      <div class="col-lg-5 px-5 mx-auto"><img src="https://media.istockphoto.com/photos/side-view-of-beautiful-muscular-woman-running-on-treadmill-picture-id1132086660?k=20&m=1132086660&s=612x612&w=0&h=UTXXsDbUuREHV0UwHThgI144yKyReetDYlIL5C6_JoI=" alt="" class="img-fluid mb-4 mb-lg-0"></div>
       <div class="col-lg-6">
         <h2 class="font-weight-light text-black">Information</h2>
-        <p class="font-italic text-muted mb-4">To be able to shop at Charity For Gentlemen you will have to register an account. Charity For Gentlemen donates $5 extra for each new member to <b class="text-red">Star For Life.</b> </p><a href="https://starforlife.org/" class="btn btn-light px-5 rounded-50 text-black shadow-sm" target="_blank">Star For Life</a>
+        <p class="font-italic text-muted mb-4">To be able to shop and to be a member of Gym Pigs you will have to register an account. Gym Pigs donates $5 for each new member and order to <b class="text-red">Star For Life.</b> </p><a href="https://starforlife.org/" class="btn btn-light px-5 rounded-50 text-black shadow-sm" target="_blank">Star For Life</a>
       </div>
     </div>
   </div>
@@ -63,8 +63,8 @@
   <div class="container py-5">
     <div class="row mb-4">
       <div class="col-lg-5">
-        <h2 class="display-4 font-weight-light text-black">Our Stores</h2>
-        <p class="font-italic text-muted text-black">Find our physical store locations below.</p>
+        <h2 class="display-4 font-weight-light text-black">Our Gyms</h2>
+        <p class="font-italic text-muted text-black">Find our Gym locations below. We will also be opening up our virtual Gym, so keep your eyes open for that,</p>
       </div>
     </div>
 
@@ -101,39 +101,26 @@
   </div>
 </div>
 <!-- Office location (Google Map API) -->
-<div class="bg-light py-5">
-  <div class="container py-5">
-    <div class="row">
-      <div class="col-12">
-        <h2 class="display-4 font-weight-light text-black">Office Location</h2>
-        <p class="font-italic text-muted text-black">Find our HeadQuarters from the map.</p>
-      </div>
-    </div>
-    <div class="col-12">
-      <div id="map"></div>
-        <h5 class="mb-2 text-black">London</h5>
-      </div>
-    </div>
-    </div>
+
     
-    <!-- Footer -->
-    {% block footer %}
+        <!-- Footer -->
+        {% block footer %}
     <footer>
     <div class="container">
         <div class="row">
           <div class="col-md-4 footer-column">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <span class="footer-title">Products</span>
+                <span class="footer-title">Some Of The Products & Subscriptions Available</span>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Suits</a>
+                <a class="nav-link" href="{% url 'products' %}">Subscriptions</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Ties</a>
+                <a class="nav-link" href="{% url 'products' %}">Products</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Shoes</a>
+                <a class="nav-link" href="{% url 'products' %}">Sport shoes</a>
               </li>
             </ul>
           </div>
@@ -160,7 +147,7 @@
                 <span class="nav-link"><i class="fas fa-phone"></i>+1 504-711-2934</span>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="mailto:info@charityforgentlemen.com"><i class="fas fa-envelope"></i>Contact us</a>
+                <a class="nav-link" href="mailto:info@badassgym12345678.com"><i class="fas fa-envelope"></i>Contact us</a>
               </li>
               <li class="nav-item">
               </li>
@@ -172,7 +159,7 @@
         
         <div class="row text-center">
           <div class="col-md-4 box">
-            <span class="copyright quick-links">Copyright &copy; Charity For Gentlemen <script>document.write(new Date().getFullYear())</script>
+            <span class="copyright quick-links">Copyright &copy; Gym Pigs <script>document.write(new Date().getFullYear())</script>
             </span>
           </div>
           <div class="col-md-4 box">

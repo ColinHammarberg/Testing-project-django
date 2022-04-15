@@ -36,7 +36,7 @@
               <div class="card">
                 <div class="card-body">
                   <div class="d-flex flex-column align-items-center text-center">
-                    <img src="https://www.linkpicture.com/q/charity-logo-3.png" alt="Admin" class="rounded-circle" width="300">
+                    <img src="https://i.pinimg.com/originals/7e/e1/10/7ee11026a30ed2a4af2d29308dffcf54.jpg" alt="Admin" class="rounded-circle" width="300">
                     <div class="mt-3">
                       <h6 class="text-black">Welcome back <b>@{{ my_account }}</b></h6>
                       <p class="text-secondary mb-1"></p>
@@ -119,16 +119,16 @@
           <div class="col-md-4 footer-column">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <span class="footer-title">Some Of The Products Available</span>
+                <span class="footer-title">Some Of The Products & Subscriptions Available</span>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'products' %}">Suits</a>
+                <a class="nav-link" href="{% url 'products' %}">Subscriptions</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'products' %}">Ties</a>
+                <a class="nav-link" href="{% url 'products' %}">Products</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'products' %}">Shoes</a>
+                <a class="nav-link" href="{% url 'products' %}">Sport shoes</a>
               </li>
             </ul>
           </div>
@@ -155,7 +155,7 @@
                 <span class="nav-link"><i class="fas fa-phone"></i>+1 504-711-2934</span>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="mailto:info@charityforgentlemen.com"><i class="fas fa-envelope"></i>Contact us</a>
+                <a class="nav-link" href="mailto:info@badassgym12345678.com"><i class="fas fa-envelope"></i>Contact us</a>
               </li>
               <li class="nav-item">
               </li>
@@ -167,7 +167,8 @@
         
         <div class="row text-center">
           <div class="col-md-4 box">
-            <span class="copyright quick-links">Copyright &copy; Charity For Gentlemen <script>document.write(new Date().getFullYear())</script>            </span>
+            <span class="copyright quick-links">Copyright &copy; Gym Pigs <script>document.write(new Date().getFullYear())</script>
+            </span>
           </div>
           <div class="col-md-4 box">
             <ul class="list-inline social-buttons">
@@ -201,8 +202,11 @@
         </div>
       </div>   
     </footer>
-   
+    {% endblock %}          
+    <script type="text/javascript">
+      $('.carousel').carousel({
+          interval: 1500
+      })
 
   </script>
-{% endblock %}
 {% endblock %}
