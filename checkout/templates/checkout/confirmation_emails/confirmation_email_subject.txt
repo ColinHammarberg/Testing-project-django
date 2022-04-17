@@ -1,1 +1,1 @@
-Charity For Gentlemen Confirmation for Order Number {{ order.order_number }}
+Gym Pigs Confirmation for Order Number {{ order.order_number }}
