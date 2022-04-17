@@ -1,1 +1,1 @@
-web: gunicorn gentlemen.wsgi:application
+web: gunicorn gympigs.wsgi:application

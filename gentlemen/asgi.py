@@ -1,5 +1,5 @@
 """
-ASGI config for gentlemen project.
+ASGI config for gympigs project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 

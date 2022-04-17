@@ -98,7 +98,7 @@
                         {{ order_form.town_or_city | as_crispy_field }}
                         {{ order_form.street_address | as_crispy_field }}
                         {{ order_form.county | as_crispy_field }}
-                        <p class="text-black">Please choose where you would like the profits from your order to go. We send all profits in the end of the month to the chosen organization.</p>
+                        <p class="text-black">Please choose where you would like the donation from us to go to:</p>
                         {{ order_form.charity | as_crispy_field }}
                         <div class="form-check form-check-inline float-center">
                           {% if user.is_authenticated %}
