@@ -39,7 +39,7 @@ body {
 }
 
 .btn-red {
-background: rgb(211, 28, 28);
+background: rgb(36, 34, 34);
 color: white;
 }
 
@@ -66,11 +66,11 @@ color: white;
 
 
 .bg-red {
-    background:rgb(211, 28, 28);
+    background:rgb(36, 34, 34);
 }
 
 .text-red {
-    color:rgb(211, 28, 28);
+    color:rgb(36, 34, 34);
 }
 
 .bg-container {
@@ -129,7 +129,7 @@ h1 {
 	text-transform: uppercase;
 	font-weight: bolder;
 	width: 90%;
-    color: rgb(211, 28, 28);
+    color: rgb(36, 34, 34);
 }
 
 ul.titles {
@@ -167,7 +167,7 @@ ul.titles {
 /*------------------ about us page ------------- */
 
 .btn a:hover {
-  color: rgb(211, 28, 28);
+  color: rgb(36, 34, 34);
 }
 
 /*------------------ about us page ends ------------- */
@@ -175,12 +175,12 @@ ul.titles {
 /*------------------ footer section begins here (Bootsrapcdn inspired)------------- */
 
   a {
-    color: rgb(211, 28, 28);
+    color: rgb(36, 34, 34);
 
   }
   a:hover {
     text-decoration: none;
-    color: rgb(211, 28, 28);
+    color: rgb(36, 34, 34);
   }
   
   ::selection {
@@ -235,7 +235,7 @@ ul.titles {
   ul.social-buttons li a:active,
   ul.social-buttons li a:focus,
   ul.social-buttons li a:hover {
-    background-color: rgb(211, 28, 28);
+    background-color: rgb(36, 34, 34);
   }
   
   ul.social-buttons li a {
@@ -364,8 +364,8 @@ div#map {
     max-width: 600px;
     padding: 4vh 0;
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-top: 3px solid rgb(211, 28, 28);
-    border-bottom: 3px solid rgb(211, 28, 28);
+    border-top: 3px solid rgb(36, 34, 34);
+    border-bottom: 3px solid rgb(36, 34, 34);
     border-left: none;
     border-right: none
 }
@@ -378,7 +378,7 @@ div#map {
 }
 
 .title-4 {
-  color: rgb(211, 28, 28);
+  color: rgb(36, 34, 34);
   font-weight: 600;
   margin-bottom: 2vh;
   padding: 0 8%;
@@ -424,7 +424,7 @@ div#map {
 
 .total {
   padding: 2vh 8%;
-  color: rgb(211, 28, 28);
+  color: rgb(36, 34, 34);
   font-weight: bold
 }
 
@@ -444,7 +444,7 @@ div#map {
 }
 
 .footer a {
-  color: rgb(211, 28, 28);
+  color: rgb(36, 34, 34);
 }
 
 .footer .col-10,
@@ -479,7 +479,7 @@ div#map {
 
 #progressbar #step1:before {
   content: "";
-  background: rgb(211, 28, 28);
+  background: rgb(36, 34, 34);
   height: 5px;
   width: 5px;
   margin-left: 0px;
@@ -538,7 +538,7 @@ div#map {
 
 #progressbar li:nth-child(1):after {
   margin: auto;
-  background: rgb(211, 28, 28);
+  background: rgb(36, 34, 34);
 }
 
 #progressbar li:nth-child(2):after {
