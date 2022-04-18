@@ -129,7 +129,7 @@ h1 {
 	text-transform: uppercase;
 	font-weight: bolder;
 	width: 90%;
-    color: rgb(36, 34, 34);
+    color: rgb(255, 255, 255);
 }
 
 ul.titles {
@@ -175,12 +175,12 @@ ul.titles {
 /*------------------ footer section begins here (Bootsrapcdn inspired)------------- */
 
   a {
-    color: rgb(36, 34, 34);
+    color: rgb(255, 255, 255);
 
   }
   a:hover {
     text-decoration: none;
-    color: rgb(36, 34, 34);
+    color: rgb(150, 150, 150);
   }
   
   ::selection {
@@ -210,7 +210,7 @@ ul.titles {
     text-align: center;
     }
       span.nav-link {
-        color: grey;
+        color: #fff;
       }
       span.footer-title {
         font-size: 14px;
@@ -392,7 +392,7 @@ div#map {
 }
 
 @media(max-width: 992px) {
-  #details{
+  #details {
     font-weight: 250;
     font-size: 7px;
   }
